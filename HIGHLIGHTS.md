@@ -4,6 +4,12 @@ A chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-01-29: Prevented RAN Upgrade Failures
+
+Eliminated IBU upgrade failures for telco RAN customers by removing incompatible cert-manager configuration before release. Custom certificates are lost during Image Based Upgrades, so proactively removed RAN references while preserving Core/Hub support. Coordinated changes across GitHub and GitLab repos with full documentation.
+
+---
+
 ## 2026-01-29: Restored CI Reliability Across OCP Versions
 
 Eliminated false test failures blocking certsuite releases on OCP 4.16 and 4.17 clusters. Added precondition assertions that detect environment issues early, reducing CI debugging time and preventing engineers from chasing phantom failures. Isolated 4.14 issue to upstream certsuite behavior for targeted follow-up.
