@@ -33,3 +33,9 @@ Reduced false CI failures caused by intermittent GitHub API issues during Kubern
 Reduced CI cluster overhead by configuring per-suite worker node counts. Analysis identified only 4 of 27 test suites require multi-node clusters. Single-worker suites now have more resource headroom, improving stability. Changes deployed across certsuite and certsuite-qe repositories with full validation.
 
 ---
+
+## 2026-01-30: Validated IBU Certificate Behavior
+
+Created automated test framework proving cert-manager certificates are NOT preserved during Image-Based Upgrades. Uses OADP backup/restore to simulate IBU, captures cryptographic checksums, and validates regeneration. Provides documented evidence for customer advisory and engineering decisions around telco RAN upgrades.
+
+---
