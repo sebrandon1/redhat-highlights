@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ## 2026-01-30: Validated IBU Certificate Behavior
 
-Created automated test framework proving cert-manager certificates are NOT preserved during Image-Based Upgrades. Uses OADP backup/restore to simulate IBU, captures cryptographic checksums, and validates regeneration. Provides documented evidence for customer advisory and engineering decisions around telco RAN upgrades.
+Created automated test framework proving cert-manager certificates are NOT preserved during Image-Based Upgrades. Uses OADP backup/restore to simulate IBU, captures cryptographic checksums, and validates regeneration. Provides documented evidence for customer advisory and engineering decisions around telco RAN upgrades. [Full Report](https://gist.github.com/sebrandon1/71f33b35aea2aa4cf9edda855201c8fc)
 
 ---
 
