@@ -27,3 +27,9 @@ Built 6 automated scanners tracking Go versions, deprecated packages, and securi
 Reduced false CI failures caused by intermittent GitHub API issues during Kubernetes cluster provisioning. Added exponential backoff retry logic that distinguishes transient API errors from invalid versions, eliminating spurious workflow failures that waste engineer time and delay releases.
 
 ---
+
+## 2026-01-30: Optimized CI Resource Efficiency
+
+Reduced CI cluster overhead by configuring per-suite worker node counts. Analysis identified only 4 of 27 test suites require multi-node clusters. Single-worker suites now have more resource headroom, improving stability. Changes deployed across certsuite and certsuite-qe repositories with full validation.
+
+---
