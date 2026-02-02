@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-01: Restored Nightly E2E Pipeline
+
+Fixed broken nightly e2e tests that were failing 100% of the time due to container registry misconfiguration. Kubernetes tests now pass reliably; OpenShift tests skip gracefully when pull secret unavailable. Restored CI visibility into operator health, preventing regressions from going undetected between releases.
+
+---
+
 ## 2026-01-30: Streamlined Repository Maintenance
 
 Reduced repository clutter by eliminating 9 stale branches from certsuite, removing abandoned feature branches and obsolete dependabot updates. Also established version-controlled Claude Code skills with GitHub sync, enabling consistent AI-assisted workflows across machines and easy skill sharing.
