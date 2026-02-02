@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-02: Expanded CI Coverage to macOS
+
+Enabled macOS testing for quick-k8s GitHub Action using free-tier `macos-15-intel` runner, expanding platform coverage from 4 to 6 runners. Fixed cross-platform binary downloads and documented runner compatibility. All 15 CI checks pass, validating Kubernetes cluster creation works on both Linux and macOS. [PR #84](https://github.com/palmsoftware/quick-k8s/pull/84) | [CNFCERT-1326](https://issues.redhat.com/browse/CNFCERT-1326)
+
+---
+
 ## 2026-02-02: Hardened Operator Security Posture
 
 Reduced supply chain and runtime attack surface for imagecertinfo-operator. Added Trivy vulnerability scanning with GitHub Security integration, cosign image signing for provenance verification, egress NetworkPolicy restrictions, and Kubernetes Secret support for API credentials. All container images now cryptographically signed and verifiable. Released in [v0.2.3](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.3). [CNFCERT-1325](https://issues.redhat.com/browse/CNFCERT-1325)
