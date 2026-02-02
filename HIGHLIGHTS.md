@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-02: Improved Cert-Manager Test Documentation
+
+Enhanced developer onboarding by adding descriptive comment headers to 33 YAML manifests in cert-manager-scripts. Each file now explains its purpose and configuration, making the IBU testing framework self-documenting for contributors validating certificate behavior during OpenShift upgrades. [PR #15](https://github.com/sebrandon1/cert-manager-scripts/pull/15)
+
+---
+
 ## 2026-02-02: Expanded CI Coverage to macOS
 
 Enabled macOS testing for quick-k8s GitHub Action using free-tier `macos-15-intel` runner, expanding platform coverage from 4 to 6 runners. Fixed cross-platform binary downloads and documented runner compatibility. All 15 CI checks pass, validating Kubernetes cluster creation works on both Linux and macOS. [PR #84](https://github.com/palmsoftware/quick-k8s/pull/84) | [CNFCERT-1326](https://issues.redhat.com/browse/CNFCERT-1326)
