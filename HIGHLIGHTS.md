@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-02: Hardened Operator Security Posture
+
+Reduced supply chain and runtime attack surface for imagecertinfo-operator. Added Trivy vulnerability scanning with GitHub Security integration, cosign image signing for provenance verification, egress NetworkPolicy restrictions, and Kubernetes Secret support for API credentials. All container images now cryptographically signed and verifiable.
+
+---
+
 ## 2026-02-01: Restored Nightly E2E Pipeline
 
 Fixed broken nightly e2e tests that were failing 100% of the time due to container registry misconfiguration. Kubernetes tests now pass reliably; OpenShift tests skip gracefully when pull secret unavailable. Restored CI visibility into operator health, preventing regressions from going undetected between releases.
