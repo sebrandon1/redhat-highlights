@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-03: Enhanced Certsuite Value Proposition
+
+Improved project adoption potential by adding a "Why Use Certsuite?" section to the README. Clearly articulates business value—early problem detection, Red Hat expertise, certification readiness, and flexible deployment—helping partners and developers understand benefits before investing time in evaluation.
+
+---
+
 ## 2026-02-02: Improved Cert-Manager Test Documentation
 
 Enhanced developer onboarding by adding descriptive comment headers to 33 YAML manifests in cert-manager-scripts. Each file now explains its purpose and configuration, making the IBU testing framework self-documenting for contributors validating certificate behavior during OpenShift upgrades. [PR #15](https://github.com/sebrandon1/cert-manager-scripts/pull/15)
