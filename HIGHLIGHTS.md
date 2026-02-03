@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ## 2026-02-03: Enhanced Certsuite Value Proposition
 
-Improved project adoption potential by adding a "Why Use Certsuite?" section to the README. Clearly articulates business value—early problem detection, Red Hat expertise, certification readiness, and flexible deployment—helping partners and developers understand benefits before investing time in evaluation.
+Improved project adoption potential by adding a "Why Use Certsuite?" section to the README. Clearly articulates business value—early problem detection, Red Hat expertise, certification readiness, and flexible deployment—helping partners and developers understand benefits before investing time in evaluation. [PR #3439](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3439)
 
 ---
 
