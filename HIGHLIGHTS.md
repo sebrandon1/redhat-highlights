@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-04: Fixed Flaky Platform Alteration Tests
+
+Eliminated false CI failures across 6 OCP clusters by adding smart cluster detection to platformalteration tests. Tests now dynamically expect PASS on development clusters (CRC) and FAIL on real lab clusters with actual kernel modifications—fixing tests that failed 100% on OCP 4.14/4.16/4.17 while passing incorrectly on 4.18-4.20. [PR #1350](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1350)
+
+---
+
 ## 2026-02-04: Automated Dependency Tracking Visibility
 
 Enabled leadership visibility into security debt across 100+ OpenShift repositories by creating verified status reports for 5 tracking initiatives (x/crypto CVEs, deprecated packages, Go versions). Automated gist creation and issue comments surface actionable data—2 critical CVEs, 21 stale PRs awaiting review, and 107 outdated repos—accelerating remediation prioritization. [Tracking Issues](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues?q=is%3Aissue+is%3Aopen+Tracking)
