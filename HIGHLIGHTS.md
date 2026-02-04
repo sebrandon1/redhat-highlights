@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ## 2026-02-04: Automated Dependency Tracking Visibility
 
-Enabled leadership visibility into security debt across 100+ OpenShift repositories by creating verified status reports for 5 tracking initiatives (x/crypto CVEs, deprecated packages, Go versions). Automated gist creation and issue comments surface actionable data—2 critical CVEs, 21 stale PRs awaiting review, and 107 outdated repos—accelerating remediation prioritization.
+Enabled leadership visibility into security debt across 100+ OpenShift repositories by creating verified status reports for 5 tracking initiatives (x/crypto CVEs, deprecated packages, Go versions). Automated gist creation and issue comments surface actionable data—2 critical CVEs, 21 stale PRs awaiting review, and 107 outdated repos—accelerating remediation prioritization. [Tracking Issues](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues?q=is%3Aissue+is%3Aopen+Tracking)
 
 ---
 
