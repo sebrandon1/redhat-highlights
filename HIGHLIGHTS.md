@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-04: Improved OCT Adoption
+
+Reduced partner confusion about OCT's value proposition by adding a clear "Why Use OCT" section to the README. Highlights 4x daily updates vs stale certsuite releases, disconnected environment support, and how to avoid false certification test failures—helping partners quickly understand when and why to use this tool. [PR #405](https://github.com/redhat-best-practices-for-k8s/oct/pull/405)
+
+---
+
 ## 2026-02-03: Enhanced Certsuite Value Proposition
 
 Improved project adoption potential by adding a "Why Use Certsuite?" section to the README. Clearly articulates business value—early problem detection, Red Hat expertise, certification readiness, and flexible deployment—helping partners and developers understand benefits before investing time in evaluation. [PR #3439](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3439)
