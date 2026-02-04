@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ## 2026-02-04: Improved OCT Adoption
 
-Reduced partner confusion about OCT's value proposition by adding a clear "Why Use OCT" section to the README. Highlights 4x daily updates vs stale certsuite releases, disconnected environment support, and how to avoid false certification test failures—helping partners quickly understand when and why to use this tool. [PR #405](https://github.com/redhat-best-practices-for-k8s/oct/pull/405)
+Reduced partner confusion about OCT's value proposition by adding a clear "Why Use OCT" section to the README. Highlights 4x daily updates vs stale certsuite releases, disconnected environment support, and how to avoid false certification test failures—helping partners quickly understand when and why to use this tool. [PR #405](https://github.com/redhat-best-practices-for-k8s/oct/pull/405) | [Blog Post](https://github.com/sebrandon1/redhat-blog-posts/blob/main/posts/why-use-oct-for-certification-testing.md)
 
 ---
 
