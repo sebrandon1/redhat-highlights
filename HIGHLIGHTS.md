@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-05: Telco RDS Security Hardening Documentation
+
+Strengthened security posture for telco customers by adding NIST 800-53 aligned BIOS hardening guidance to Reference Design Specifications. Documented disabling USB boot, wireless LAN, and Bluetooth in host firmware—reducing attack surface for RAN and Core deployments. Consolidated duplicate PRs and updated internal/external docs in parallel. [PR #106068](https://github.com/openshift/openshift-docs/pull/106068) | [MR !168](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/168) | [CNF-15900](https://issues.redhat.com/browse/CNF-15900)
+
+---
+
 ## 2026-02-05: Security Debt Visibility Across 200+ Repos
 
 Surfaced critical security risks by generating verified status reports across 5 dependency tracking initiatives. Identified 2 repositories vulnerable to CVE-2025-22869 (high severity), 21 stale migration PRs with 0% merge rate, and 11 repos requiring major golangci-lint upgrades. Reports posted to tracking issues with actionable remediation priorities. [Reports](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues?q=is%3Aissue+is%3Aopen+Tracking)
