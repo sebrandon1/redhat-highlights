@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Automated OCP Lifecycle Date Maintenance
+
+Eliminated manual maintenance of OpenShift lifecycle dates that had drifted out of sync, risking incorrect certification test results. Lifecycle data now auto-updates daily from the endoflife.date API via GitHub Actions, matching the pattern used for RHCOS versions. Reduces human error and ensures partners always test against accurate support windows. [PR #3444](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3444) | [CNFCERT-1332](https://issues.redhat.com/browse/CNFCERT-1332)
+
+---
+
 ## 2026-02-06: Simplified TLS Certificate Setup for CI Pipelines
 
 Eliminated manual cert-manager installation steps by adding native support to quick-k8s GitHub Action. Teams now enable TLS certificate management with a single `installCertManager: true` flag instead of custom kubectl commands. Includes automated version updates and pod readiness checks. Already adopted by certsuite-operator, reducing CI complexity. [quick-k8s PR #87](https://github.com/palmsoftware/quick-k8s/pull/87) | [v0.0.48](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.48) | [certsuite-operator PR #278](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/278) | [CNFCERT-1330](https://issues.redhat.com/browse/CNFCERT-1330)
