@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ## 2026-02-06: Unblocked K8s Dependency Updates
 
-Restored safe dependency updates after controller-runtime 0.22.2+ introduced breaking API changes that blocked all k8s upgrades. Added targeted ignore rule enabling k8s.io packages to update independently while isolating the breaking change. Created tracking issue with remediation steps. [PR #276](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/276) | [CNFCERT-1331](https://issues.redhat.com/browse/CNFCERT-1331)
+Restored safe dependency updates after controller-runtime 0.22.2+ introduced breaking API changes that blocked CI. Configured dependabot to exclude controller-runtime from the k8s-dependencies group, allowing k8s.io packages to update independently. Created tracking issue for future webhook code migration. [PR #276](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/276) | [CNFCERT-1331](https://issues.redhat.com/browse/CNFCERT-1331)
 
 ---
 
