@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Simplified TLS Certificate Setup for CI Pipelines
+
+Eliminated manual cert-manager installation steps by adding native support to quick-k8s GitHub Action. Teams now enable TLS certificate management with a single `installCertManager: true` flag instead of custom kubectl commands. Includes automated version updates and pod readiness checks. Already adopted by certsuite-operator, reducing CI complexity. [quick-k8s PR #87](https://github.com/palmsoftware/quick-k8s/pull/87) | [v0.0.48](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.48) | [certsuite-operator PR #278](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/278) | [CNFCERT-1330](https://issues.redhat.com/browse/CNFCERT-1330)
+
+---
+
 ## 2026-02-06: Unblocked K8s Dependency Updates
 
 Restored safe dependency updates after controller-runtime 0.22.2+ introduced breaking API changes that blocked CI. Configured dependabot to exclude controller-runtime from the k8s-dependencies group, allowing k8s.io packages to update independently. Created tracking issue for future webhook code migration. [PR #276](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/276) | [CNFCERT-1331](https://issues.redhat.com/browse/CNFCERT-1331)
