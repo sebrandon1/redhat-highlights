@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Fixed Performance Test Failures Across OCP Clusters
+
+Eliminated false CI failures on OCP 4.14, 4.16, and 4.17 nightly jobs by diagnosing missing PerformanceProfile configuration and adding proper preconditions to exclusive CPU pool tests. Tests now skip gracefully with clear messages instead of failing unexpectedly, restoring CI reliability and reducing engineer debugging time. [PR #1352](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1352)
+
+---
+
 ## 2026-02-06: Self-Service Security Scanning for Developers
 
 Enabled instant security scanning across 200+ repositories by creating 8 Claude Code skills (`/tls-scan`, `/xcrypto-scan`, etc.) and adding API mode to the TLS compliance checker. Developers can now run scans locally in seconds without cloning repos, while CI pipelines avoid disk-intensive operations. Standardized workflows reduce onboarding friction. [PR #99](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/99)
