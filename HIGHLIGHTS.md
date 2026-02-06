@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Self-Service Security Scanning for Developers
+
+Enabled instant security scanning across 200+ repositories by creating 8 Claude Code skills (`/tls-scan`, `/xcrypto-scan`, etc.) and adding API mode to the TLS compliance checker. Developers can now run scans locally in seconds without cloning repos, while CI pipelines avoid disk-intensive operations. Standardized workflows reduce onboarding friction. [PR #99](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/99)
+
+---
+
 ## 2026-02-05: Telco RDS Security Hardening Documentation
 
 Strengthened security posture for telco customers by adding NIST 800-53 aligned BIOS hardening guidance to Reference Design Specifications. Documented disabling USB boot, wireless LAN, and Bluetooth in host firmware—reducing attack surface for RAN and Core deployments. Consolidated duplicate PRs and updated internal/external docs in parallel. [PR #106068](https://github.com/openshift/openshift-docs/pull/106068) | [MR !168](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/168) | [CNF-15900](https://issues.redhat.com/browse/CNF-15900)
