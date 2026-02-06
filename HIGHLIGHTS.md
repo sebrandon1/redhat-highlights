@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Unblocked K8s Dependency Updates
+
+Restored safe dependency updates after controller-runtime 0.22.2+ introduced breaking API changes that blocked all k8s upgrades. Added targeted ignore rule enabling k8s.io packages to update independently while isolating the breaking change. Created tracking issue with remediation steps. [PR #276](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/276) | [CNFCERT-1331](https://issues.redhat.com/browse/CNFCERT-1331)
+
+---
+
 ## 2026-02-06: Fixed Performance Test Failures Across OCP Clusters
 
 Eliminated false CI failures on OCP 4.14, 4.16, and 4.17 nightly jobs by diagnosing missing PerformanceProfile configuration and adding proper preconditions to exclusive CPU pool tests. Tests now skip gracefully with clear messages instead of failing unexpectedly, restoring CI reliability and reducing engineer debugging time. [PR #1352](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1352)
