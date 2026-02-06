@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-06: Simplified CRC Kubeconfig Access
+
+Enabled developers to quickly export and pipe CRC cluster credentials by adding a `crc generate-kubeconfig` command. Previously users had to manually locate the kubeconfig file path. Now a single command outputs it to stdout for use with kubectl, reducing friction for local OpenShift development workflows. [PR #5133](https://github.com/crc-org/crc/pull/5133) | [#4752](https://github.com/crc-org/crc/issues/4752)
+
+---
+
 ## 2026-02-06: Automated OCP Lifecycle Date Maintenance
 
 Eliminated manual maintenance of OpenShift lifecycle dates that had drifted out of sync, risking incorrect certification test results. Lifecycle data now auto-updates daily from the endoflife.date API via GitHub Actions, matching the pattern used for RHCOS versions. Reduces human error and ensures partners always test against accurate support windows. [PR #3444](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3444) | [CNFCERT-1332](https://issues.redhat.com/browse/CNFCERT-1332)
