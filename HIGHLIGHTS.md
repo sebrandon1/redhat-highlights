@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-09: Improved CRC Startup Error Clarity
+
+Reduced developer debugging time by adding early validation of CRC machine instance files during startup. Missing SSH keys now produce a clear remediation message instead of cryptic connection failures, preventing users from chasing phantom errors when their local cluster state is corrupted. [PR #5134](https://github.com/crc-org/crc/pull/5134) | [CNFCERT-1334](https://issues.redhat.com/browse/CNFCERT-1334)
+
+---
+
 ## 2026-02-06: Simplified CRC Kubeconfig Access
 
 Enabled developers to quickly export and pipe CRC cluster credentials by adding a `crc generate-kubeconfig` command. Previously users had to manually locate the kubeconfig file path. Now a single command outputs it to stdout for use with kubectl, reducing friction for local OpenShift development workflows. [PR #5133](https://github.com/crc-org/crc/pull/5133) | [#4752](https://github.com/crc-org/crc/issues/4752)
