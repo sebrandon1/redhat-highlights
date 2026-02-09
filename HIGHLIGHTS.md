@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-09: Unblocked Collector Dependency Update
+
+Resolved CI-blocking lint failures in the collector service caused by a deprecated AWS S3 upload API. Migrated to the new transfermanager package, unblocking the dependabot security update and keeping the data collection pipeline current with supported SDKs. [PR #653](https://github.com/redhat-best-practices-for-k8s/collector/pull/653) | [CNFCERT-1335](https://issues.redhat.com/browse/CNFCERT-1335)
+
+---
+
 ## 2026-02-09: Improved CRC Startup Error Clarity
 
 Reduced developer debugging time by adding early validation of CRC machine instance files during startup. Missing SSH keys now produce a clear remediation message instead of cryptic connection failures, preventing users from chasing phantom errors when their local cluster state is corrupted. [PR #5134](https://github.com/crc-org/crc/pull/5134) | [CNFCERT-1334](https://issues.redhat.com/browse/CNFCERT-1334)
