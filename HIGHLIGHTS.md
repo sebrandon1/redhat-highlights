@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-09: Post-Quantum Cryptography Readiness Scanning
+
+Enabled early detection of post-quantum cryptography (PQC) readiness across 554 repositories by adding ML-KEM adoption tracking, curve configuration detection, and centralized TLS profile adherence checks to the TLS compliance scanner. A two-pass filter reduces false positives by excluding repos already consuming TLSSecurityProfile. Scanned 5 organizations, surfacing 28 critical and 78 informational findings. [PR #105](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/105) | [Tracking Issue #98](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/98)
+
+---
+
 ## 2026-02-09: Unblocked Collector Dependency Update
 
 Resolved CI-blocking lint failures in the collector service caused by a deprecated AWS S3 upload API. Migrated to the new transfermanager package, unblocking the dependabot security update and keeping the data collection pipeline current with supported SDKs. [PR #653](https://github.com/redhat-best-practices-for-k8s/collector/pull/653) | [CNFCERT-1335](https://issues.redhat.com/browse/CNFCERT-1335)
