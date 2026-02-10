@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-10: Scalable Monthly Highlights Organization - [claude-skills](https://github.com/sebrandon1/claude-skills)
+
+Prevented highlight file from growing unbounded by switching to monthly files (HIGHLIGHTS-YYYY-MM.md). New months auto-create their own file, keeping each document focused and manageable. Split 29 existing entries across two monthly files, improving navigability for leadership reviewing accomplishments.
+
+---
+
 ## 2026-02-10: Reduced Dependabot PR Noise - [crc](https://github.com/crc-org/crc)
 
 Cut dependency update PR volume by grouping related Go modules (golang.org/x, sigstore, containers, podman, gRPC, testing, CLI frameworks) into single coordinated PRs. Six simultaneous golang.org/x PRs now merge as one, reducing reviewer burden and CI churn for the team. [PR #5142](https://github.com/crc-org/crc/pull/5142) | [CNFCERT-1342](https://issues.redhat.com/browse/CNFCERT-1342)
