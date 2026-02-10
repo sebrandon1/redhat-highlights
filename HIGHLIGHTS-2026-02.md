@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-10: Reusable TLS Security Linter for CI - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+Created a standalone GitHub Action that any repository can adopt as a CI gate to detect TLS configuration anti-patterns across Go, Python, Node.js, and C++. Detects 34 patterns including certificate verification bypasses and deprecated protocol usage. Produces inline PR annotations, job summaries, and optional SARIF for Code Scanning. Already deployed as a proof of concept in kpi-collection-tool. [v1.0.1](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.0.1) | [PoC PR #62](https://github.com/redhat-best-practices-for-k8s/kpi-collection-tool/pull/62)
+
+---
+
 ## 2026-02-10: Scalable Monthly Highlights Organization - [claude-skills](https://github.com/sebrandon1/claude-skills)
 
 Prevented highlight file from growing unbounded by switching to monthly files (HIGHLIGHTS-YYYY-MM.md). New months auto-create their own file, keeping each document focused and manageable. Split 29 existing entries across two monthly files, improving navigability for leadership reviewing accomplishments.
