@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments.
 
 ---
 
+## 2026-02-10: Reduced Dependabot PR Noise - [crc](https://github.com/crc-org/crc)
+
+Cut dependency update PR volume by grouping related Go modules (golang.org/x, sigstore, containers, podman, gRPC, testing, CLI frameworks) into single coordinated PRs. Six simultaneous golang.org/x PRs now merge as one, reducing reviewer burden and CI churn for the team. [PR #5142](https://github.com/crc-org/crc/pull/5142) | [CNFCERT-1342](https://issues.redhat.com/browse/CNFCERT-1342)
+
+---
+
 ## 2026-02-10: Multi-Language TLS Compliance Scanning - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Expanded TLS security scanning from Go-only to four languages (Python, Node.js, C++), increasing coverage to 704 repositories across 6 organizations. Detected 61 critical certificate verification bypasses — including Python `verify=False` patterns previously invisible to the scanner. Fork repositories are now scanned instead of skipped. [PR #107](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/107) | [Tracking Issue #98](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/98)
