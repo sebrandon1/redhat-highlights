@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-11: Unified Team Accomplishment Tracking - [team-highlights](https://github.com/redhat-best-practices-for-k8s/team-highlights)
+
+Created a shared team highlights repository providing managers and leadership centralized visibility into engineering accomplishments. Standardized format and automated workflows make it easy for every team member to surface impactful work, strengthening advocacy for the team's contributions across the organization.
+
+---
+
 ## 2026-02-11: Prevented Stale Issue Auto-Closure - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Prevented 21 Go version tracking issues from being auto-closed by the Prow lifecycle bot across OpenShift repositories. Scanned all 6 telco-bot tracking initiatives (100+ linked issues) and removed stale labels before issues were lost, preserving visibility into outdated dependencies across the organization. [Tracking Issue #39](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/39)
