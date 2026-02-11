@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-11: Actionable TLS Compliance Scanning - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+
+Reduced scan noise by replacing four severity tiers with a binary pass/fail model aligned with Red Hat's centralized TLS security profile strategy (CNF-21745). Only actionable findings remain, making results immediately useful for remediation. Added fork detection to close a scanning gap that missed repositories like kube-rbac-proxy. [Tracking Issue #98](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/98)
+
+---
+
 ## 2026-02-11: Go 1.26.0 Modernization Across 21 Repos - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Eliminated exposure to known Go vulnerabilities and enabled post-quantum TLS by upgrading 21 repositories to Go 1.26.0 across two organizations. Automated branch creation, Dockerfile updates, dependency resolution, and PR creation with cross-linked tracking. All PRs linked to [CNFCERT-1344](https://issues.redhat.com/browse/CNFCERT-1344). [certsuite#3455](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3455)
