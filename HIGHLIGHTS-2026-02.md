@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-13: OpenShift 4.21 Day-One CI Support - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Enabled same-day OpenShift 4.21 testing for all downstream consumers by integrating CRC 2.58.0 support into the quick-ocp GitHub Action. Teams can now validate workloads against 4.21 immediately, eliminating delays between platform release and CI readiness. [PR #44](https://github.com/palmsoftware/quick-ocp/pull/44) | [v0.0.25](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.25) | [CNFCERT-1337](https://issues.redhat.com/browse/CNFCERT-1337)
+
+---
+
 ## 2026-02-11: Actionable TLS Compliance Scanning - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Reduced scan noise by replacing four severity tiers with a binary pass/fail model aligned with Red Hat's centralized TLS security profile strategy (CNF-21745). Only actionable findings remain, making results immediately useful for remediation. Added fork detection to close a scanning gap that missed repositories like kube-rbac-proxy. [Tracking Issue #98](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/98)
