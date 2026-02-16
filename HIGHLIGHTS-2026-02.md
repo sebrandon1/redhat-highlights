@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-13: Cluster-Wide TLS Compliance Operator - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Built a proof-of-concept Kubernetes operator that automatically discovers and monitors every TLS endpoint across a cluster, enabling teams to detect non-compliant TLS configurations, expiring certificates, and post-quantum cryptography (PQC) readiness without manual auditing. Includes full CI/CD pipeline with nightly E2E tests on both Kubernetes and OpenShift. [v0.0.2](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.2) | [CNFCERT-1346](https://issues.redhat.com/browse/CNFCERT-1346)
+
+---
+
 ## 2026-02-13: OpenShift 4.21 Day-One CI Support - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Enabled same-day OpenShift 4.21 testing for all downstream consumers by integrating CRC 2.58.0 support into the quick-ocp GitHub Action. Teams can now validate workloads against 4.21 immediately, eliminating delays between platform release and CI readiness. [PR #44](https://github.com/palmsoftware/quick-ocp/pull/44) | [v0.0.25](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.25) | [CNFCERT-1337](https://issues.redhat.com/browse/CNFCERT-1337)
