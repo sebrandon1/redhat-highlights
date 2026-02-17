@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-17: Automated Istio Version Maintenance - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Eliminated manual Istio version drift in service mesh Quality Engineering (QE) tests by bumping from 1.24.1 to 1.29.0 and adding a weekly GitHub Actions workflow that auto-detects new releases and creates update PRs. Prevents test failures from stale dependencies without ongoing human effort. [PR #1370](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1370) | [CNFCERT-1350](https://issues.redhat.com/browse/CNFCERT-1350)
+
+---
+
 ## 2026-02-13: Cluster-Wide TLS Compliance Operator - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Built a proof-of-concept Kubernetes operator that automatically discovers and monitors every TLS endpoint across a cluster, enabling teams to detect non-compliant TLS configurations, expiring certificates, and post-quantum cryptography (PQC) readiness without manual auditing. Includes full CI/CD pipeline with nightly E2E tests on both Kubernetes and OpenShift. [v0.0.2](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.2) | [CNFCERT-1346](https://issues.redhat.com/browse/CNFCERT-1346)
