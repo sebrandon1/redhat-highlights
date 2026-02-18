@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-18: Fixed E2E Test State Leakage - [crc](https://github.com/crc-org/crc)
+
+Improved end-to-end test reliability by fixing a config cleanup gap where `developer-password` persisted across test scenarios, risking false results. Added the missing unset call to the `@cleanup` tag handler, matching the existing pattern for other config properties. [PR #5154](https://github.com/crc-org/crc/pull/5154)
+
+---
+
 ## 2026-02-18: YAML Summarizer Feature Sprint - [yaml-to-readme](https://github.com/sebrandon1/yaml-to-readme)
 
 Accelerated yaml-to-readme from a single-provider CLI into a production-ready tool by shipping 10 features across 10 merged PRs: multi-provider LLM support (Ollama + OpenAI-compatible APIs), concurrent processing, multi-format output (Markdown/JSON/HTML), Dockerfile, structured logging, dry-run mode, and 86%+ test coverage. [PRs #96-#105](https://github.com/sebrandon1/yaml-to-readme/pulls?q=is%3Apr+is%3Amerged)
