@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-18: AI-Driven Lab Operations Skills - [billerica-lab](https://github.com/redhat-best-practices-for-k8s/billerica-lab)
+
+Enabled natural-language management of the Billerica CI lab (4 runners, 4 OpenShift clusters) by creating 4 Claude Code skills covering status dashboards, resource cleanup, system updates, and certificate monitoring. Engineers can now run `/lab-status` or `/lab-cleanup` instead of remembering 11 Ansible playbook names and flags, reducing operational friction and lowering the barrier for on-call troubleshooting.
+
+---
+
 ## 2026-02-18: Fixed E2E Test State Leakage - [crc](https://github.com/crc-org/crc)
 
 Improved end-to-end test reliability by fixing a config cleanup gap where `developer-password` persisted across test scenarios, risking false results. Added the missing unset call to the `@cleanup` tag handler, matching the existing pattern for other config properties. [PR #5154](https://github.com/crc-org/crc/pull/5154)
