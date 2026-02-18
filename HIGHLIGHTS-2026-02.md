@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-18: YAML Summarizer Feature Sprint - [yaml-to-readme](https://github.com/sebrandon1/yaml-to-readme)
+
+Accelerated yaml-to-readme from a single-provider CLI into a production-ready tool by shipping 10 features across 10 merged PRs: multi-provider LLM support (Ollama + OpenAI-compatible APIs), concurrent processing, multi-format output (Markdown/JSON/HTML), Dockerfile, structured logging, dry-run mode, and 86%+ test coverage. [PRs #96-#105](https://github.com/sebrandon1/yaml-to-readme/pulls?q=is%3Apr+is%3Amerged)
+
+---
+
 ## 2026-02-18: Jiracrawler Code Quality and Feature Sprint - [jiracrawler](https://github.com/sebrandon1/jiracrawler)
 
 Resolved 13 open issues across two sprints, transforming jiracrawler from a basic CLI into a production-quality tool. Added proper Go error handling, cmd/ test coverage (68.5%), table output format, custom JQL queries, CodeQL security scanning, code coverage reporting, and golangci-lint enforcement. All changes shipped via individual PRs with passing CI. [PRs #54-#67](https://github.com/sebrandon1/jiracrawler/pulls?q=is%3Apr+is%3Amerged)
