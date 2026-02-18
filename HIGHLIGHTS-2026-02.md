@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ## 2026-02-18: Expanded CI Disk Cleanup Adoption - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
 
-Reduced CI maintenance burden across 7 OpenShift ecosystem repositories by replacing ~120 lines of duplicated disk cleanup scripts with a single shared GitHub Action. Consolidates fragmented, error-prone cleanup patterns into a maintained, tested solution. [quick-cleanup#3](https://github.com/palmsoftware/quick-cleanup/issues/3) | [CNFCERT-1351](https://issues.redhat.com/browse/CNFCERT-1351)
+Reduced CI maintenance burden across 7 repositories in 6 open source communities (Velero, Prometheus Operator, MetalLB, TopoLVM, Confidential Containers, OpenPerouter) by replacing ~120 lines of duplicated disk cleanup scripts with a single shared GitHub Action. Filed PRs against upstream repos where GitHub Actions is actively used. [quick-cleanup#3](https://github.com/palmsoftware/quick-cleanup/issues/3) | [CNFCERT-1351](https://issues.redhat.com/browse/CNFCERT-1351)
 
 ---
 
