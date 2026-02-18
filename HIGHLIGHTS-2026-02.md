@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-18: Expanded CI Disk Cleanup Adoption - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
+
+Reduced CI maintenance burden across 7 OpenShift ecosystem repositories by replacing ~120 lines of duplicated disk cleanup scripts with a single shared GitHub Action. Consolidates fragmented, error-prone cleanup patterns into a maintained, tested solution. [quick-cleanup#3](https://github.com/palmsoftware/quick-cleanup/issues/3) | [CNFCERT-1351](https://issues.redhat.com/browse/CNFCERT-1351)
+
+---
+
 ## 2026-02-17: Automated Istio Version Maintenance - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Eliminated manual Istio version drift in service mesh Quality Engineering (QE) tests by bumping from 1.24.1 to 1.29.0 and adding a weekly GitHub Actions workflow that auto-detects new releases and creates update PRs. Prevents test failures from stale dependencies without ongoing human effort. [PR #1370](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1370) | [CNFCERT-1350](https://issues.redhat.com/browse/CNFCERT-1350)
