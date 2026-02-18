@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-18: Prevented Bundle Download Failures - [crc](https://github.com/crc-org/crc)
+
+Eliminated frustrating "no space left on device" errors that hit developers after lengthy ~12 GiB bundle downloads by adding a disk space preflight check to CRC. The check validates 35 GiB free space before download begins, giving users a clear error and actionable fix upfront instead of a cryptic failure. Open request since 2021. [PR #5153](https://github.com/crc-org/crc/pull/5153) | [CNFCERT-1352](https://issues.redhat.com/browse/CNFCERT-1352)
+
+---
+
 ## 2026-02-18: Expanded CI Disk Cleanup Adoption - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
 
 Reduced CI maintenance burden across 7 repositories in 6 open source communities (Velero, Prometheus Operator, MetalLB, TopoLVM, Confidential Containers, OpenPerouter) by replacing ~120 lines of duplicated disk cleanup scripts with a single shared GitHub Action. Filed PRs against upstream repos where GitHub Actions is actively used. [quick-cleanup#3](https://github.com/palmsoftware/quick-cleanup/issues/3) | [CNFCERT-1351](https://issues.redhat.com/browse/CNFCERT-1351)
