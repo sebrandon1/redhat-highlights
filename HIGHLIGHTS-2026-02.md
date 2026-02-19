@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-19: Pod-Level TLS Discovery and v0.0.3 Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Expanded cluster TLS visibility from Services/Routes to every pod with TLS-likely ports (443, 8443, https-named), catching TLS servers invisible to traditional scanning. v0.0.3 also adds OpenShift TLS security profile compliance checking, cipher strength grading, arbitrary target scanning via Custom Resource Definition (CRD), and CSV/JUnit export for CI integration — 9 features across 13 merged PRs. [v0.0.3](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.3) | [CNFCERT-1346](https://issues.redhat.com/browse/CNFCERT-1346)
+
+---
+
 ## 2026-02-18: AI-Driven Lab Operations Skills - [billerica-lab](https://github.com/redhat-best-practices-for-k8s/billerica-lab)
 
 Enabled natural-language management of the Billerica CI lab (4 runners, 4 OpenShift clusters) by creating 4 Claude Code skills covering status dashboards, resource cleanup, system updates, and certificate monitoring. Engineers can now run `/lab-status` or `/lab-cleanup` instead of remembering 11 Ansible playbook names and flags, reducing operational friction and lowering the barrier for on-call troubleshooting.
