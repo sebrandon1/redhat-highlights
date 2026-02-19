@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-19: TLS Operator Roadmap Planning - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Established a structured roadmap for the TLS compliance operator by creating 10 prioritized GitHub issues spanning observability (Grafana dashboard, Prometheus alerts), CI enforcement (coverage thresholds, benchmarks), resilience (retry with backoff), security hardening (NetworkPolicy), and developer experience (env var config, kubectl plugin enhancements). Provides clear next steps for contributors and leadership visibility into planned improvements. [Issues #35-#44](https://github.com/sebrandon1/tls-compliance-operator/issues?q=is%3Aissue+is%3Aopen)
+
+---
+
 ## 2026-02-19: Batch Remediation Apply and v0.0.1 Release - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Reduced OpenShift cluster downtime during compliance hardening by enabling batch remediation apply — operators select multiple MachineConfig remediations and apply them together, consolidating node reboot cycles instead of rebooting per-item. Added undo capability to back out changes before reboots, plus search/filter/sort controls. Released as [v0.0.1](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.1). [PR #2](https://github.com/sebrandon1/compliance-operator-dashboard/pull/2)
