@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-19: Proactive TLS Alerting for Kubernetes - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Enabled proactive incident prevention by shipping five Prometheus alerting rules that notify teams of non-compliant TLS endpoints, expiring or expired certificates, slow scan cycles, and unreachable endpoints — before they become outages. No operator code changes required; alerts leverage existing metrics. [PR #45](https://github.com/sebrandon1/tls-compliance-operator/pull/45)
+
+---
+
 ## 2026-02-19: TLS Operator Roadmap Planning - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Established a structured roadmap for the TLS compliance operator by creating 10 prioritized GitHub issues spanning observability (Grafana dashboard, Prometheus alerts), CI enforcement (coverage thresholds, benchmarks), resilience (retry with backoff), security hardening (NetworkPolicy), and developer experience (env var config, kubectl plugin enhancements). Provides clear next steps for contributors and leadership visibility into planned improvements. [Issues #35-#44](https://github.com/sebrandon1/tls-compliance-operator/issues?q=is%3Aissue+is%3Aopen)
