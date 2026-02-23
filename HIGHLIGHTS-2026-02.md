@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-23: Faster TLS Failure Recovery - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Reduced mean time to detect recovered TLS endpoints from 1 hour to under 4 minutes by adding retry with exponential backoff for transient failures (timeouts, connection refused). Non-transient failures skip retries, avoiding wasted resources. Includes Prometheus retry metrics and Kubernetes events for observability. Released in [v0.0.4](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.4). [PR #49](https://github.com/sebrandon1/tls-compliance-operator/pull/49)
+
+---
+
 ## 2026-02-23: Hardened TLS Operator Network Security - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Reduced attack surface of the TLS compliance operator by adding a NetworkPolicy restricting ingress to only Prometheus metrics scraping and kubelet health probes, with egress limited to DNS, the Kubernetes API, and TLS scan targets. Added a PodDisruptionBudget for high-availability deployments. Validated on a live CRC OpenShift cluster. [PR #46](https://github.com/sebrandon1/tls-compliance-operator/pull/46)
