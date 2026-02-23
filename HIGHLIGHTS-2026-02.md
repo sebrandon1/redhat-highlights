@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-23: Scriptable TLS Compliance Reporting - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Enabled automation-friendly TLS compliance querying by adding JSON export, namespace/status/source filtering, and a summary subcommand to the kubectl-tlsreport plugin. Teams can now script compliance checks, filter by namespace in CI pipelines, and get instant cluster-wide compliance dashboards without manual CR inspection. Released in [v0.0.5](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.5). [PR #51](https://github.com/sebrandon1/tls-compliance-operator/pull/51)
+
+---
+
 ## 2026-02-23: Production-Ready CI and Frontend Modernization - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Enabled automated quality gates and containerized deployment for the compliance dashboard by adding CI, a multi-platform Dockerfile, and Dependabot. Modernized the entire frontend stack — ESLint 10, Vite 7, Tailwind CSS v4, React 19 — resolving all dependency drift in one session. Released [v0.0.2](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.2) through [v0.0.4](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.4). [PR #15](https://github.com/sebrandon1/compliance-operator-dashboard/pull/15) | [PR #43](https://github.com/sebrandon1/compliance-operator-dashboard/pull/43) | [PR #44](https://github.com/sebrandon1/compliance-operator-dashboard/pull/44) | [PR #45](https://github.com/sebrandon1/compliance-operator-dashboard/pull/45)
