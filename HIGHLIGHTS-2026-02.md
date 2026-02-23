@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-23: Hardened TLS Operator Network Security - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Reduced attack surface of the TLS compliance operator by adding a NetworkPolicy restricting ingress to only Prometheus metrics scraping and kubelet health probes, with egress limited to DNS, the Kubernetes API, and TLS scan targets. Added a PodDisruptionBudget for high-availability deployments. Validated on a live CRC OpenShift cluster. [PR #46](https://github.com/sebrandon1/tls-compliance-operator/pull/46)
+
+---
+
 ## 2026-02-19: Proactive TLS Alerting for Kubernetes - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Enabled proactive incident prevention by shipping five Prometheus alerting rules that notify teams of non-compliant TLS endpoints, expiring or expired certificates, slow scan cycles, and unreachable endpoints — before they become outages. No operator code changes required; alerts leverage existing metrics. [PR #45](https://github.com/sebrandon1/tls-compliance-operator/pull/45)
