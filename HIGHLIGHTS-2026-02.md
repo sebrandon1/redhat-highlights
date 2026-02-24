@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-24: Eliminated Scheduling Policy Test Flakiness - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Eliminated intermittent CI failures in the shared CPU pool scheduling policy test caused by a race condition where processes disappeared between enumeration and inspection. The fix classifies transient errors and always evaluates remaining processes, improving test reliability across all nightly OCP cluster jobs. [PR #3480](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3480)
+
+---
+
 ## 2026-02-23: Test Infrastructure and Results Quick-Look - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Accelerated compliance review workflows by adding a slide-out detail drawer that lets operators inspect check results without navigating away from the results table, plus built frontend test infrastructure (38 Vitest unit tests, ESLint Makefile targets) to prevent regressions as the dashboard grows. Released in [v0.0.5](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.5). [PR #48](https://github.com/sebrandon1/compliance-operator-dashboard/pull/48)
