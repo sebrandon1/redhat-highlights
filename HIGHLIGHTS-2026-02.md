@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-24: Secured CI Workflow Permissions - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
+
+Hardened CI security posture by adding explicit `read-all` permissions to all GitHub Actions workflows, following the principle of least privilege. Cleaned up 4 stale branches and released [v0.0.6](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.6). [PR #49](https://github.com/sebrandon1/compliance-operator-dashboard/pull/49)
+
+---
+
 ## 2026-02-24: Eliminated Scheduling Policy Test Flakiness - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Eliminated intermittent CI failures in the shared CPU pool scheduling policy test caused by a race condition where processes disappeared between enumeration and inspection. The fix classifies transient errors and always evaluates remaining processes, improving test reliability across all nightly OCP cluster jobs. [PR #3480](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3480)
