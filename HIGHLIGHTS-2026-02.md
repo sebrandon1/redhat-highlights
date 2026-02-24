@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-24: Security-Hardened Operator Release v0.2.4 - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Strengthened CI supply chain security and eliminated a Kubernetes security audit finding (KSV-0013) by enforcing least-privilege workflow permissions and removing the `:latest` image tag placeholder. Updated Go to 1.26.0 and Kubernetes client libraries to 0.35.1, closing known CVEs. [v0.2.4](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.4) | [PR #49](https://github.com/sebrandon1/imagecertinfo-operator/pull/49) | [PR #50](https://github.com/sebrandon1/imagecertinfo-operator/pull/50)
+
+---
+
 ## 2026-02-24: Secured CI Workflow Permissions - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Hardened CI security posture by adding explicit `read-all` permissions to all GitHub Actions workflows, following the principle of least privilege. Cleaned up 4 stale branches and released [v0.0.6](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.6). [PR #49](https://github.com/sebrandon1/compliance-operator-dashboard/pull/49)
