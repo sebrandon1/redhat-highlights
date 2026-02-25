@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-25: Standardized AI Agent Guidance Across 28 Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s)
+
+Established consistent AI-assisted development standards across all 28 active repositories in the organization. Created or updated AGENTS.md files with accurate project documentation, added CLAUDE.md symlinks for backward compatibility, removed tool-specific references, and standardized Go version and dependency information. [certsuite#3494](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3494)
+
+---
+
 ## 2026-02-25: User-Facing Documentation with Live Screenshots - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Lowered the adoption barrier for the compliance dashboard by creating a step-by-step how-to-use guide with 12 screenshots captured from a live OpenShift cluster. Covers the full workflow from operator install through remediation. Linked from the README so new users can self-serve without team support. Released as [v0.0.7](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.7). [PR #50](https://github.com/sebrandon1/compliance-operator-dashboard/pull/50)
