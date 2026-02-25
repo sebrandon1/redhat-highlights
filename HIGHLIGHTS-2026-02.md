@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-25: OCP 4.21 Operator Catalog Monitoring - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Extended operator catalog availability monitoring to OCP 4.21, ensuring QE tests detect missing operator dependencies before they cause nightly CI failures on the newest OpenShift release. Also cleaned up 4 stale branches across origin and upstream remotes. [PR #1378](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1378)
+
+---
+
 ## 2026-02-25: Fixed CI Lint Pipeline and XSS Findings - [collector](https://github.com/redhat-best-practices-for-k8s/collector)
 
 Restored CI reliability by replacing a failing third-party GitHub Action with a native Go install for shfmt, and fixed two gosec XSS findings flagged by golangci-lint v2. Cleared all 3 blocked dependabot PRs, keeping the certification data collection service current with security patches. [PR #660](https://github.com/redhat-best-practices-for-k8s/collector/pull/660) | [PR #659](https://github.com/redhat-best-practices-for-k8s/collector/pull/659) | [PR #658](https://github.com/redhat-best-practices-for-k8s/collector/pull/658) | [PR #657](https://github.com/redhat-best-practices-for-k8s/collector/pull/657)
