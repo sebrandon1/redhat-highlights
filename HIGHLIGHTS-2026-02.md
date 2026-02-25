@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-25: Hardened TLS Security Linter with Java Support and CI Improvements - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+Expanded TLS misconfiguration detection to Java (8 new patterns), added input validation with clear error messages, nearly doubled test coverage (37 to 65 tests), and hardened CI with cross-platform testing, actionlint, and a PR template. Released as [v1.1.0](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.1.0). [PR #3](https://github.com/sebrandon1/tls-config-lint/pull/3) | [PR #4](https://github.com/sebrandon1/tls-config-lint/pull/4) | [PR #5](https://github.com/sebrandon1/tls-config-lint/pull/5) | [PR #6](https://github.com/sebrandon1/tls-config-lint/pull/6) | [PR #7](https://github.com/sebrandon1/tls-config-lint/pull/7)
+
+---
+
 ## 2026-02-25: OCP 4.21 Operator Catalog Monitoring - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Extended operator catalog availability monitoring to OCP 4.21, ensuring QE tests detect missing operator dependencies before they cause nightly CI failures on the newest OpenShift release. Also cleaned up 4 stale branches across origin and upstream remotes. [PR #1378](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1378)
