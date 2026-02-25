@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-25: User-Facing TLS Operator Documentation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Lowered adoption barriers for the TLS compliance operator by creating five concise how-to guides covering installation, report interpretation, custom target scanning, data export, and troubleshooting. All examples captured from a live OpenShift CRC 4.21 cluster deployment, giving users copy-pasteable commands with real output. Released as [v0.0.7](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.7). [PR #55](https://github.com/sebrandon1/tls-compliance-operator/pull/55)
+
+---
+
 ## 2026-02-25: Standardized AI Agent Guidance Across 28 Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s)
 
 Established consistent AI-assisted development standards across all 28 active repositories in the organization. Created or updated AGENTS.md files with accurate project documentation, added CLAUDE.md symlinks for backward compatibility, removed tool-specific references, and standardized Go version and dependency information. [certsuite#3494](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3494)
