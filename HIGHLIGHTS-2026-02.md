@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-25: User-Facing Documentation with Live Screenshots - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
+
+Lowered the adoption barrier for the compliance dashboard by creating a step-by-step how-to-use guide with 12 screenshots captured from a live OpenShift cluster. Covers the full workflow from operator install through remediation. Linked from the README so new users can self-serve without team support. Released as [v0.0.7](https://github.com/sebrandon1/compliance-operator-dashboard/releases/tag/v0.0.7). [PR #50](https://github.com/sebrandon1/compliance-operator-dashboard/pull/50)
+
+---
+
 ## 2026-02-25: Hardened TLS Security Linter with Java Support and CI Improvements - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Expanded TLS misconfiguration detection to Java (8 new patterns), added input validation with clear error messages, nearly doubled test coverage (37 to 65 tests), and hardened CI with cross-platform testing, actionlint, and a PR template. Released as [v1.1.0](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.1.0). [PR #3](https://github.com/sebrandon1/tls-config-lint/pull/3) | [PR #4](https://github.com/sebrandon1/tls-config-lint/pull/4) | [PR #5](https://github.com/sebrandon1/tls-config-lint/pull/5) | [PR #6](https://github.com/sebrandon1/tls-config-lint/pull/6) | [PR #7](https://github.com/sebrandon1/tls-config-lint/pull/7)
