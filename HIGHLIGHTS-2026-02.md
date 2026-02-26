@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-26: Standardized CI Disk Cleanup Across CRC Workflows - [crc](https://github.com/crc-org/crc)
+
+Improved CI reliability by replacing fragile ad-hoc `rm -rf` cleanup scripts with the standardized quick-cleanup GitHub Action across 3 disk-intensive workflows (OKD bundle testing, Windows QE artifacts, QE image builds). Eliminates duplicated cleanup logic and ensures consistent disk space recovery before resource-heavy operations like `crc setup`, `crc start`, and large container image builds. [PR #5160](https://github.com/crc-org/crc/pull/5160) | [CNFCERT-1359](https://issues.redhat.com/browse/CNFCERT-1359)
+
+---
+
 ## 2026-02-26: macOS Runner Disk Cleanup Support - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
 
 Extended quick-cleanup GitHub Action to macOS runners, enabling iOS/Swift CI pipelines to reclaim disk space. Aggressive mode frees 85GB in 44 seconds by removing Xcode simulator runtimes, Homebrew cache, and system caches — tripling usable space on macos-15 runners. Linux scripts remain untouched, ensuring zero regression risk. [PR #5](https://github.com/palmsoftware/quick-cleanup/pull/5) | [v0.0.5](https://github.com/palmsoftware/quick-cleanup/releases/tag/v0.0.5)
