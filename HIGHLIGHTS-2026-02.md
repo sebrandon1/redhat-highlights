@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-26: Prow/OpenShift CI Feasibility for Certsuite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Assessed OpenShift CI (Prow) for certsuite E2E testing, documenting onboarding steps, ephemeral cluster provisioning via Hive pools, and custom hardware options. Recommends a hybrid model — GitHub Actions for fast checks, Prow for OCP E2E on real clusters — eliminating infrastructure management burden. [CNFCERT-1360](https://issues.redhat.com/browse/CNFCERT-1360)
+
+---
+
 ## 2026-02-26: Standardized CI Disk Cleanup Across CRC Workflows - [crc](https://github.com/crc-org/crc)
 
 Improved CI reliability by replacing fragile ad-hoc `rm -rf` cleanup scripts with the standardized quick-cleanup GitHub Action across 3 disk-intensive workflows (OKD bundle testing, Windows QE artifacts, QE image builds). Eliminates duplicated cleanup logic and ensures consistent disk space recovery before resource-heavy operations like `crc setup`, `crc start`, and large container image builds. [PR #5160](https://github.com/crc-org/crc/pull/5160) | [CNFCERT-1359](https://issues.redhat.com/browse/CNFCERT-1359)
