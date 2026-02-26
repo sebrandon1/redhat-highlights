@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-26: macOS Runner Disk Cleanup Support - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
+
+Extended quick-cleanup GitHub Action to macOS runners, enabling iOS/Swift CI pipelines to reclaim disk space. Aggressive mode frees 85GB in 44 seconds by removing Xcode simulator runtimes, Homebrew cache, and system caches — tripling usable space on macos-15 runners. Linux scripts remain untouched, ensuring zero regression risk. [PR #5](https://github.com/palmsoftware/quick-cleanup/pull/5) | [v0.0.5](https://github.com/palmsoftware/quick-cleanup/releases/tag/v0.0.5)
+
+---
+
 ## 2026-02-25: User-Facing TLS Operator Documentation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Lowered adoption barriers for the TLS compliance operator by creating five concise how-to guides covering installation, report interpretation, custom target scanning, data export, and troubleshooting. All examples captured from a live OpenShift CRC 4.21 cluster deployment, giving users copy-pasteable commands with real output. Released as [v0.0.7](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.7). [PR #55](https://github.com/sebrandon1/tls-compliance-operator/pull/55)
