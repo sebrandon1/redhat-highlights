@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Febru
 
 ---
 
+## 2026-02-27: Certsuite v5.5.16 Release - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Shipped certsuite v5.5.16 with a new zone-aware Pod Disruption Budget (PDB) validation test for platform upgrade resilience, Go 1.26.0 runtime upgrade, bug fixes for scheduling policy and RHCOS version handling, expanded unit test coverage across 5 test suites, and CI security hardening via SHA-pinned Actions and restricted workflow permissions. Includes 22 merged branch cleanup. [v5.5.16](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.16)
+
+---
+
 ## 2026-02-27: Batch PR Rebase Across 25 Deprecation Migration PRs - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Accelerated deprecation migration velocity by rebasing 25 open PRs across two tracking initiatives (io/ioutil and golang/mock) spanning 25 OpenShift repositories. Resolved merge conflicts in 4 repos including a 14,000-file vendor directory rebase. Updated both tracking issue dashboards, moving all PRs to up-to-date status. [Issue #52](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/52) | [Issue #45](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/45)
