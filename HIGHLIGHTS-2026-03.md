@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-04: CI Reliability and Security Hardening - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Improved OpenShift CI action reliability by adding timeouts to prevent infinite job hangs, fixing operator readiness checks that missed degraded states, and hardening pull secret file permissions. Removed 7 dead scripts and eliminated redundant CI steps, reducing maintenance burden and shaving time off every deployment pipeline run. Released in v0.0.27. [PR #46](https://github.com/palmsoftware/quick-ocp/pull/46)
+
+---
+
 ## 2026-03-04: cert-manager Preservation for Image-Based Upgrades - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Enabled TLS certificate continuity across OpenShift Image-Based Upgrades (IBU), preventing certificate regeneration that would break external trust chains. Implemented pre-pivot export of cert-manager resources and a post-pivot webhook deferral mechanism in the Lifecycle Agent (LCA). Validated end-to-end on a live Single Node OpenShift (SNO) cluster — TLS private keys preserved byte-identical across upgrade. [PR #5174](https://github.com/openshift-kni/lifecycle-agent/pull/5174) | [CNF-21719](https://issues.redhat.com/browse/CNF-21719) | [Test Writeup](https://gist.github.com/sebrandon1/34ff318eea1d31a7605743483606535e)
