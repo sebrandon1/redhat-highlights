@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-04: Operator Scalability and Reliability Hardening - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Eliminated goroutine leaks and reduced Kubernetes API calls by ~99.9% during cleanup cycles (from ~10K to 6 calls per interval) by batching resource lookups. Fixed unbounded concurrency in event handlers and deduplicated code across 7 files, improving operator stability for large-cluster deployments. Released in v0.0.9. [PR #60](https://github.com/sebrandon1/tls-compliance-operator/pull/60) | [CNFCERT-1363](https://issues.redhat.com/browse/CNFCERT-1363)
+
+---
+
 ## 2026-03-04: QE Test Harness Reliability Improvements - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Improved test harness reliability and efficiency by fixing correctness bugs (file descriptor leak, slice mutation defect) and eliminating 22 redundant Kubernetes client creations per test run. Consolidated ~140 lines of duplicated code across 8 PRs, reducing maintenance burden and API call overhead. [CNFCERT-1362](https://issues.redhat.com/browse/CNFCERT-1362)
