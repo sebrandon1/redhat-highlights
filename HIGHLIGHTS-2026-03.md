@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-04: Simplified Istio Download Retry Logic - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Reduced download retry code by 55% (20 lines to 9) by replacing a hand-rolled retry loop with curl's native `--retry` flags, improving maintainability and adding partial download cleanup on failure. Released in v0.0.56. [PR #97](https://github.com/palmsoftware/quick-k8s/pull/97)
+
+---
+
 ## 2026-03-04: CI Reliability and Security Hardening - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Improved OpenShift CI action reliability by adding timeouts to prevent infinite job hangs, fixing operator readiness checks that missed degraded states, and hardening pull secret file permissions. Removed 7 dead scripts and eliminated redundant CI steps, reducing maintenance burden and shaving time off every deployment pipeline run. Released in v0.0.27. [PR #46](https://github.com/palmsoftware/quick-ocp/pull/46)
