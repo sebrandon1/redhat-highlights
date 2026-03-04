@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-04: macOS Runner Cleanup and Code Quality - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
+
+Improved GitHub Actions runner compatibility by removing an unnecessary jq dependency that could block macOS cleanup jobs on runners without it installed. Identified through a three-agent code review of the full codebase. Released in v0.0.6. [PR #6](https://github.com/palmsoftware/quick-cleanup/pull/6)
+
+---
+
 ## 2026-03-04: Simplified Istio Download Retry Logic - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Reduced download retry code by 55% (20 lines to 9) by replacing a hand-rolled retry loop with curl's native `--retry` flags, improving maintainability and adding partial download cleanup on failure. Released in v0.0.56. [PR #97](https://github.com/palmsoftware/quick-k8s/pull/97)
