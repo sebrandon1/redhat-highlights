@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-05: Operator Bug Fixes and v0.2.6 Release - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Fixed a memory leak from an unstarted Docker Hub cache cleanup loop, corrected error handling that made unnecessary API calls on failure, and removed duplicated registry detection logic with a case-sensitivity bug. Cleaned up dead code, merged 8 dependency updates, and released v0.2.6 with signed multi-arch images. [PR #54](https://github.com/sebrandon1/imagecertinfo-operator/pull/54) | [v0.2.6](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.6)
+
+---
+
 ## 2026-03-04: macOS Runner Cleanup and Code Quality - [quick-cleanup](https://github.com/palmsoftware/quick-cleanup)
 
 Improved GitHub Actions runner compatibility by removing an unnecessary jq dependency that could block macOS cleanup jobs on runners without it installed. Identified through a three-agent code review of the full codebase. Released in v0.0.6. [PR #6](https://github.com/palmsoftware/quick-cleanup/pull/6)
