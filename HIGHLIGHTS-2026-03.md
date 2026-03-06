@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: Code Quality and Security Cleanup - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Improved certsuite code quality by eliminating duplicate logic in PDB validation and test helpers, and fixed a gosec G120 security finding (unbounded request body parsing) in the webserver caught by a newer linter version. All CI checks green including full QE test matrix. [PR #3506](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3506) | [CNFCERT-1369](https://issues.redhat.com/browse/CNFCERT-1369)
+
+---
+
 ## 2026-03-06: Scanner Script Maintainability Overhaul - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Reduced maintenance burden across 10 automation scripts by extracting 817 lines of duplicated code into a shared library. Eliminated copy-paste drift risk for prerequisite checks, cache management, and date handling used by daily CI scans across 7 GitHub organizations. Also fixed unsafe JSON construction vulnerabilities in Slack notification scripts. [PR #121](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/121)
