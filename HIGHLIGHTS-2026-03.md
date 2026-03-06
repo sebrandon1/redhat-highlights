@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: Scanner Script Maintainability Overhaul - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+
+Reduced maintenance burden across 10 automation scripts by extracting 817 lines of duplicated code into a shared library. Eliminated copy-paste drift risk for prerequisite checks, cache management, and date handling used by daily CI scans across 7 GitHub organizations. Also fixed unsafe JSON construction vulnerabilities in Slack notification scripts. [PR #121](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/121)
+
+---
+
 ## 2026-03-06: Security and Reliability Hardening - [collector](https://github.com/redhat-best-practices-for-k8s/collector)
 
 Eliminated a SQL injection vulnerability, 5 potential runtime panics from unsafe type assertions, and a variable shadowing bug in the certification results collector. Removed dead code across 10 files, improved query performance from O(N×M) to O(N+M), and fixed unbounded request body parsing flagged by gosec. [PR #664](https://github.com/redhat-best-practices-for-k8s/collector/pull/664)
