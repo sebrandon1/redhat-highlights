@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: Codebase Simplification and Race Condition Fix - [yaml-to-readme](https://github.com/sebrandon1/yaml-to-readme)
+
+Fixed a race condition in concurrent progress reporting, eliminated triplicated sorting logic across output writers, and reduced unnecessary syscalls during parallel file processing. Improved Ollama provider string handling from O(n²) to O(n). Released v0.0.20. [PR #116](https://github.com/sebrandon1/yaml-to-readme/pull/116) | [v0.0.20](https://github.com/sebrandon1/yaml-to-readme/releases/tag/v0.0.20)
+
+---
+
 ## 2026-03-06: DCI API Client Bug Fixes and Cleanup - [go-dci](https://github.com/sebrandon1/go-dci)
 
 Fixed two pagination bugs that caused incomplete data retrieval from the Distributed CI (DCI) API, eliminated response body resource leaks in loop-based fetches, and removed 225 lines of dead code including duplicate functions and unused config helpers. Cleaned up 18 stale branches. Released v0.0.37. [PR #99](https://github.com/sebrandon1/go-dci/pull/99) | [v0.0.37](https://github.com/sebrandon1/go-dci/releases/tag/v0.0.37)
