@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: DCI API Client Bug Fixes and Cleanup - [go-dci](https://github.com/sebrandon1/go-dci)
+
+Fixed two pagination bugs that caused incomplete data retrieval from the Distributed CI (DCI) API, eliminated response body resource leaks in loop-based fetches, and removed 225 lines of dead code including duplicate functions and unused config helpers. Cleaned up 18 stale branches. Released v0.0.37. [PR #99](https://github.com/sebrandon1/go-dci/pull/99) | [v0.0.37](https://github.com/sebrandon1/go-dci/releases/tag/v0.0.37)
+
+---
+
 ## 2026-03-06: Quay API Client Bug Fix and Simplification - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Fixed a critical CLI bug where all `logs` command flags defaulted to their help text instead of empty strings, cleaned up 15 stale branches, and simplified the codebase by removing duplicate structs, dead code, and deprecated API usage — cutting 67 lines net. Released v0.0.37. [PR #78](https://github.com/sebrandon1/go-quay/pull/78) | [v0.0.37](https://github.com/sebrandon1/go-quay/releases/tag/v0.0.37)
