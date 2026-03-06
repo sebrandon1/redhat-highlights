@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: Quay API Client Bug Fix and Simplification - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Fixed a critical CLI bug where all `logs` command flags defaulted to their help text instead of empty strings, cleaned up 15 stale branches, and simplified the codebase by removing duplicate structs, dead code, and deprecated API usage — cutting 67 lines net. Released v0.0.37. [PR #78](https://github.com/sebrandon1/go-quay/pull/78) | [v0.0.37](https://github.com/sebrandon1/go-quay/releases/tag/v0.0.37)
+
+---
+
 ## 2026-03-06: Code Quality and Security Cleanup - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved certsuite code quality by eliminating duplicate logic in PDB validation and test helpers, and fixed a gosec G120 security finding (unbounded request body parsing) in the webserver caught by a newer linter version. All CI checks green including full QE test matrix. [PR #3506](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3506) | [CNFCERT-1369](https://issues.redhat.com/browse/CNFCERT-1369)
