@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-06: Security and Reliability Hardening - [collector](https://github.com/redhat-best-practices-for-k8s/collector)
+
+Eliminated a SQL injection vulnerability, 5 potential runtime panics from unsafe type assertions, and a variable shadowing bug in the certification results collector. Removed dead code across 10 files, improved query performance from O(N×M) to O(N+M), and fixed unbounded request body parsing flagged by gosec. [PR #664](https://github.com/redhat-best-practices-for-k8s/collector/pull/664)
+
+---
+
 ## 2026-03-05: Operator Bug Fixes and v0.2.6 Release - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Fixed a memory leak from an unstarted Docker Hub cache cleanup loop, corrected error handling that made unnecessary API calls on failure, and removed duplicated registry detection logic with a case-sensitivity bug. Cleaned up dead code, merged 8 dependency updates, and released v0.2.6 with signed multi-arch images. [PR #54](https://github.com/sebrandon1/imagecertinfo-operator/pull/54) | [v0.2.6](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.6)
