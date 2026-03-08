@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-08: Fixed Slack Notification Formatting - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+
+Fixed weekly Quay pull statistics Slack notifications displaying raw `\n` text instead of line breaks, restoring readability for the team's image download tracking. [PR #122](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/122)
+
+---
+
 ## 2026-03-06: Codebase Simplification and Race Condition Fix - [yaml-to-readme](https://github.com/sebrandon1/yaml-to-readme)
 
 Fixed a race condition in concurrent progress reporting, eliminated triplicated sorting logic across output writers, and reduced unnecessary syscalls during parallel file processing. Improved Ollama provider string handling from O(n²) to O(n). Released v0.0.20. [PR #116](https://github.com/sebrandon1/yaml-to-readme/pull/116) | [v0.0.20](https://github.com/sebrandon1/yaml-to-readme/releases/tag/v0.0.20)
