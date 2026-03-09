@@ -4,9 +4,9 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
-## 2026-03-08: Fixed Slack Notification Formatting - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+## 2026-03-09: Fixed Slack Notification Formatting - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
-Fixed weekly Quay pull statistics Slack notifications displaying raw `\n` text instead of line breaks, restoring readability for the team's image download tracking. [PR #122](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/122)
+Restored readability of two weekly Slack notifications (Quay pull statistics and Distributed CI query) that were displaying raw `\n` text instead of line breaks, ensuring the team can quickly parse image download trends and certification test activity. [PR #122](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/122) | [PR #124](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/124)
 
 ---
 
