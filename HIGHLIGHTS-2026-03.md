@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-10: Persistent Event Storage for ZTP Dashboard - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
+
+Eliminated event data loss on dashboard restarts by replacing the volatile in-memory buffer with SQLite-backed persistent storage. Added server-side search, severity filtering, pagination, 24-hour statistics, and CSV export — enabling operators to investigate historical cluster events without external logging tools. [PR #12](https://github.com/sebrandon1/ztp-dashboard/pull/12)
+
+---
+
 ## 2026-03-10: Fixed CI-Blocking Taint Removal Bug - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Diagnosed and fixed a bug in quick-k8s where `remove-control-plane-taint.sh` used `oc taint` (which doesn't exist), leaving control-plane nodes unschedulable. This was breaking certsuite smoke tests across multiple CI workflows. Released v0.0.58. [PR #100](https://github.com/palmsoftware/quick-k8s/pull/100) | [v0.0.58](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.58)
