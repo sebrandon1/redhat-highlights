@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-10: Fixed CI-Blocking Taint Removal Bug - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Diagnosed and fixed a bug in quick-k8s where `remove-control-plane-taint.sh` used `oc taint` (which doesn't exist), leaving control-plane nodes unschedulable. This was breaking certsuite smoke tests across multiple CI workflows. Released v0.0.58. [PR #100](https://github.com/palmsoftware/quick-k8s/pull/100) | [v0.0.58](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.58)
+
+---
+
 ## 2026-03-10: ZTP Dashboard Operational Controls - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
 
 Transformed the ZTP dashboard from a read-only viewer into an actionable management tool by adding ArgoCD sync/refresh controls, policy enable/disable toggles, YAML resource inspection, cluster lifecycle management, and compliance summary charts — plus 102+ backend unit tests and multi-arch container CI. [PR #9](https://github.com/sebrandon1/ztp-dashboard/pull/9)
