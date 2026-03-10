@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-10: ZTP Dashboard Operational Controls - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
+
+Transformed the ZTP dashboard from a read-only viewer into an actionable management tool by adding ArgoCD sync/refresh controls, policy enable/disable toggles, YAML resource inspection, cluster lifecycle management, and compliance summary charts — plus 102+ backend unit tests and multi-arch container CI. [PR #9](https://github.com/sebrandon1/ztp-dashboard/pull/9)
+
+---
+
 ## 2026-03-09: Fixed Slack Notification Formatting - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Restored readability of two weekly Slack notifications (Quay pull statistics and Distributed CI query) that were displaying raw `\n` text instead of line breaks, ensuring the team can quickly parse image download trends and certification test activity. [PR #122](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/122) | [PR #124](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/124)
