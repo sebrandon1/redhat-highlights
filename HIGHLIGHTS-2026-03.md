@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-10: Org-Wide Go 1.26.1 Upgrade - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Modernized Go runtime across all 15 repositories in the redhat-best-practices-for-k8s organization, picking up the latest security patches and bug fixes. Fixed pre-existing lint issues in 3 repos (certsuite-operator, kpi-analyzer, operator-results-spreadsheet) discovered during the rollout. [CNFCERT-1370](https://issues.redhat.com/browse/CNFCERT-1370) | [certsuite #3516](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3516)
+
+---
+
 ## 2026-03-10: Persistent Event Storage for ZTP Dashboard - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
 
 Eliminated event data loss on dashboard restarts by replacing the volatile in-memory buffer with SQLite-backed persistent storage. Added server-side search, severity filtering, pagination, 24-hour statistics, and CSV export — enabling operators to investigate historical cluster events without external logging tools. [PR #12](https://github.com/sebrandon1/ztp-dashboard/pull/12)
