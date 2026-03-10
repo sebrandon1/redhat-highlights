@@ -70,9 +70,9 @@ Improved OpenShift CI action reliability by adding timeouts to prevent infinite 
 
 ---
 
-## 2026-03-04: cert-manager Preservation for Image-Based Upgrades - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+## 2026-03-04: cert-manager Preservation for Image-Based Upgrades - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent) / [recert](https://github.com/rh-ecosystem-edge/recert)
 
-Enabled TLS certificate continuity across OpenShift Image-Based Upgrades (IBU), preventing certificate regeneration that would break external trust chains. Implemented pre-pivot export of cert-manager resources and a post-pivot webhook deferral mechanism in the Lifecycle Agent (LCA). Validated end-to-end on a live Single Node OpenShift (SNO) cluster — TLS private keys preserved byte-identical across upgrade. [PR #5174](https://github.com/openshift-kni/lifecycle-agent/pull/5174) | [CNF-21719](https://issues.redhat.com/browse/CNF-21719) | [Test Writeup](https://gist.github.com/sebrandon1/34ff318eea1d31a7605743483606535e)
+Enabled TLS certificate continuity across OpenShift Image-Based Upgrades (IBU), preventing certificate regeneration that would break external trust chains. On the LCA side, added pre-pivot export of cert-manager TLS Secrets as recert `use_cert` rules. On the recert side, added a `cert_manager_rename` postprocessing module that updates Certificate CR specs in etcd and deletes stale CertificateRequests. Validated end-to-end on a live Single Node OpenShift (SNO) cluster with cert-manager v1.17.2 — zero reissuance events and TLS key checksums preserved byte-identical across upgrade. [LCA PR #5174](https://github.com/openshift-kni/lifecycle-agent/pull/5174) | [recert PR #1192](https://github.com/rh-ecosystem-edge/recert/pull/1192) | [CNF-21719](https://issues.redhat.com/browse/CNF-21719) | [Technical Writeup](https://gist.github.com/sebrandon1/9c93733b4a0b2ea8dec0784b0c253209)
 
 ---
 
