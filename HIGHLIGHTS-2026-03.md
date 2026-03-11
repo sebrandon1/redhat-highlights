@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-11: Resolved Security Scan Failures and Released v0.2.7 - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Unblocked all pull requests by fixing a high-severity CVE (CVE-2026-24051) in OpenTelemetry Go SDK dependencies that Trivy security scans were catching. Dependabot missed it because all affected packages were indirect dependencies. Updated OTel SDK from v1.36.0 to v1.42.0 and released v0.2.7 with signed multi-arch images. [PR #67](https://github.com/sebrandon1/imagecertinfo-operator/pull/67) | [v0.2.7](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.7)
+
+---
+
 ## 2026-03-10: Org-Wide Go 1.26.1 Upgrade - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Modernized Go runtime across all 15 repositories in the redhat-best-practices-for-k8s organization, picking up the latest security patches and bug fixes. Fixed pre-existing lint issues in 3 repos (certsuite-operator, kpi-analyzer, operator-results-spreadsheet) discovered during the rollout. [CNFCERT-1370](https://issues.redhat.com/browse/CNFCERT-1370) | [certsuite #3516](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3516)
