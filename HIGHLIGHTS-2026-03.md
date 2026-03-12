@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-12: Fixed 10-Day OCP Integration Test Outage - [eco-goinfra](https://github.com/rh-ecosystem-edge/eco-goinfra)
+
+Restored the nightly OCP integration test pipeline that had been failing for 10+ consecutive days. Root cause: `nginx:latest` requires root privileges, blocked by OpenShift's default restricted SecurityContextConstraint. Switched to `ubi9/ubi-minimal` — all three CI jobs now passing. Also cleaned up 81 stale merged branches from fork. [PR #1288](https://github.com/rh-ecosystem-edge/eco-goinfra/pull/1288)
+
+---
+
 ## 2026-03-12: CI Failure Diagnosis and Repo Cleanup - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Diagnosed a transient GitHub Actions 401 error blocking the daily compliance test pipeline, confirmed it was infrastructure-related (not misconfiguration), and restored CI by re-running the workflow. Cleaned up stale planning documents and added `__pycache__/` to `.gitignore` to prevent build artifacts from being tracked. [PR #59](https://github.com/sebrandon1/compliance-scripts/pull/59)
