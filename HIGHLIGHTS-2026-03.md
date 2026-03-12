@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-12: Dependency Updates and v0.2.8 Release - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Kept the operator current and secure by merging 7 dependency updates (controller-runtime, GitHub Actions, Go libraries) and releasing v0.2.8 with signed multi-arch images. Reduces exposure to upstream vulnerabilities and ensures CI tooling stays compatible with latest runner environments. [v0.2.8](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.8)
+
+---
+
 ## 2026-03-11: Resolved Security Scan Failures and Released v0.2.7 - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Unblocked all pull requests by fixing a high-severity CVE (CVE-2026-24051) in OpenTelemetry Go SDK dependencies that Trivy security scans were catching. Dependabot missed it because all affected packages were indirect dependencies. Updated OTel SDK from v1.36.0 to v1.42.0 and released v0.2.7 with signed multi-arch images. [PR #67](https://github.com/sebrandon1/imagecertinfo-operator/pull/67) | [v0.2.7](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.7)
