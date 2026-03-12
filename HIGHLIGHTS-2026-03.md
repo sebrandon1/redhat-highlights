@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-12: CI Failure Diagnosis and Repo Cleanup - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Diagnosed a transient GitHub Actions 401 error blocking the daily compliance test pipeline, confirmed it was infrastructure-related (not misconfiguration), and restored CI by re-running the workflow. Cleaned up stale planning documents and added `__pycache__/` to `.gitignore` to prevent build artifacts from being tracked. [PR #59](https://github.com/sebrandon1/compliance-scripts/pull/59)
+
+---
+
 ## 2026-03-12: Dependency Updates and v0.2.8 Release - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Kept the operator current and secure by merging 7 dependency updates (controller-runtime, GitHub Actions, Go libraries) and releasing v0.2.8 with signed multi-arch images. Reduces exposure to upstream vulnerabilities and ensures CI tooling stays compatible with latest runner environments. [v0.2.8](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.8)
