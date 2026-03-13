@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-13: Best Practices Checks Library and Operator Proof of Concept - [checks](https://github.com/redhat-best-practices-for-k8s/checks) / [bps-operator](https://github.com/sebrandon1/bps-operator)
+
+Delivered a proof-of-concept (PoC) demonstrating certsuite best-practice checks can run as a Kubernetes operator instead of requiring CLI execution. Extracted 78 compliance checks into a shared Go library with 100% unit test coverage, then integrated it into a controller that scans workloads via Custom Resources and stores results as Kubernetes objects — enabling continuous compliance monitoring. Released v0.0.1 for both projects. [checks v0.0.1](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.1) | [bps-operator v0.0.1](https://github.com/sebrandon1/bps-operator/releases/tag/v0.0.1)
+
+---
+
 ## 2026-03-12: Fixed 10-Day OCP Integration Test Outage - [eco-goinfra](https://github.com/rh-ecosystem-edge/eco-goinfra)
 
 Restored the nightly OCP integration test pipeline that had been failing for 10+ consecutive days. Root cause: `nginx:latest` requires root privileges, blocked by OpenShift's default restricted SecurityContextConstraint. Switched to `ubi9/ubi-minimal` — all three CI jobs now passing. Also cleaned up 81 stale merged branches from fork. [PR #1288](https://github.com/rh-ecosystem-edge/eco-goinfra/pull/1288)
