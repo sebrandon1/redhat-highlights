@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-16: Restored Workflow Automation - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+
+Restored critical visibility into certsuite adoption metrics and DCI testing by fixing failing automation workflows. Bumped Go version to 1.26.1, unblocking daily Slack reports that inform team decisions. [PR #125](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/125)
+
+---
+
 ## 2026-03-16: Integration Test Resilience - [jiracrawler](https://github.com/sebrandon1/jiracrawler)
 
 Reduced false CI failures by adding exponential backoff retry logic to integration tests, preventing transient Jira service outages (503 errors) from blocking development. Three-attempt retry mechanism with increasing delays (2s, 4s, 8s) eliminates noise from infrastructure issues, saving engineering time spent investigating and re-running tests. [PR #75](https://github.com/sebrandon1/jiracrawler/pull/75)
