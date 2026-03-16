@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-16: Integration Test Resilience - [jiracrawler](https://github.com/sebrandon1/jiracrawler)
+
+Reduced false CI failures by adding exponential backoff retry logic to integration tests, preventing transient Jira service outages (503 errors) from blocking development. Three-attempt retry mechanism with increasing delays (2s, 4s, 8s) eliminates noise from infrastructure issues, saving engineering time spent investigating and re-running tests. [PR #75](https://github.com/sebrandon1/jiracrawler/pull/75)
+
+---
+
 ## 2026-03-13: Best Practices Checks Library and Operator Proof of Concept - [checks](https://github.com/redhat-best-practices-for-k8s/checks) / [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Delivered a proof-of-concept (PoC) demonstrating certsuite best-practice checks can run as a Kubernetes operator instead of requiring CLI execution. Extracted 78 compliance checks into a shared Go library with 100% unit test coverage, then integrated it into a controller that scans workloads via Custom Resources and stores results as Kubernetes objects — enabling continuous compliance monitoring. Released v0.0.1 for both projects. [checks v0.0.1](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.1) | [bps-operator v0.0.1](https://github.com/sebrandon1/bps-operator/releases/tag/v0.0.1)
