@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-19: Completed Certsuite-to-Checks Migration (100%) - [checks](https://github.com/redhat-best-practices-for-k8s/checks)
+
+Completed migration of all 102 portable certsuite compliance checks into the standalone checks library, reaching 100% parity. Final milestone ported 4 certification checks using a lightweight interface that avoids heavy dependencies, then hardened the codebase by replacing 254 magic strings with compile-time constants. Released v0.0.3. [v0.0.3](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.3) | [PR #23](https://github.com/redhat-best-practices-for-k8s/checks/pull/23) | [PR #24](https://github.com/redhat-best-practices-for-k8s/checks/pull/24)
+
+---
+
 ## 2026-03-17: Validated Modular Compliance Library PoC - [checks](https://github.com/redhat-best-practices-for-k8s/checks) / [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Validated the proof-of-concept (PoC) architecture of extracting compliance checks into a standalone library by successfully upgrading the best-practices-scanner operator from checks v0.0.1 to v0.0.2. The upgrade brings bug fixes (silent probe failures, context timeouts) with zero breaking changes, demonstrating that the modular approach enables independent library evolution without impacting consuming applications. [checks v0.0.2](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.2) | [PR #39](https://github.com/sebrandon1/bps-operator/pull/39) | [PR #40](https://github.com/sebrandon1/bps-operator/pull/40)
