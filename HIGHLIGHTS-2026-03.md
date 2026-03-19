@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-19: Streamlined CRC Developer Inner Loop - [crc](https://github.com/crc-org/crc)
+
+Eliminated multi-step manual workflow for loading container images into local OpenShift clusters by adding `crc image load` command. Automates registry health checks, route enablement, and authentication — reducing what was a 5+ step manual process to a single command for developers iterating on containerized applications. [PR #5188](https://github.com/crc-org/crc/pull/5188) | [CNFCERT-1379](https://issues.redhat.com/browse/CNFCERT-1379)
+
+---
+
 ## 2026-03-19: Completed Certsuite-to-Checks Migration (100%) - [checks](https://github.com/redhat-best-practices-for-k8s/checks)
 
 Completed migration of all 102 portable certsuite compliance checks into the standalone checks library, reaching 100% parity. Final milestone ported 4 certification checks using a lightweight interface that avoids heavy dependencies, then hardened the codebase by replacing 254 magic strings with compile-time constants. Released v0.0.3. [v0.0.3](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.3) | [PR #23](https://github.com/redhat-best-practices-for-k8s/checks/pull/23) | [PR #24](https://github.com/redhat-best-practices-for-k8s/checks/pull/24)
