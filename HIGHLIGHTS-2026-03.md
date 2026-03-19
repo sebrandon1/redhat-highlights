@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-19: Zero-Config CRC VM Debugging - [crc](https://github.com/crc-org/crc)
+
+Enabled instant VM access and diagnostics for CRC developers by adding `crc ssh` (interactive/command mode) and `crc vm stats` (system, CPU, memory, disk, network, container, and health metrics with usage bars and JSON output). Eliminates manual SSH key/port lookup, reducing debugging setup from minutes to zero. [PR #5189](https://github.com/crc-org/crc/pull/5189)
+
+---
+
 ## 2026-03-19: Streamlined CRC Developer Inner Loop - [crc](https://github.com/crc-org/crc)
 
 Eliminated multi-step manual workflow for loading container images into local OpenShift clusters by adding `crc image load` command. Automates registry health checks, route enablement, and authentication — reducing what was a 5+ step manual process to a single command for developers iterating on containerized applications. [PR #5188](https://github.com/crc-org/crc/pull/5188) | [CNFCERT-1379](https://issues.redhat.com/browse/CNFCERT-1379)
