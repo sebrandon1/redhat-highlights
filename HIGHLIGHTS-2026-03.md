@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-20: CNF Security Board Cleanup - [team-jira-commitments](https://github.com/sebrandon1/team-jira-commitments)
+
+Reduced backlog noise and restored accountability across the CNF Security board by auditing all 50+ open issues. Commented on 36 issues stale over a year asking owners to validate relevance, closed a duplicate and linked it to its replacement, reassigned 5 orphaned stories, and built 4 reusable Claude skills to automate future Jira hygiene. [CNF Security Board](https://redhat.atlassian.net/jira/software/c/projects/CNF/boards/3911)
+
+---
+
 ## 2026-03-20: Reduced Affiliated Certification Test Timeouts - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Eliminated unnecessary operator deployments that were causing affiliated certification Quality Engineering (QE) tests to time out in CI. Each test now deploys only the operators it needs instead of all three, reducing setup time and preventing false failures that blocked merges. Also reduced deployment polling log noise from every 1 second to every 10 seconds. [PR #1411](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1411)
