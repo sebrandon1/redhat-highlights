@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-20: Reduced Affiliated Certification Test Timeouts - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Eliminated unnecessary operator deployments that were causing affiliated certification Quality Engineering (QE) tests to time out in CI. Each test now deploys only the operators it needs instead of all three, reducing setup time and preventing false failures that blocked merges. Also reduced deployment polling log noise from every 1 second to every 10 seconds. [PR #1411](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1411)
+
+---
+
 ## 2026-03-20: Compliance Workflow Decision Guide - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Reduced onboarding friction for compliance tooling by adding an Operator concepts glossary, workflow decision guide, safety warnings about MachineConfig node reboots, and dependency/wait-point documentation. Helps new users and LLMs choose the right scripts in the right order, preventing costly missteps on production clusters. [PR #63](https://github.com/sebrandon1/compliance-scripts/pull/63)
