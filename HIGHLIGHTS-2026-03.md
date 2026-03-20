@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-20: Compliance Workflow Decision Guide - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Reduced onboarding friction for compliance tooling by adding an Operator concepts glossary, workflow decision guide, safety warnings about MachineConfig node reboots, and dependency/wait-point documentation. Helps new users and LLMs choose the right scripts in the right order, preventing costly missteps on production clusters. [PR #63](https://github.com/sebrandon1/compliance-scripts/pull/63)
+
+---
+
 ## 2026-03-19: Zero-Config CRC VM Debugging - [crc](https://github.com/crc-org/crc)
 
 Enabled instant VM access and diagnostics for CRC developers by adding `crc ssh` (interactive/command mode) and `crc vm stats` (system, CPU, memory, disk, network, container, and health metrics with usage bars and JSON output). Eliminates manual SSH key/port lookup, reducing debugging setup from minutes to zero. [PR #5189](https://github.com/crc-org/crc/pull/5189)
