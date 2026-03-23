@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-23: Improved Nightly Test Visibility - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Improved team visibility into nightly certification test health by adding QE OCP status badges for versions 4.16 through 4.21 to the certsuite README. Contributors and maintainers can now assess pipeline health across all supported OpenShift versions at a glance, catching failures earlier. [PR #3533](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3533) | [CNFCERT-1380](https://issues.redhat.com/browse/CNFCERT-1380)
+
+---
+
 ## 2026-03-20: CNF Security Board Cleanup - [team-jira-commitments](https://github.com/sebrandon1/team-jira-commitments)
 
 Reduced backlog noise and restored accountability across the CNF Security board by auditing all 50+ open issues. Commented on 36 issues stale over a year asking owners to validate relevance, closed a duplicate and linked it to its replacement, reassigned 5 orphaned stories, and built 4 reusable Claude skills to automate future Jira hygiene. [CNF Security Board](https://redhat.atlassian.net/jira/software/c/projects/CNF/boards/3911)
