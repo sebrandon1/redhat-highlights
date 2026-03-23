@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-23: Improved kube-compare Code Quality - [kube-compare](https://github.com/openshift/kube-compare)
+
+Improved upstream kube-compare code quality by fixing misspelled struct fields and error messages in regex diff handling, and reducing Dockerfile maintenance burden by replacing 10 hardcoded path references with a single build argument. Both PRs merged upstream. [PR #265](https://github.com/openshift/kube-compare/pull/265) | [PR #266](https://github.com/openshift/kube-compare/pull/266) | [CNFCERT-1374](https://issues.redhat.com/browse/CNFCERT-1374) | [CNFCERT-1375](https://issues.redhat.com/browse/CNFCERT-1375)
+
+---
+
 ## 2026-03-23: Improved Nightly Test Visibility - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved team visibility into nightly certification test health by adding QE OCP status badges for versions 4.16 through 4.21 to the certsuite README. Contributors and maintainers can now assess pipeline health across all supported OpenShift versions at a glance, catching failures earlier. [PR #3533](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3533) | [CNFCERT-1380](https://issues.redhat.com/browse/CNFCERT-1380)
