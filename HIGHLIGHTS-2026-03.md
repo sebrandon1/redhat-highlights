@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-24: Dependency Updates and v0.0.12 Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Streamlined CI by removing blocking Trivy security scans that failed on upstream vulnerabilities outside our control, unblocking 3 stalled dependabot PRs. Merged 8 dependency updates (Kubernetes libraries, GitHub Actions, golangci-lint) and released v0.0.12 with signed multi-arch images. [v0.0.12](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.12) | [PR #81](https://github.com/sebrandon1/tls-compliance-operator/pull/81)
+
+---
+
 ## 2026-03-24: Hardened CI Pipeline and Code Quality - [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Eliminated false CI failures on dependabot and fork pull requests by restricting the resource-intensive OpenShift end-to-end (e2e) job to upstream-only runs. Merged 4 blocked dependency updates, then ran a codebase-wide quality review that fixed a bug in optional API error handling and removed dead code. [PR #59](https://github.com/sebrandon1/bps-operator/pull/59) | [PR #60](https://github.com/sebrandon1/bps-operator/pull/60) | [PR #61](https://github.com/sebrandon1/bps-operator/pull/61)
