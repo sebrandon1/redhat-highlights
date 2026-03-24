@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-24: OCP 4.23 RAN Compliance Hardening PRs - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Advanced RAN cluster security posture by opening 5 verified compliance hardening PRs targeting 25 settings across SSHD, SELinux auditing, time/login monitoring, and API encryption. Each remediation was applied and validated on a live OCP 4.22 cluster before submission, with corresponding Jira stories and a tracking dashboard for cross-team visibility. [PR #674](https://github.com/openshift-kni/telco-reference/pull/674) | [PR #675](https://github.com/openshift-kni/telco-reference/pull/675) | [PR #676](https://github.com/openshift-kni/telco-reference/pull/676) | [PR #677](https://github.com/openshift-kni/telco-reference/pull/677) | [PR #678](https://github.com/openshift-kni/telco-reference/pull/678) | [CNF-22573](https://redhat.atlassian.net/browse/CNF-22573) | [Dashboard](https://sebrandon1.github.io/compliance-scripts/versions/4.22/groups/)
+
+---
+
 ## 2026-03-24: Dependency Updates and v0.0.12 Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Streamlined CI by removing blocking Trivy security scans that failed on upstream vulnerabilities outside our control, unblocking 3 stalled dependabot PRs. Merged 8 dependency updates (Kubernetes libraries, GitHub Actions, golangci-lint) and released v0.0.12 with signed multi-arch images. [v0.0.12](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.12) | [PR #81](https://github.com/sebrandon1/tls-compliance-operator/pull/81)
