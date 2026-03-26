@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-26: Image Preloading for OCP CI Action - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Enabled CI workflows to preload container images into OpenShift clusters at deployment time, eliminating manual registry setup. Users specify images in the action input and they are automatically mirrored into the cluster's internal registry via `oc image mirror` — reducing test setup complexity and ensuring consistent image availability. Implements functionality proposed upstream in [crc-org/crc#5188](https://github.com/crc-org/crc/pull/5188) at the action level. [PR #49](https://github.com/palmsoftware/quick-ocp/pull/49) | [CNFCERT-1381](https://redhat.atlassian.net/browse/CNFCERT-1381)
+
+---
+
 ## 2026-03-25: Compliance Observability and QE Tooling - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Improved compliance workflow visibility and Quality Engineering (QE) collaboration with three enhancements: nightly tests now detect when security content updates add or remove checks, a shared validation toolkit lets QE verify scan results on any cluster with a single command, and the dashboard shows projected coverage gains from in-progress work (34% → 40%). [#66](https://github.com/sebrandon1/compliance-scripts/issues/66) | [#68](https://github.com/sebrandon1/compliance-scripts/issues/68) | [#69](https://github.com/sebrandon1/compliance-scripts/issues/69)
