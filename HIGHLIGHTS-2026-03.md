@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-25: Compliance Observability and QE Tooling - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Improved compliance workflow visibility and Quality Engineering (QE) collaboration with three enhancements: nightly tests now detect when security content updates add or remove checks, a shared validation toolkit lets QE verify scan results on any cluster with a single command, and the dashboard shows projected coverage gains from in-progress work (34% → 40%). [#66](https://github.com/sebrandon1/compliance-scripts/issues/66) | [#68](https://github.com/sebrandon1/compliance-scripts/issues/68) | [#69](https://github.com/sebrandon1/compliance-scripts/issues/69)
+
+---
+
 ## 2026-03-25: Compliance Operator Code Quality Improvements - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
 
 Improved upstream compliance-operator code quality with 4 focused PRs: removed 141 lines of dead code (unused functions, variables, struct fields), replaced inefficient string comparisons with `strings.EqualFold`, and fixed typos and naming conventions in exported error variables. All changes pass CI and follow Go best practices. [PR #1116](https://github.com/ComplianceAsCode/compliance-operator/pull/1116) | [PR #1117](https://github.com/ComplianceAsCode/compliance-operator/pull/1117) | [PR #1118](https://github.com/ComplianceAsCode/compliance-operator/pull/1118) | [PR #1119](https://github.com/ComplianceAsCode/compliance-operator/pull/1119) | [CNF-22644](https://redhat.atlassian.net/browse/CNF-22644) | [CNF-22645](https://redhat.atlassian.net/browse/CNF-22645) | [CNF-22646](https://redhat.atlassian.net/browse/CNF-22646) | [CNF-22647](https://redhat.atlassian.net/browse/CNF-22647)
