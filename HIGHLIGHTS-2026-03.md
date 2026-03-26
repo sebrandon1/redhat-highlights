@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
+## 2026-03-26: Found and Fixed Broken Compliance Operator Remediation - [content](https://github.com/ComplianceAsCode/content)
+
+Discovered that the compliance operator's own PAM remediation generates RHEL 8 era templates on RHCOS 9, causing scans to still report FAIL after applying the fix. Root cause: `authselect` rewrites PAM files with 2018 templates containing `pam_fprintd.so` — modules that don't exist on RHCOS 9. Created corrected MachineConfigs using the actual RHCOS 9 PAM stack with `nullok` surgically removed, verified all three HIGH severity checks (H1/H2/H3) flip from FAIL to PASS on OCP 4.22. Filed upstream fix. [ComplianceAsCode/content#14602](https://github.com/ComplianceAsCode/content/pull/14602) | [CNF-22661](https://redhat.atlassian.net/browse/CNF-22661) | [telco-reference PR #529](https://github.com/openshift-kni/telco-reference/pull/529)
+
+---
+
 ## 2026-03-26: Image Preloading for OCP CI Action - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Enabled CI workflows to preload container images into OpenShift clusters at deployment time, eliminating manual registry setup. Users specify images in the action input and they are automatically mirrored into the cluster's internal registry via `oc image mirror` — reducing test setup complexity and ensuring consistent image availability. Implements functionality proposed upstream in [crc-org/crc#5188](https://github.com/crc-org/crc/pull/5188) at the action level. [PR #49](https://github.com/palmsoftware/quick-ocp/pull/49) | [CNFCERT-1381](https://redhat.atlassian.net/browse/CNFCERT-1381)
