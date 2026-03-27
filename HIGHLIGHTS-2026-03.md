@@ -4,9 +4,9 @@ A reverse-chronological log of significant engineering accomplishments for March
 
 ---
 
-## 2026-03-26: Verified 102 E8 Compliance Checks Across 3 Cluster Topologies - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+## 2026-03-26: Zero Fixable Node Failures Across E8 and Moderate Profiles - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
-Achieved 100% RHCOS node compliance (102/102 checks PASS) across Multi-Node OpenShift (MNO), Single Node OpenShift (SNO), and CodeReady Containers (CRC) clusters on OCP 4.21-4.22. Fixed 6 remediation groups where MachineConfigs produced incorrect audit rules or used SSHD drop-in files that the OpenSCAP scanner couldn't detect. All 14 Essential Eight (E8) groups (H1-H3, M1-M9, L1-L2) now verified with corrected telco-reference branches force-pushed.
+Verified 638 compliance checks (E8 + NIST 800-53 Moderate) with zero MachineConfig-addressable node failures on OCP 4.22. Fixed 10 remediation groups during testing — incorrect audit rule formats, SSHD scanner limitations, missing kernel arguments, and incomplete access controls. Filed upstream fix ([ComplianceAsCode/content#14603](https://github.com/ComplianceAsCode/content/pull/14603)) enabling OCP4 scanner to detect SSHD drop-in configurations, eliminating false failures. All 30 node-level groups verified across Multi-Node OpenShift (MNO) and Single Node OpenShift (SNO) topologies. [CNF-22573](https://redhat.atlassian.net/browse/CNF-22573) | [CNF-22667](https://redhat.atlassian.net/browse/CNF-22667)
 
 ---
 
