@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-08: Go 1.26.2 Security Upgrade Across 27 Repos
+
+Eliminated exposure to 10 CVEs — including code execution, memory corruption, and XSS vulnerabilities — by upgrading Go to 1.26.2 across 27 repositories in the sebrandon1 and redhat-best-practices-for-k8s organizations. Added `toolchain` directives for developer compatibility, updated Dockerfiles, and cut 13 patch releases. [Go 1.26.2 announcement](https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk/m/41DopX_WAAAJ), [certsuite #3555](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3555), [checks #31](https://github.com/redhat-best-practices-for-k8s/checks/pull/31), [bps-operator #67](https://github.com/sebrandon1/bps-operator/pull/67)
+
+---
+
 ## 2026-04-08: Restored 14 Nightly QE Pipelines - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Restored all 14 nightly Quality Engineering (QE) pipelines across 7 OpenShift versions after overly aggressive timeout reductions left 42 of 70 runs (60%) failing via cancellation. Audited CI timing data, right-sized job and step timeouts, and verified fixes across every pipeline. Eliminates daily false-failure noise for the team and restores confidence in nightly regression signals. [PR #3553](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3553), [PR #3556](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3556)
