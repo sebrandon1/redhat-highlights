@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-08: Restored 14 Nightly QE Pipelines - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Restored all 14 nightly Quality Engineering (QE) pipelines across 7 OpenShift versions after overly aggressive timeout reductions left 42 of 70 runs (60%) failing via cancellation. Audited CI timing data, right-sized job and step timeouts, and verified fixes across every pipeline. Eliminates daily false-failure noise for the team and restores confidence in nightly regression signals. [PR #3553](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3553), [PR #3556](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3556)
+
+---
+
 ## 2026-04-08: Checks Library Migration Proof of Concept - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Consolidated check metadata and test logic into a shared library, eliminating ~3,200 lines of duplicated code from the certification test suite. Establishes a single source of truth for 102 compliance checks, enabling both the CLI tool and the Kubernetes operator to share identical validation logic. [checks v0.0.6](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.6), [checks #30](https://github.com/redhat-best-practices-for-k8s/checks/pull/30), [certsuite #3554](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3554)
