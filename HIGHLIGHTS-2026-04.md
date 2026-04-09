@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-09: Codebase Health Audit and Bug Fixes - [cnf-features-deploy](https://github.com/openshift-kni/cnf-features-deploy)
+
+Improved codebase reliability and maintainability across cnf-features-deploy by conducting a full-repo audit that identified 54 improvement items. Fixed 2 bugs (missing variable reference, DPDK version typo), corrected typos across 8 files, migrated 51 deprecated kustomize configs, addressed security review findings on kustomize CI, and closed 4 obsolete PRs. Created Jira tracking for all work. [PR #3956](https://github.com/openshift-kni/cnf-features-deploy/pull/3956), [PR #3957](https://github.com/openshift-kni/cnf-features-deploy/pull/3957), [PR #3958](https://github.com/openshift-kni/cnf-features-deploy/pull/3958), [PR #3097](https://github.com/openshift-kni/cnf-features-deploy/pull/3097), [CNF-22868](https://issues.redhat.com/browse/CNF-22868), [CNF-22869](https://issues.redhat.com/browse/CNF-22869), [CNF-22873](https://issues.redhat.com/browse/CNF-22873)
+
+---
+
 ## 2026-04-09: RAN Hardening Reference Design Specification - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Enabled telco partners to adopt HIGH severity security compliance remediations by documenting crypto policy, PAM, and SSHD hardening in the RAN Reference Design Specification (RDS). Created the RDS Merge Request, linked traceability across Jira and GitHub, and rebased 33 compliance branches with corrected directory structure for the 4.23 release. [RDS MR !184](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/184), [PR #529](https://github.com/openshift-kni/telco-reference/pull/529), [PR #466](https://github.com/openshift-kni/telco-reference/pull/466), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
