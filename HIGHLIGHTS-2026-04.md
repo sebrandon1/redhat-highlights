@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-10: Environment-Aware QE Test Assertions - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Eliminated false nightly failures on OCP 4.14, 4.16, and 4.17 by making QE tests detect cluster state before asserting certsuite outcomes. The scheduling policy test now runs `chrt` to detect RT scheduling, and the lifecycle test checks OCP end-of-life dates — ensuring each test expects the correct result for its environment instead of assuming a fixed outcome. [PR #1435](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1435)
+
+---
+
 ## 2026-04-10: Cert-Manager Operator Code Health Campaign - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Improved code maintainability across the OpenShift cert-manager operator by rebasing 2 stale community PRs, conducting a full codebase audit that identified 22 cleanup opportunities, and shipping 5 PRs covering logging consolidation, context consistency, typo fixes, error handling, and magic string elimination. Created Jira tracking and CI-verified all changes. [PR #314](https://github.com/openshift/cert-manager-operator/pull/314), [PR #242](https://github.com/openshift/cert-manager-operator/pull/242), [PR #399](https://github.com/openshift/cert-manager-operator/pull/399), [PR #400](https://github.com/openshift/cert-manager-operator/pull/400), [PR #404](https://github.com/openshift/cert-manager-operator/pull/404), [CNF-22825](https://issues.redhat.com/browse/CNF-22825), [CNF-22826](https://issues.redhat.com/browse/CNF-22826), [CNF-22831](https://issues.redhat.com/browse/CNF-22831), [CNF-22833](https://issues.redhat.com/browse/CNF-22833), [CNF-22870](https://issues.redhat.com/browse/CNF-22870)
