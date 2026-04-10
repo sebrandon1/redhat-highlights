@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-10: Codebase Simplification Audit and Cleanup - [eco-goinfra](https://github.com/openshift-kni/eco-goinfra)
+
+Reduced technical debt across eco-goinfra (282K lines, 80+ packages) by conducting a full codebase audit that identified 22 improvement items across code reuse, quality, and efficiency. Removed 21 redundant nil-slice checks across 11 files (-114 lines), created a reusable `/simplify-audit` skill for future audits, and confirmed alignment with Kirsten Laskoski's ongoing common builder migration to avoid duplicate effort. [PR #1321](https://github.com/rh-ecosystem-edge/eco-goinfra/pull/1321), [CNF-22884](https://issues.redhat.com/browse/CNF-22884)
+
+---
+
 ## 2026-04-09: Codebase Health Audit and Bug Fixes - [cnf-features-deploy](https://github.com/openshift-kni/cnf-features-deploy)
 
 Improved codebase reliability and maintainability across cnf-features-deploy by conducting a full-repo audit that identified 54 improvement items. Fixed 2 bugs (missing variable reference, DPDK version typo), corrected typos across 8 files, migrated 51 deprecated kustomize configs, addressed security review findings on kustomize CI, and closed 4 obsolete PRs. Created Jira tracking for all work. [PR #3956](https://github.com/openshift-kni/cnf-features-deploy/pull/3956), [PR #3957](https://github.com/openshift-kni/cnf-features-deploy/pull/3957), [PR #3958](https://github.com/openshift-kni/cnf-features-deploy/pull/3958), [PR #3097](https://github.com/openshift-kni/cnf-features-deploy/pull/3097), [CNF-22868](https://issues.redhat.com/browse/CNF-22868), [CNF-22869](https://issues.redhat.com/browse/CNF-22869), [CNF-22873](https://issues.redhat.com/browse/CNF-22873)
