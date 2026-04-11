@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-10: Full-Profile Compliance Scanning and Mirror CI - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Expanded compliance validation from 106 checks (one profile) to 910 checks across all four security profiles (E8, CIS, Moderate, PCI-DSS), eliminating blind spots in our hardening baseline. Reprovisioned cnfdt16 with OCP 4.22 nightly and confirmed zero regressions. Fixed multi-architecture image mirroring CI that was silently producing arm64-only bundles, added nightly architecture verification, and resolved a podman 4.x auth bug that blocked all image pushes from GitHub Actions. [PR #81](https://github.com/sebrandon1/compliance-scripts/pull/81), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
+
+---
+
 ## 2026-04-10: Environment-Aware QE Test Assertions - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Eliminated false nightly failures on OCP 4.14, 4.16, and 4.17 by making QE tests detect cluster state before asserting certsuite outcomes. The scheduling policy test now runs `chrt` to detect RT scheduling, and the lifecycle test checks OCP end-of-life dates — ensuring each test expects the correct result for its environment instead of assuming a fixed outcome. [PR #1435](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1435)
