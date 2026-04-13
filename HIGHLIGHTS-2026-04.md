@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-13: Operator SDK v1.42.2 Dependency Update - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Updated operator-sdk from v1.41.1 to v1.42.2 across certsuite and certsuite-sample-workload, picking up a gRPC security bump. End-to-end: created Jira, opened PRs in both repos, verified CI across all test suites, merged, and closed the ticket. [certsuite #3563](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3563), [sample-workload #676](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/pull/676), [CNFCERT-1387](https://issues.redhat.com/browse/CNFCERT-1387)
+
+---
+
 ## 2026-04-10: TLS Scanner Feature Parity and Beyond - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Closed 8 of 10 feature gaps against the upstream OpenShift tls-scanner in a single session, shipping 6 PRs as release v0.0.14. Added post-quantum cryptography (PQC) compliance classification, forward secrecy reporting, key exchange type details, SSLv3 detection via raw socket probing, health probe port filtering to eliminate false positives, and IPv6 dual-stack support. The operator now exceeds the upstream scanner's capabilities while providing continuous monitoring, Prometheus metrics, and Kubernetes-native reporting that the upstream batch-mode scanner lacks. [v0.0.14](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v0.0.14), [PR #87](https://github.com/sebrandon1/tls-compliance-operator/pull/87), [PR #88](https://github.com/sebrandon1/tls-compliance-operator/pull/88), [PR #89](https://github.com/sebrandon1/tls-compliance-operator/pull/89), [PR #90](https://github.com/sebrandon1/tls-compliance-operator/pull/90), [PR #91](https://github.com/sebrandon1/tls-compliance-operator/pull/91), [PR #92](https://github.com/sebrandon1/tls-compliance-operator/pull/92)
