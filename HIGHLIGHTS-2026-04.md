@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-14: k3s Cluster Provider for CI Pipelines - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Added k3s as a third cluster provider in quick-k8s, giving CI pipelines a lightweight Kubernetes option that starts in under 30 seconds on ~512MB RAM. Enables faster, cheaper test runs on GitHub Actions free-tier runners. Fully tested across 4 Ubuntu variants with nightly version updates. [PR #111](https://github.com/palmsoftware/quick-k8s/pull/111), [CNFCERT-1389](https://issues.redhat.com/browse/CNFCERT-1389)
+
+---
+
 ## 2026-04-13: Operator SDK v1.42.2 Dependency Update - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Updated operator-sdk from v1.41.1 to v1.42.2 across certsuite and certsuite-sample-workload, picking up a gRPC security bump. End-to-end: created Jira, opened PRs in both repos, verified CI across all test suites, merged, and closed the ticket. [certsuite #3563](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3563), [sample-workload #676](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/pull/676), [CNFCERT-1387](https://issues.redhat.com/browse/CNFCERT-1387)
