@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-14: Disconnected Environment Support Guide - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Enabled partners with air-gapped OpenShift clusters to run the certification test suite by creating comprehensive disconnected environment documentation. Covers oc-mirror v2 and skopeo workflows for mirroring the certsuite-probe image, validated end-to-end against a local cluster. Unblocks users who were previously unable to certify workloads in restricted networks. [PR #3573](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3573), [CNFCERT-1390](https://issues.redhat.com/browse/CNFCERT-1390)
+
+---
+
 ## 2026-04-14: Patch Releases Across 17 Repositories
 
 Reduced dependency drift and security exposure by cutting patch releases across 17 repositories in the redhat-best-practices-for-k8s and sebrandon1 organizations. Covers Go 1.26.2 upgrades, dependency bumps, CI action updates, and feature improvements that had accumulated since March. Keeps downstream consumers on supported, CVE-patched versions.
