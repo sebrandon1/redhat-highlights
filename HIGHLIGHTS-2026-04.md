@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-14: Patch Releases Across 17 Repositories
+
+Reduced dependency drift and security exposure by cutting patch releases across 17 repositories in the redhat-best-practices-for-k8s and sebrandon1 organizations. Covers Go 1.26.2 upgrades, dependency bumps, CI action updates, and feature improvements that had accumulated since March. Keeps downstream consumers on supported, CVE-patched versions.
+
+---
+
 ## 2026-04-14: k3s Cluster Provider for CI Pipelines - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Added k3s as a third cluster provider in quick-k8s, giving CI pipelines a lightweight Kubernetes option that starts in under 30 seconds on ~512MB RAM. Enables faster, cheaper test runs on GitHub Actions free-tier runners. Fully tested across 4 Ubuntu variants with nightly version updates. [PR #111](https://github.com/palmsoftware/quick-k8s/pull/111), [CNFCERT-1389](https://issues.redhat.com/browse/CNFCERT-1389)
