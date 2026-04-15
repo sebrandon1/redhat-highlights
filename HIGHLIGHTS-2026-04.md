@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-15: End-to-End Quality Engineering for BPS Operator - [bps-operator](https://github.com/sebrandon1/bps-operator), [checks-qe](https://github.com/redhat-best-practices-for-k8s/checks-qe)
+
+Established automated quality engineering coverage for the Best Practices Scanner operator by integrating the checks-qe test framework in operator mode. 146 scenarios now validate the operator end-to-end on every PR across both Kubernetes (Kind) and OpenShift (CRC) clusters, catching regressions like missing Role-Based Access Control (RBAC) permissions and check behavior changes from dependency updates. Also bumped the checks library to v0.0.23, replaced a 2-minute blocking reconciliation loop with an idiomatic non-blocking requeue pattern, and resolved all open issues. [bps-operator PRs #71-#74](https://github.com/sebrandon1/bps-operator/pulls?q=is%3Apr+is%3Amerged+number%3A71..74), [checks-qe PRs #9-#12](https://github.com/redhat-best-practices-for-k8s/checks-qe/pulls?q=is%3Apr+is%3Amerged+number%3A9..12)
+
+---
+
 ## 2026-04-14: Disconnected Environment Support Guide - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Enabled partners with air-gapped OpenShift clusters to run the certification test suite by creating comprehensive disconnected environment documentation. Covers oc-mirror v2 and skopeo workflows for mirroring the certsuite-probe image, validated end-to-end against a local cluster. Unblocks users who were previously unable to certify workloads in restricted networks. [PR #3573](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3573), [CNFCERT-1390](https://issues.redhat.com/browse/CNFCERT-1390)
