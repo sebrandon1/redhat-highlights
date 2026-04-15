@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-15: Simplified BPS Operator Developer Experience - [bps-operator](https://github.com/sebrandon1/bps-operator)
+
+Reduced the Best Practices Scanner operator quick start from a multi-step, multi-terminal workflow to a single command (`make deploy-scan`). Eliminated local process management by deploying the operator in-cluster, auto-configured OpenShift security privileges, fixed noisy Operator Lifecycle Manager (OLM) cache errors, and corrected outdated documentation (57 checks listed vs. 105 actual). New users can now run a full compliance scan in one step. [PR #75](https://github.com/sebrandon1/bps-operator/pull/75)
+
+---
+
 ## 2026-04-15: End-to-End Quality Engineering for BPS Operator - [bps-operator](https://github.com/sebrandon1/bps-operator), [checks-qe](https://github.com/redhat-best-practices-for-k8s/checks-qe)
 
 Established automated quality engineering coverage for the Best Practices Scanner operator by integrating the checks-qe test framework in operator mode. 146 scenarios now validate the operator end-to-end on every PR across both Kubernetes (Kind) and OpenShift (CRC) clusters, catching regressions like missing Role-Based Access Control (RBAC) permissions and check behavior changes from dependency updates. Also bumped the checks library to v0.0.23, replaced a 2-minute blocking reconciliation loop with an idiomatic non-blocking requeue pattern, and resolved all open issues. [bps-operator PRs #71-#74](https://github.com/sebrandon1/bps-operator/pulls?q=is%3Apr+is%3Amerged+number%3A71..74), [checks-qe PRs #9-#12](https://github.com/redhat-best-practices-for-k8s/checks-qe/pulls?q=is%3Apr+is%3Amerged+number%3A9..12)
