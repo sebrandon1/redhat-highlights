@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-15: Prebuilt Image for QE CI Pipelines - [bps-operator](https://github.com/sebrandon1/bps-operator)
+
+Streamlined end-to-end test pipelines by replacing clone-and-compile steps with a prebuilt checks-qe container image. Eliminates source-level build dependency, reduces CI complexity, and saves ~1 minute per workflow across both Kubernetes and OpenShift pipelines. Leverages new image publishing from [checks-qe PR #13](https://github.com/redhat-best-practices-for-k8s/checks-qe/pull/13). [PR #77](https://github.com/sebrandon1/bps-operator/pull/77)
+
+---
+
 ## 2026-04-15: Simplified BPS Operator Developer Experience - [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Reduced the Best Practices Scanner operator quick start from a multi-step, multi-terminal workflow to a single command (`make deploy-scan`). Eliminated local process management by deploying the operator in-cluster, auto-configured OpenShift security privileges, fixed noisy Operator Lifecycle Manager (OLM) cache errors, and corrected outdated documentation (57 checks listed vs. 105 actual). New users can now run a full compliance scan in one step. [PR #75](https://github.com/sebrandon1/bps-operator/pull/75)
