@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-16: New Informational Config Category for RAN Hardening - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Introduced a new "informational" configuration category to the RAN Reference Design Specification (RDS), enabling security hardening configs to be shared as warn-only guidance rather than required or optional. Migrated 28 compliance branches to the new directory structure, fixed CI validation, and updated SSHD hardening to a drop-in approach verified with compliance-operator v1.8.2. [PR #529](https://github.com/openshift-kni/telco-reference/pull/529), [PR #466](https://github.com/openshift-kni/telco-reference/pull/466), [RDS MR !184](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/184), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
+
+---
+
 ## 2026-04-15: Prebuilt Image for QE CI Pipelines - [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Streamlined end-to-end test pipelines by replacing clone-and-compile steps with a prebuilt checks-qe container image. Eliminates source-level build dependency, reduces CI complexity, and saves ~1 minute per workflow across both Kubernetes and OpenShift pipelines. Leverages new image publishing from [checks-qe PR #13](https://github.com/redhat-best-practices-for-k8s/checks-qe/pull/13). [PR #77](https://github.com/sebrandon1/bps-operator/pull/77)
