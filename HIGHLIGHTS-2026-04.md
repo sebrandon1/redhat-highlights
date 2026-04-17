@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-17: Cert-Manager Test Scripts Consolidation - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Reduced maintenance burden across 32 cert-manager automation scripts by consolidating ~1,000 lines of duplicated code into a shared library with 8 reusable functions. Fixed inefficient API call patterns (21 calls to 1) and replaced custom polling loops with native OpenShift tooling. Released as [v0.0.6](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.6). [PR #26](https://github.com/sebrandon1/cert-manager-scripts/pull/26)
+
+---
+
 ## 2026-04-17: Compliance Scripts Code Quality Overhaul - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Improved maintainability of 28 OpenShift compliance automation scripts by consolidating duplicated code into a shared library, rewriting the README for user-friendliness, and conducting a full codebase audit. Eliminated 239 lines of redundant logging, role detection, and polling logic across 27 files. Released as [v1.0.3](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.3). [PR #89](https://github.com/sebrandon1/compliance-scripts/pull/89), [PR #90](https://github.com/sebrandon1/compliance-scripts/pull/90)
