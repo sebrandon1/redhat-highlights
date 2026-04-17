@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-17: Restored Slack Team Notifications - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
+
+Fixed the broken weekly Jira team update that had been failing silently, restored visibility into team workload across 10 engineers. Upgraded all 4 Slack notification scripts (DCI stats, Quay pulls, Jira updates, x/crypto security) with improved formatting, error handling, and new metrics like migration percentage and outdated dependency rates. Created a shared notification library to reduce duplication. [PR #132](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/132)
+
+---
+
 ## 2026-04-16: New Informational Config Category for RAN Hardening - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Introduced a new "informational" configuration category to the RAN Reference Design Specification (RDS), enabling security hardening configs to be shared as warn-only guidance rather than required or optional. Migrated 28 compliance branches to the new directory structure, fixed CI validation, and updated SSHD hardening to a drop-in approach verified with compliance-operator v1.8.2. [PR #529](https://github.com/openshift-kni/telco-reference/pull/529), [PR #466](https://github.com/openshift-kni/telco-reference/pull/466), [RDS MR !184](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/184), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
