@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-17: Compliance Scripts Code Quality Overhaul - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Improved maintainability of 28 OpenShift compliance automation scripts by consolidating duplicated code into a shared library, rewriting the README for user-friendliness, and conducting a full codebase audit. Eliminated 239 lines of redundant logging, role detection, and polling logic across 27 files. Released as [v1.0.3](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.3). [PR #89](https://github.com/sebrandon1/compliance-scripts/pull/89), [PR #90](https://github.com/sebrandon1/compliance-scripts/pull/90)
+
+---
+
 ## 2026-04-17: GolangCI-Lint v2 Upgrade Campaign - [telco-bot](https://github.com/redhat-best-practices-for-k8s/telco-bot)
 
 Modernized linting infrastructure across 6 OpenShift repositories by upgrading golangci-lint from v2.0.2 to v2.11.4, rebasing stale PRs, and fixing 55 newly-surfaced lint violations in cluster-image-registry-operator. Reduces static analysis gaps and aligns repos with current tooling standards. [Tracking issue #49](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/49), [backplane-tools #84](https://github.com/openshift/backplane-tools/pull/84), [cluster-image-registry-operator #1279](https://github.com/openshift/cluster-image-registry-operator/pull/1279), [telemeter #576](https://github.com/openshift/telemeter/pull/576), [zero-trust-workload-identity-manager #90](https://github.com/openshift/zero-trust-workload-identity-manager/pull/90), [ingress-node-firewall #692](https://github.com/openshift/ingress-node-firewall/pull/692), [cloud-provider-powervs #92](https://github.com/openshift/cloud-provider-powervs/pull/92)
