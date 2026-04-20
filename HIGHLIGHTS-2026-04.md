@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-20: End-to-End Compliance Remediation Verification - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Proved that our RAN hardening remediations work end-to-end by building automated verification tooling and running it against a live OCP 4.22 cluster. Applied 42 MachineConfigs from 21 remediation groups: 420 compliance checks flipped from FAIL to PASS with zero regressions, reducing failures from 520 to 100 (81% reduction). [PR #94](https://github.com/sebrandon1/compliance-scripts/pull/94), [PR #95](https://github.com/sebrandon1/compliance-scripts/pull/95), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
+
+---
+
 ## 2026-04-20: BPS Operator Release Readiness - [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Accelerated the Best Practices Scanner operator toward production readiness by boosting test coverage from 49% to 65%, automating the release pipeline (single-command tag-to-release-to-image), and adding automatic result cleanup to prevent unbounded Custom Resource growth in long-running deployments. Cleaned up 18 stale branches. [PR #84](https://github.com/sebrandon1/bps-operator/pull/84), [PR #85](https://github.com/sebrandon1/bps-operator/pull/85), [PR #86](https://github.com/sebrandon1/bps-operator/pull/86), [CNF-23058](https://issues.redhat.com/browse/CNF-23058), [CNF-23059](https://issues.redhat.com/browse/CNF-23059), [CNF-23060](https://issues.redhat.com/browse/CNF-23060)
