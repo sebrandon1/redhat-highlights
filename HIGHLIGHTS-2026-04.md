@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-20: Cluster Monitoring Support for CI Pipelines - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Enabled CI pipelines to deploy OpenShift with the full monitoring stack (Prometheus, Alertmanager) by adding an `enableClusterMonitoring` option to the quick-ocp GitHub Action. Automatically enforces minimum memory requirements, preventing silent deployment failures. Teams testing monitoring-dependent workloads can now validate in CI instead of manual clusters. [PR #51](https://github.com/palmsoftware/quick-ocp/pull/51), [CNFCERT-1394](https://issues.redhat.com/browse/CNFCERT-1394)
+
+---
+
 ## 2026-04-17: Cert-Manager Test Scripts Consolidation - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Reduced maintenance burden across 32 cert-manager automation scripts by consolidating ~1,000 lines of duplicated code into a shared library with 8 reusable functions. Fixed inefficient API call patterns (21 calls to 1) and replaced custom polling loops with native OpenShift tooling. Released as [v0.0.6](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.6). [PR #26](https://github.com/sebrandon1/cert-manager-scripts/pull/26)
