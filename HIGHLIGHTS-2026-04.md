@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-20: Jira Tracking for ioutil Deprecation Campaign - [cluster-samples-operator](https://github.com/openshift/cluster-samples-operator)
+
+Created 10 CNF Jira stories to track deprecated `io/ioutil` migration efforts across 10 OpenShift repositories, providing traceability for PRs that previously had no issue tracking. Updated all PR titles with Jira references to satisfy OpenShift CI requirements. [CNF-23044](https://issues.redhat.com/browse/CNF-23044) through [CNF-23053](https://issues.redhat.com/browse/CNF-23053), [tracking issue #52](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/52)
+
+---
+
 ## 2026-04-20: Cluster Monitoring Support for CI Pipelines - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Enabled CI pipelines to deploy OpenShift with the full monitoring stack (Prometheus, Alertmanager) by adding an `enableClusterMonitoring` option to the quick-ocp GitHub Action. Automatically enforces minimum memory requirements, preventing silent deployment failures. Teams testing monitoring-dependent workloads can now validate in CI instead of manual clusters. [PR #51](https://github.com/palmsoftware/quick-ocp/pull/51), [CNFCERT-1394](https://issues.redhat.com/browse/CNFCERT-1394)
