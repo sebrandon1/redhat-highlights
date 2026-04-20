@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-20: Cert-Manager Certificate Preservation for Image-Based Upgrades - [recert](https://github.com/rh-ecosystem-edge/recert), [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Unblocked the 4.22 epic for testing by delivering coordinated changes across two repos that preserve cert-manager TLS certificates during Image-Based Upgrades (IBU). Eliminates post-upgrade certificate reissuance that broke key continuity, ensuring addon certificates survive cluster upgrades intact. Validated end-to-end on OCP 4.20→4.21 with cert-manager v1.17.2. [recert #1192](https://github.com/rh-ecosystem-edge/recert/pull/1192), [lifecycle-agent #5174](https://github.com/openshift-kni/lifecycle-agent/pull/5174), [CNF-21719](https://issues.redhat.com/browse/CNF-21719)
+
+---
+
 ## 2026-04-20: Jira Tracking for ioutil Deprecation Campaign - [cluster-samples-operator](https://github.com/openshift/cluster-samples-operator)
 
 Created 10 CNF Jira stories to track deprecated `io/ioutil` migration efforts across 10 OpenShift repositories, providing traceability for PRs that previously had no issue tracking. Updated all PR titles with Jira references to satisfy OpenShift CI requirements. [CNF-23044](https://issues.redhat.com/browse/CNF-23044) through [CNF-23053](https://issues.redhat.com/browse/CNF-23053), [tracking issue #52](https://github.com/redhat-best-practices-for-k8s/telco-bot/issues/52)
