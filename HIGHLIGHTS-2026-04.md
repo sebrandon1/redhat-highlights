@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-20: BPS Operator Release Readiness - [bps-operator](https://github.com/sebrandon1/bps-operator)
+
+Accelerated the Best Practices Scanner operator toward production readiness by boosting test coverage from 49% to 65%, automating the release pipeline (single-command tag-to-release-to-image), and adding automatic result cleanup to prevent unbounded Custom Resource growth in long-running deployments. Cleaned up 18 stale branches. [PR #84](https://github.com/sebrandon1/bps-operator/pull/84), [PR #85](https://github.com/sebrandon1/bps-operator/pull/85), [PR #86](https://github.com/sebrandon1/bps-operator/pull/86), [CNF-23058](https://issues.redhat.com/browse/CNF-23058), [CNF-23059](https://issues.redhat.com/browse/CNF-23059), [CNF-23060](https://issues.redhat.com/browse/CNF-23060)
+
+---
+
 ## 2026-04-20: Cert-Manager Certificate Preservation for Image-Based Upgrades - [recert](https://github.com/rh-ecosystem-edge/recert), [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Unblocked the 4.22 epic for testing by delivering coordinated changes across two repos that preserve cert-manager TLS certificates during Image-Based Upgrades (IBU). Eliminates post-upgrade certificate reissuance that broke key continuity, ensuring addon certificates survive cluster upgrades intact. Validated end-to-end on OCP 4.20→4.21 with cert-manager v1.17.2. [recert #1192](https://github.com/rh-ecosystem-edge/recert/pull/1192), [lifecycle-agent #5174](https://github.com/openshift-kni/lifecycle-agent/pull/5174), [CNF-21719](https://issues.redhat.com/browse/CNF-21719)
