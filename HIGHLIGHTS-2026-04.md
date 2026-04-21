@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-21: Nightly CI Catalog Source Resilience - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Improved nightly CI reliability by adding retry logic for OLM catalog source creation. Catalog sources on resource-constrained CRC clusters intermittently get stuck in TRANSIENT_FAILURE, causing entire test suites to be skipped. The retry loop deletes and recreates stuck sources (up to 3 attempts), reducing false nightly failures for the affiliated certification and operator test suites. [PR #1445](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1445)
+
+---
+
 ## 2026-04-20: End-to-End Compliance Remediation Verification - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Proved that our RAN hardening remediations work end-to-end by building automated verification tooling and running it against a live OCP 4.22 cluster. Applied 42 MachineConfigs from 21 remediation groups: 420 compliance checks flipped from FAIL to PASS with zero regressions, reducing failures from 520 to 100 (81% reduction). [PR #94](https://github.com/sebrandon1/compliance-scripts/pull/94), [PR #95](https://github.com/sebrandon1/compliance-scripts/pull/95), [CNF-19031](https://issues.redhat.com/browse/CNF-19031)
