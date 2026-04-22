@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-22: First Stable Releases of DCI and Quay API Tools - [go-dci](https://github.com/sebrandon1/go-dci), [go-quay](https://github.com/sebrandon1/go-quay)
+
+Delivered v1.0.0 stable releases of go-dci and go-quay — Go CLI and library tools providing full API coverage for Red Hat Distributed CI (11 endpoints) and Quay.io (115 endpoints across 17 categories). Enables programmatic certification workflow automation, job date-range queries, and container registry management for partners and internal CI pipelines. [go-dci v1.0.0](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.0), [go-quay v1.0.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.0.0), [CNFCERT-1400](https://issues.redhat.com/browse/CNFCERT-1400)
+
+---
+
 ## 2026-04-22: Upstream Compliance Operator Code Quality Reviews - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
 
 Receiving upstream code reviews on 9 open PRs improving the ComplianceAsCode compliance-operator: Go best practices (error string casing, deprecated API removal, typo fixes, unused code cleanup). 3 PRs approved by maintainers, reviewer feedback addressed same-day. Strengthens our upstream presence and influence in the compliance ecosystem. [PR #1123](https://github.com/ComplianceAsCode/compliance-operator/pull/1123), [PR #1120](https://github.com/ComplianceAsCode/compliance-operator/pull/1120), [PR #1117](https://github.com/ComplianceAsCode/compliance-operator/pull/1117)
