@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-22: TLS Tool Parity Testing Framework and v1.0.0 Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Built an automated parity testing framework that validates the tls-compliance-operator against the upstream OpenShift tls-scanner across 5 TLS scenarios. The effort immediately surfaced two operator bugs (nil pointer panic on Routes, incomplete mTLS version detection) which were fixed and shipped in v1.0.0. Establishes ongoing CI-driven accuracy validation against the upstream tool. [PR #96](https://github.com/sebrandon1/tls-compliance-operator/pull/96), [PR #97](https://github.com/sebrandon1/tls-compliance-operator/pull/97), [PR #98](https://github.com/sebrandon1/tls-compliance-operator/pull/98), [PR #99](https://github.com/sebrandon1/tls-compliance-operator/pull/99), [v1.0.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.0)
+
+---
+
 ## 2026-04-22: Unblocked Dependabot Lint Upgrade - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
 
 Fixed a CI-blocking lint failure caused by the new `eslint-plugin-react-hooks` 7.1.1 `set-state-in-effect` rule. Refactored synchronous `setState` out of a `useEffect` into event handlers, aligning with React best practices and unblocking the dependency update. [PR #89](https://github.com/sebrandon1/compliance-operator-dashboard/pull/89)
