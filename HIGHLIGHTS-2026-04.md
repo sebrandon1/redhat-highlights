@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-22: Unblocked Dependabot Lint Upgrade - [compliance-operator-dashboard](https://github.com/sebrandon1/compliance-operator-dashboard)
+
+Fixed a CI-blocking lint failure caused by the new `eslint-plugin-react-hooks` 7.1.1 `set-state-in-effect` rule. Refactored synchronous `setState` out of a `useEffect` into event handlers, aligning with React best practices and unblocking the dependency update. [PR #89](https://github.com/sebrandon1/compliance-operator-dashboard/pull/89)
+
+---
+
 ## 2026-04-22: First Stable Releases of DCI and Quay API Tools - [go-dci](https://github.com/sebrandon1/go-dci), [go-quay](https://github.com/sebrandon1/go-quay)
 
 Delivered v1.0.0 stable releases of go-dci and go-quay — Go CLI and library tools providing full API coverage for Red Hat Distributed CI (11 endpoints) and Quay.io (115 endpoints across 17 categories). Enables programmatic certification workflow automation, job date-range queries, and container registry management for partners and internal CI pipelines. [go-dci v1.0.0](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.0), [go-quay v1.0.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.0.0), [CNFCERT-1400](https://issues.redhat.com/browse/CNFCERT-1400)
