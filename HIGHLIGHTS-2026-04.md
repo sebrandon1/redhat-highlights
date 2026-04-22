@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-22: Upstream Compliance Operator Code Quality Reviews - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
+
+Receiving upstream code reviews on 9 open PRs improving the ComplianceAsCode compliance-operator: Go best practices (error string casing, deprecated API removal, typo fixes, unused code cleanup). 3 PRs approved by maintainers, reviewer feedback addressed same-day. Strengthens our upstream presence and influence in the compliance ecosystem. [PR #1123](https://github.com/ComplianceAsCode/compliance-operator/pull/1123), [PR #1120](https://github.com/ComplianceAsCode/compliance-operator/pull/1120), [PR #1117](https://github.com/ComplianceAsCode/compliance-operator/pull/1117)
+
+---
+
 ## 2026-04-21: Nightly CI Catalog Source Resilience - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Improved nightly CI reliability by adding retry logic for OLM catalog source creation. Catalog sources on resource-constrained CRC clusters intermittently get stuck in TRANSIENT_FAILURE, causing entire test suites to be skipped. The retry loop deletes and recreates stuck sources (up to 3 attempts), reducing false nightly failures for the affiliated certification and operator test suites. [PR #1445](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1445)
