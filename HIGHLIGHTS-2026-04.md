@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-23: Upstream RHCOS Hardening Proposal - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
+
+Proposed moving OS-level compliance hardening from day-2 MachineConfigs into the Red Hat Enterprise Linux CoreOS (RHCOS) base image, eliminating redundant remediation work across every OpenShift customer. Identified that RHCOS already ships 3 SSH settings via `overlay.d/` — opened an upstream PR adding 8 more that match OpenSSH compiled-in defaults (zero behavior change), with kola test coverage. If accepted, compliance scanners report PASS out of the box for these checks across Essential Eight (E8), Center for Internet Security (CIS), and National Institute of Standards and Technology (NIST) 800-53 Moderate profiles. [PR #244](https://github.com/coreos/rhel-coreos-config/pull/244), [CNF-19031](https://redhat.atlassian.net/browse/CNF-19031)
+
+---
+
 ## 2026-04-23: Restored Cert-Manager as Optional RAN Component - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Unblocked the RAN Reference Design Specification (RDS) update by adding cert-manager reference configurations to the telco-ran folder structure in telco-reference. After resolving Image-Based Upgrade (IBU) incompatibility upstream, cert-manager is now available as an optional component for RAN deployments, enabling automated TLS certificate management for API server and ingress endpoints across managed clusters. [PR #722](https://github.com/openshift-kni/telco-reference/pull/722), [RDS MR !185](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/185), [CNF-21719](https://issues.redhat.com/browse/CNF-21719)
