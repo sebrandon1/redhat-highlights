@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-23: Restored Cert-Manager as Optional RAN Component - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Unblocked the RAN Reference Design Specification (RDS) update by adding cert-manager reference configurations to the telco-ran folder structure in telco-reference. After resolving Image-Based Upgrade (IBU) incompatibility upstream, cert-manager is now available as an optional component for RAN deployments, enabling automated TLS certificate management for API server and ingress endpoints across managed clusters. [PR #722](https://github.com/openshift-kni/telco-reference/pull/722), [RDS MR !185](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/185), [CNF-21719](https://issues.redhat.com/browse/CNF-21719)
+
+---
+
 ## 2026-04-23: Context Propagation for Compliance Operator Reliability - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
 
 Initiated a systematic effort to enable proper request cancellation and timeout handling in the upstream compliance-operator by replacing 458 hardcoded context placeholders with propagated context across 9 packages. First PR covers the shared utilities package, fixes a bug where retry loops ignored cancellation signals, and eliminates redundant API calls in per-node scan scheduling. [PR #1187](https://github.com/ComplianceAsCode/compliance-operator/pull/1187), [CNF-23094](https://issues.redhat.com/browse/CNF-23094)
