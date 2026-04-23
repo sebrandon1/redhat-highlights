@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-23: Context Propagation for Compliance Operator Reliability - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
+
+Initiated a systematic effort to enable proper request cancellation and timeout handling in the upstream compliance-operator by replacing 458 hardcoded context placeholders with propagated context across 9 packages. First PR covers the shared utilities package, fixes a bug where retry loops ignored cancellation signals, and eliminates redundant API calls in per-node scan scheduling. [PR #1187](https://github.com/ComplianceAsCode/compliance-operator/pull/1187), [CNF-23094](https://issues.redhat.com/browse/CNF-23094)
+
+---
+
 ## 2026-04-23: Nightly TLS Parity CI Pipeline - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Automated nightly validation of TLS detection accuracy by building and deploying a full parity test pipeline that compares operator results against the upstream OpenShift tls-scanner across 5 scenarios (TLS 1.2, 1.3, mixed, plain HTTP, mTLS). Resolved 10 infrastructure and test issues to achieve green CI, including fixing the tls-scanner image (missing hexdump dependency) and a race condition where tests read operator results before retries completed. Catches detection regressions automatically every night.
