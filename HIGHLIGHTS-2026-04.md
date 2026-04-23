@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-23: Nightly TLS Parity CI Pipeline - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Automated nightly validation of TLS detection accuracy by building and deploying a full parity test pipeline that compares operator results against the upstream OpenShift tls-scanner across 5 scenarios (TLS 1.2, 1.3, mixed, plain HTTP, mTLS). Resolved 10 infrastructure and test issues to achieve green CI, including fixing the tls-scanner image (missing hexdump dependency) and a race condition where tests read operator results before retries completed. Catches detection regressions automatically every night.
+
+---
+
 ## 2026-04-22: TLS Tool Parity Testing Framework and v1.0.0 Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Built an automated parity testing framework that validates the tls-compliance-operator against the upstream OpenShift tls-scanner across 5 TLS scenarios. The effort immediately surfaced two operator bugs (nil pointer panic on Routes, incomplete mTLS version detection) which were fixed and shipped in v1.0.0. Establishes ongoing CI-driven accuracy validation against the upstream tool. [PR #96](https://github.com/sebrandon1/tls-compliance-operator/pull/96), [PR #97](https://github.com/sebrandon1/tls-compliance-operator/pull/97), [PR #98](https://github.com/sebrandon1/tls-compliance-operator/pull/98), [PR #99](https://github.com/sebrandon1/tls-compliance-operator/pull/99), [v1.0.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.0)
