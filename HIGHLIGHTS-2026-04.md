@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-27: Pinned Compliance Operator Image Versions - [compliance-operator](https://github.com/ComplianceAsCode/compliance-operator)
+
+Eliminated unreproducible compliance scan results by pinning all three hardcoded `:latest` container images to specific verified versions and adding automated GitHub Actions tooling to keep them current. The daily workflow verifies images exist in the registry before opening update PRs, preventing broken releases. [PR #1196](https://github.com/ComplianceAsCode/compliance-operator/pull/1196), [CNF-23203](https://redhat.atlassian.net/browse/CNF-23203)
+
+---
+
 ## 2026-04-27: Upstream Content Image Versioning Gap - [content](https://github.com/ComplianceAsCode/content)
 
 Identified and reported that the upstream compliance content container image (`k8scontent`) has no version-tagged releases and a stale `:latest` tag frozen since June 2025, making scan results non-reproducible across clusters. Filed upstream issue requesting versioned image publishing as part of the release process, which would enable all compliance-operator users to pin to specific content versions and access features shipped in v0.1.79 and v0.1.80. [Issue #14681](https://github.com/ComplianceAsCode/content/issues/14681)
