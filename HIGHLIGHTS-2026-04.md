@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-27: Upstream Content Image Versioning Gap - [content](https://github.com/ComplianceAsCode/content)
+
+Identified and reported that the upstream compliance content container image (`k8scontent`) has no version-tagged releases and a stale `:latest` tag frozen since June 2025, making scan results non-reproducible across clusters. Filed upstream issue requesting versioned image publishing as part of the release process, which would enable all compliance-operator users to pin to specific content versions and access features shipped in v0.1.79 and v0.1.80. [Issue #14681](https://github.com/ComplianceAsCode/content/issues/14681)
+
+---
+
 ## 2026-04-23: Upstream RHCOS Hardening Proposal - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
 
 Proposed moving OS-level compliance hardening from day-2 MachineConfigs into the Red Hat Enterprise Linux CoreOS (RHCOS) base image, eliminating redundant remediation work across every OpenShift customer. Identified that RHCOS already ships 3 SSH settings via `overlay.d/` — opened an upstream PR adding 8 more that match OpenSSH compiled-in defaults (zero behavior change), with kola test coverage. If accepted, compliance scanners report PASS out of the box for these checks across Essential Eight (E8), Center for Internet Security (CIS), and National Institute of Standards and Technology (NIST) 800-53 Moderate profiles. [PR #244](https://github.com/coreos/rhel-coreos-config/pull/244), [CNF-19031](https://redhat.atlassian.net/browse/CNF-19031)
