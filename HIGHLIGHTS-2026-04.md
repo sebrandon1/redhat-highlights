@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-29: Multi-Arch Compliance Operator Image Pipeline - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Enabled reproducible compliance testing by building and mirroring all 4 compliance-operator release images (operator, scanner, bundle, catalog) as multi-arch containers. Native ARM64/AMD64 parallel builds cut CI time from 40+ minutes to under 10 minutes. Standalone script supports both CI and local workflows. [PR #103](https://github.com/sebrandon1/compliance-scripts/pull/103)
+
+---
+
 ## 2026-04-28: Platform Classification and Jira Triage for Compliance Hardening - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Added platform classification (RHCOS node-level vs OCP platform-level) across the compliance dashboard and scan tooling, enabling engineers to instantly identify which failures resolve with OS upgrades vs require cluster configuration. Triaged 6 Jira stories against fresh scan data (compliance-operator v1.8.2, content v0.1.80, RHCOS 9.8), closing 1 as resolved by OS defaults, confirming 4 still valid with detailed verification comments, and reparenting a stale story to the active epic. [PR #102](https://github.com/sebrandon1/compliance-scripts/pull/102), [CNF-16170](https://redhat.atlassian.net/browse/CNF-16170), [CNF-22624](https://redhat.atlassian.net/browse/CNF-22624), [CNF-16092](https://redhat.atlassian.net/browse/CNF-16092), [CNF-16294](https://redhat.atlassian.net/browse/CNF-16294), [CNF-22573](https://redhat.atlassian.net/browse/CNF-22573)
