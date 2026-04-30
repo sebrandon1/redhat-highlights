@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-30: Validated TLS Compliance Test Accuracy - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Confirmed the certsuite's TLS minimum version test catches two compliance gaps that OpenShift's tls-scanner misses, by running both tools against identical OCP 4.22 workloads. Integrated testssl.sh v3.2.3 into the probe image as an optional deep-audit mode with automated version tracking. [PR #84](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/pull/84), [Comparison](https://gist.github.com/sebrandon1/9613c3dc1733434eb1b1a84431a7bcf9), [Timing](https://gist.github.com/sebrandon1/d73fd2bda7a3b28bc5fc615fb408c948), [CNFCERT-1345](https://redhat.atlassian.net/browse/CNFCERT-1345)
+
+---
+
 ## 2026-04-30: Shared Jira Health Skill for Team Visibility - [skills](https://gitlab.cee.redhat.com/security-and-platform-team/skills)
 
 Enabled the team to quickly identify stale Jira issues by contributing the jira-health skill to the shared team skills repository. Generates prioritized health reports with staleness categories and actionable recommendations, helping engineers maintain healthy backlogs and prevent tickets from going unnoticed. [MR !5](https://gitlab.cee.redhat.com/security-and-platform-team/skills/-/merge_requests/5)
