@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for April
 
 ---
 
+## 2026-04-30: Shared Jira Health Skill for Team Visibility - [skills](https://gitlab.cee.redhat.com/security-and-platform-team/skills)
+
+Enabled the team to quickly identify stale Jira issues by contributing the jira-health skill to the shared team skills repository. Generates prioritized health reports with staleness categories and actionable recommendations, helping engineers maintain healthy backlogs and prevent tickets from going unnoticed. [MR !5](https://gitlab.cee.redhat.com/security-and-platform-team/skills/-/merge_requests/5)
+
+---
+
 ## 2026-04-30: Batch Release Automation Across 18 Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s)
 
 Shipped 18 patch releases across two GitHub organizations (sebrandon1 and redhat-best-practices-for-k8s), clearing accumulated unreleased commits from repos including certsuite, compliance-operator-dashboard, ztp-dashboard, and 15 others. Ensures downstream consumers track stable, versioned artifacts instead of floating on main.
