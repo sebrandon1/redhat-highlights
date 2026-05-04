@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-04: Released quick-k8s v0.0.66 - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Released v0.0.66 of the quick-k8s GitHub Action, updating Calico CNI to v3.32.0. This keeps the CI/CD Kubernetes testing infrastructure current with the latest network policy engine, ensuring teams validate against production-aligned networking behavior. [Release v0.0.66](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.66)
+
+---
+
 ## 2026-05-01: Eliminated Hardcoded Protocol Strings - [commatrix](https://github.com/openshift-kni/commatrix)
 
 Reduced risk of silent misconfigurations by centralizing ~138 hardcoded protocol string literals into typed constants across 9 files. Prevents typos in firewall rule generation where a single wrong character could block legitimate cluster traffic. [PR #487](https://github.com/openshift-kni/commatrix/pull/487) | [CNF-23435](https://redhat.atlassian.net/browse/CNF-23435)
