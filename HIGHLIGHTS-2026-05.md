@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-05: Engaging RHCOS Team on Upstream Hardening - [openshift/os](https://github.com/openshift/os)
+
+Initiated upstream discussions with the CoreOS team about shipping security hardening defaults in RHCOS base images. Identified 8 low-risk sysctl, PAM, and kernel boot argument changes that would eliminate MachineConfig remediation for all OCP clusters. Discovered that `authselect` already has a purpose-built `without-nullok` feature (added by Red Hat in 2018) that RHCOS could activate with a one-liner. Created proof-of-concept branches on [sebrandon1/os](https://github.com/openshift/os/compare/master...sebrandon1:os:hardening/pam-no-empty-passwords). [CNF-21212](https://redhat.atlassian.net/browse/CNF-21212)
+
+---
+
 ## 2026-05-05: Stabilized CI Across 6 Repositories - [oct](https://github.com/redhat-best-practices-for-k8s/oct) / [collector](https://github.com/redhat-best-practices-for-k8s/collector) / [certsuite-operator](https://github.com/redhat-best-practices-for-k8s/certsuite-operator) / [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
 
 Unblocked CI pipelines across 6 repositories by pinning golangci-lint to v2.12.1 and resolving lint violations introduced by the latest release. Prevented ongoing developer disruption from false failures affecting 14+ retriggered PR checks. [oct #439](https://github.com/redhat-best-practices-for-k8s/oct/pull/439) | [collector #683](https://github.com/redhat-best-practices-for-k8s/collector/pull/683) | [certsuite-operator #308](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/308) | [ztp-dashboard #76](https://github.com/sebrandon1/ztp-dashboard/pull/76)
