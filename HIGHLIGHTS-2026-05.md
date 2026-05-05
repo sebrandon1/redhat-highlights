@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-05: Improved Dependency Update Grouping - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Streamlined Kubernetes dependency management by adding `sigs.k8s.io/controller-runtime` to the Dependabot grouping configuration. Ensures controller-runtime updates are batched with other Kubernetes dependencies, reducing PR noise and preventing version drift between tightly coupled packages. [PR #103](https://github.com/sebrandon1/imagecertinfo-operator/pull/103)
+
+---
+
 ## 2026-05-05: Engaging RHCOS Team on Upstream Hardening - [openshift/os](https://github.com/openshift/os)
 
 Initiated upstream discussions with the CoreOS team about shipping security hardening defaults in RHCOS base images. Identified 8 low-risk sysctl, PAM, and kernel boot argument changes that would eliminate MachineConfig remediation for all OCP clusters. Discovered that `authselect` already has a purpose-built `without-nullok` feature (added by Red Hat in 2018) that RHCOS could activate with a one-liner. Created proof-of-concept branches on [sebrandon1/os](https://github.com/openshift/os/compare/master...sebrandon1:os:hardening/pam-no-empty-passwords). [CNF-21212](https://redhat.atlassian.net/browse/CNF-21212)
