@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-06: Strengthened CI Quality Gates for Telco Reference - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Expanded CI validation coverage for the telco reference configuration repository by adding yamllint for 150+ previously unchecked RAN YAML files and introducing ShellCheck validation for 31 shell scripts via GitHub Actions. Fixed all pre-existing lint errors across source CRs and kube-compare references. These checks catch configuration defects before they reach production deployments. [PR #744](https://github.com/openshift-kni/telco-reference/pull/744) | [PR #745](https://github.com/openshift-kni/telco-reference/pull/745) | [CNF-23578](https://redhat.atlassian.net/browse/CNF-23578)
+
+---
+
 ## 2026-05-06: Improved Error Diagnostics Across Certsuite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved debuggability of certification test failures by wrapping 40+ bare error returns with actionable context across 12 files. Engineers investigating failures now see which specific Kubernetes operation failed (e.g., "failed to get deployment ns/name") instead of generic messages, reducing triage time. [PR #3627](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3627)
