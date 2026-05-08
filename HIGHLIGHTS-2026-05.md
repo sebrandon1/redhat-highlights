@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-08: Certsuite Quality and Usability Improvements - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Improved certsuite reliability and developer experience across 4 PRs: made the Kubernetes client timeout configurable to unblock remote cluster testing, fixed incorrect SIGKILL guidance in check descriptions, documented 13 previously undocumented CLI flags, and removed 11 dead code declarations across 7 files. [PR #3629](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3629) | [PR #3630](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3630) | [PR #3632](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3632)
+
+---
+
 ## 2026-05-07: Parallelized Test Execution Saves 3 Hours Per CI Run - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Reduced nightly QE test execution time by 34% (558 min to 367 min) by parallelizing 13 I/O-heavy test functions with bounded concurrency. Networking suites alone dropped from 50 minutes to 28 minutes. Saves over 3 hours of CI compute per nightly run with zero test result regressions. [PR #3611](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3611) | [CNFCERT-1404](https://redhat.atlassian.net/browse/CNFCERT-1404)
