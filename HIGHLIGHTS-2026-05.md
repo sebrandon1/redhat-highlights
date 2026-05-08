@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-08: TLS Compliance Operator Feature Sprint - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Shipped 8 improvements to the tls-compliance-operator across bug fixes, new features, testing, and documentation. Fixed reconciler concurrency and context cancellation bugs, added certificate hostname mismatch detection, kubectl plugin filters (PQC readiness, cert expiry), sort-by and markdown export capabilities, comprehensive env var configuration, and a full configuration reference guide. Published blog posts on both palmsoftware.org and the Red Hat engineering blog showcasing real-world cluster visibility with PQC readiness data from OCP 4.22. [PR #141](https://github.com/sebrandon1/tls-compliance-operator/pull/141) | [PR #142](https://github.com/sebrandon1/tls-compliance-operator/pull/142) | [PR #143](https://github.com/sebrandon1/tls-compliance-operator/pull/143) | [PR #144](https://github.com/sebrandon1/tls-compliance-operator/pull/144) | [PR #145](https://github.com/sebrandon1/tls-compliance-operator/pull/145) | [PR #146](https://github.com/sebrandon1/tls-compliance-operator/pull/146) | [PR #147](https://github.com/sebrandon1/tls-compliance-operator/pull/147) | [PR #148](https://github.com/sebrandon1/tls-compliance-operator/pull/148)
+
+---
+
 ## 2026-05-08: Certsuite Quality and Usability Improvements - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved certsuite reliability and developer experience across 4 PRs: made the Kubernetes client timeout configurable to unblock remote cluster testing, fixed incorrect SIGKILL guidance in check descriptions, documented 13 previously undocumented CLI flags, and removed 11 dead code declarations across 7 files. [PR #3629](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3629) | [PR #3630](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3630) | [PR #3632](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3632)
