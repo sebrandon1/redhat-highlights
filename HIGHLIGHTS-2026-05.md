@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-08: Certsuite Best Practices as Proactive Developer Skills - [prodsec-skills](https://github.com/RedHatProductSecurity/prodsec-skills)
+
+Initiated cross-team collaboration with Product Security to convert certsuite test requirements into pre-emptive AI-assisted developer guidance. Shipped the first skill (health probes) covering 9 certsuite tests, with a roadmap for 10 skills covering 98 of 121 tests. Enables developers to build compliant workloads from the start instead of fixing failures after certification. [PR #4](https://github.com/RedHatProductSecurity/prodsec-skills/pull/4) | [CNFCERT-1405](https://redhat.atlassian.net/browse/CNFCERT-1405) | [CNFCERT-1406](https://redhat.atlassian.net/browse/CNFCERT-1406)
+
+---
+
 ## 2026-05-08: TLS Compliance Operator Feature Sprint - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Shipped 8 improvements to the tls-compliance-operator across bug fixes, new features, testing, and documentation. Fixed reconciler concurrency and context cancellation bugs, added certificate hostname mismatch detection, kubectl plugin filters (PQC readiness, cert expiry), sort-by and markdown export capabilities, comprehensive env var configuration, and a full configuration reference guide. Published blog posts on both palmsoftware.org and the Red Hat engineering blog showcasing real-world cluster visibility with PQC readiness data from OCP 4.22. [PR #141](https://github.com/sebrandon1/tls-compliance-operator/pull/141) | [PR #142](https://github.com/sebrandon1/tls-compliance-operator/pull/142) | [PR #143](https://github.com/sebrandon1/tls-compliance-operator/pull/143) | [PR #144](https://github.com/sebrandon1/tls-compliance-operator/pull/144) | [PR #145](https://github.com/sebrandon1/tls-compliance-operator/pull/145) | [PR #146](https://github.com/sebrandon1/tls-compliance-operator/pull/146) | [PR #147](https://github.com/sebrandon1/tls-compliance-operator/pull/147) | [PR #148](https://github.com/sebrandon1/tls-compliance-operator/pull/148)
