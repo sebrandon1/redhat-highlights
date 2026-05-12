@@ -10,9 +10,9 @@ Expanded end-to-end test coverage from 13 to 21 scenarios with balanced positive
 
 ---
 
-## 2026-05-08: Certsuite Best Practices as Proactive Developer Skills - [prodsec-skills](https://github.com/RedHatProductSecurity/prodsec-skills)
+## 2026-05-12: Certsuite Best Practices as Proactive Developer Skills - [prodsec-skills](https://github.com/RedHatProductSecurity/prodsec-skills)
 
-Initiated cross-team collaboration with Product Security to convert certsuite test requirements into pre-emptive AI-assisted developer guidance. Shipped the first skill (health probes) covering 9 certsuite tests, with a roadmap for 10 skills covering 98 of 121 tests. Enables developers to build compliant workloads from the start instead of fixing failures after certification. [PR #4](https://github.com/RedHatProductSecurity/prodsec-skills/pull/4) | [CNFCERT-1405](https://redhat.atlassian.net/browse/CNFCERT-1405) | [CNFCERT-1406](https://redhat.atlassian.net/browse/CNFCERT-1406)
+Established cross-team collaboration with Product Security to convert certsuite test requirements into pre-emptive AI-assisted developer guidance. Merged the first skill (health probes) covering 9 certsuite tests, with a roadmap for 10 skills covering 98 of 121 tests. Enables developers to build compliant workloads from the start instead of fixing failures after certification. [PR #4](https://github.com/RedHatProductSecurity/prodsec-skills/pull/4) | [CNFCERT-1405](https://redhat.atlassian.net/browse/CNFCERT-1405) | [CNFCERT-1406](https://redhat.atlassian.net/browse/CNFCERT-1406)
 
 ---
 
