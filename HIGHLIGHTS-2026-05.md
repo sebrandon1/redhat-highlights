@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-12: Self-Signed CA and Monitoring for Disconnected Cert-Manager - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Enabled cert-manager testing in disconnected/air-gapped environments by adding self-signed Certificate Authority (CA) issuer support and Prometheus monitoring with four production-ready alerts. Provides reference configurations for RDS Core deployments where external ACME servers are unreachable, unblocking QE lab testing. [PR #29](https://github.com/sebrandon1/cert-manager-scripts/pull/29) | [PR #31](https://github.com/sebrandon1/cert-manager-scripts/pull/31)
+
+---
+
 ## 2026-05-12: Structured Logging and Policy Hardening for TLS Scanner - [tls-scanner](https://github.com/openshift/tls-scanner)
 
 Replaced ad-hoc logging across 14 files with Go's stdlib `log/slog` structured logging, enabling operators to filter scan output by level (`--log-level debug|info|warn|error`) and integrate with log aggregation systems. Also eliminated panics in policy parsing, preventing scanner crashes on malformed configuration. Consolidated from two PRs into one for cleaner review. [PR #60](https://github.com/openshift/tls-scanner/pull/60) | [CNF-23702](https://redhat.atlassian.net/browse/CNF-23702) | [CNF-23701](https://redhat.atlassian.net/browse/CNF-23701)
