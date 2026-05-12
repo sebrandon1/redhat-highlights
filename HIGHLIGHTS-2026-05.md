@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-12: Shared ZTP Reprovisioning Skill - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Published a reusable Zero Touch Provisioning (ZTP) reprovisioning skill to the team's shared AI plugin marketplace, enabling any team member to safely tear down and rebuild spoke clusters through the Advanced Cluster Management/ArgoCD pipeline with guided confirmations and automated monitoring. [MR !6](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/6) | [CNF-23737](https://redhat.atlassian.net/browse/CNF-23737)
+
+---
+
 ## 2026-05-11: Doubled E2E Coverage and Halved CI Time - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Expanded end-to-end test coverage from 13 to 21 scenarios with balanced positive/negative validation of TLS compliance reporting, then restructured CI into parallel matrix jobs cutting E2E execution from 21 minutes to 10 minutes. Each test group now shows as a separate PR check for immediate failure visibility. [PR #152](https://github.com/sebrandon1/tls-compliance-operator/pull/152) | [PR #155](https://github.com/sebrandon1/tls-compliance-operator/pull/155)
