@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-12: Structured Logging and Policy Hardening for TLS Scanner - [tls-scanner](https://github.com/openshift/tls-scanner)
+
+Replaced ad-hoc logging across 14 files with Go's stdlib `log/slog` structured logging, enabling operators to filter scan output by level (`--log-level debug|info|warn|error`) and integrate with log aggregation systems. Also eliminated panics in policy parsing, preventing scanner crashes on malformed configuration. Consolidated from two PRs into one for cleaner review. [PR #60](https://github.com/openshift/tls-scanner/pull/60) | [CNF-23702](https://redhat.atlassian.net/browse/CNF-23702) | [CNF-23701](https://redhat.atlassian.net/browse/CNF-23701)
+
+---
+
 ## 2026-05-12: Shared ZTP Reprovisioning Skill - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Published a reusable Zero Touch Provisioning (ZTP) reprovisioning skill to the team's shared AI plugin marketplace, enabling any team member to safely tear down and rebuild spoke clusters through the Advanced Cluster Management/ArgoCD pipeline with guided confirmations and automated monitoring. [MR !6](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/6) | [CNF-23737](https://redhat.atlassian.net/browse/CNF-23737)
