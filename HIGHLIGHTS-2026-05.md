@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-12: Shared CI Monitoring Skill - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Published a reusable CI monitoring skill to the team's shared AI plugin marketplace, enabling any team member to watch GitHub pull request checks until completion with automatic failure diagnosis and suggested fixes. Reduces context-switching by letting the AI agent handle CI polling. [MR !8](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/8)
+
+---
+
 ## 2026-05-12: Upstream RHCOS Hardening PR Accepted for Review - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
 
 Submitted the first upstream hardening PR to the CoreOS base layer, adding authselect's `without-nullok` flag to disable empty password authentication in all RHCOS images. CoreOS maintainer confirmed the approach is valid and redirected from openshift/os to the base config repo for broader impact across Fedora and RHEL CoreOS. If merged, eliminates a HIGH severity compliance finding for every OCP cluster without per-node remediation. [PR #255](https://github.com/coreos/rhel-coreos-config/pull/255) | [CNF-21212](https://redhat.atlassian.net/browse/CNF-21212)
