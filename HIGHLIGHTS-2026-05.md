@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-12: Upstream RHCOS Hardening PR Accepted for Review - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
+
+Submitted the first upstream hardening PR to the CoreOS base layer, adding authselect's `without-nullok` flag to disable empty password authentication in all RHCOS images. CoreOS maintainer confirmed the approach is valid and redirected from openshift/os to the base config repo for broader impact across Fedora and RHEL CoreOS. If merged, eliminates a HIGH severity compliance finding for every OCP cluster without per-node remediation. [PR #255](https://github.com/coreos/rhel-coreos-config/pull/255) | [CNF-21212](https://redhat.atlassian.net/browse/CNF-21212)
+
+---
+
 ## 2026-05-12: Self-Signed CA and Monitoring for Disconnected Cert-Manager - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Enabled cert-manager testing in disconnected/air-gapped environments by adding self-signed Certificate Authority (CA) issuer support and Prometheus monitoring with four production-ready alerts. Provides reference configurations for RDS Core deployments where external ACME servers are unreachable, unblocking QE lab testing. [PR #29](https://github.com/sebrandon1/cert-manager-scripts/pull/29) | [PR #31](https://github.com/sebrandon1/cert-manager-scripts/pull/31)
