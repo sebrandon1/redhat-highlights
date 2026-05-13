@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-13: Completed Certsuite-to-Skills Epic — 98 Tests Covered - [prodsec-skills](https://github.com/RedHatProductSecurity/prodsec-skills)
+
+Completed the full CNFCERT-1405 epic converting certsuite test requirements into 8 new prodsec-skills and 2 existing skill extensions, covering 98 of 121 certsuite tests across 10 suites. Two PRs merged (health-probes, container-hardening), 8 more open for review. Developers can now get pre-emptive guidance on probes, RBAC, capabilities, networking, observability, CPU performance, and platform integrity while writing Kubernetes manifests. [CNFCERT-1405](https://redhat.atlassian.net/browse/CNFCERT-1405) | PRs [#8](https://github.com/RedHatProductSecurity/prodsec-skills/pull/8)-[#17](https://github.com/RedHatProductSecurity/prodsec-skills/pull/17)
+
+---
+
 ## 2026-05-13: Fix cert-manager Install on Console-less Clusters - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Fixed a bug blocking cert-manager operator installation on clusters without the Console capability (e.g., RAN Reference Design Specification deployments). Three `ConsoleYAMLSample` bundle resources were missing the `capability.openshift.io/name: Console` annotation, causing OLM to fail when the Console CRD was absent. [PR #424](https://github.com/openshift/cert-manager-operator/pull/424) | [CNF-23785](https://redhat.atlassian.net/browse/CNF-23785)
