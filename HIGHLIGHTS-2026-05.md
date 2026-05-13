@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-13: Shared ZTP Toolkit — 4 New Skills for Lab Management - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Published four reusable Zero Touch Provisioning (ZTP) skills to the team's shared AI plugin marketplace, giving any team member self-service access to hub credential extraction, spoke cluster health monitoring, policy compliance checking, and Redfish BMC management. Completes a 6-skill ZTP toolkit (with the previously shared ztp-reprovision and ci-watch). [MR !9](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/9) | [MR !10](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/10) | [MR !11](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/11) | [MR !12](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/12)
+
+---
+
 ## 2026-05-13: Completed Certsuite-to-Skills Epic — 98 Tests Covered - [prodsec-skills](https://github.com/RedHatProductSecurity/prodsec-skills)
 
 Completed the full CNFCERT-1405 epic converting certsuite test requirements into 8 new prodsec-skills and 2 existing skill extensions, covering 98 of 121 certsuite tests across 10 suites. Two PRs merged (health-probes, container-hardening), 8 more open for review. Developers can now get pre-emptive guidance on probes, RBAC, capabilities, networking, observability, CPU performance, and platform integrity while writing Kubernetes manifests. [CNFCERT-1405](https://redhat.atlassian.net/browse/CNFCERT-1405) | PRs [#8](https://github.com/RedHatProductSecurity/prodsec-skills/pull/8)-[#17](https://github.com/RedHatProductSecurity/prodsec-skills/pull/17)
