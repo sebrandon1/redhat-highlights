@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-13: Fix cert-manager Install on Console-less Clusters - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Fixed a bug blocking cert-manager operator installation on clusters without the Console capability (e.g., RAN Reference Design Specification deployments). Three `ConsoleYAMLSample` bundle resources were missing the `capability.openshift.io/name: Console` annotation, causing OLM to fail when the Console CRD was absent. [PR #424](https://github.com/openshift/cert-manager-operator/pull/424) | [CNF-23785](https://redhat.atlassian.net/browse/CNF-23785)
+
+---
+
 ## 2026-05-12: Shared CI Monitoring Skill - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Published a reusable CI monitoring skill to the team's shared AI plugin marketplace, enabling any team member to watch GitHub pull request checks until completion with automatic failure diagnosis and suggested fixes. Reduces context-switching by letting the AI agent handle CI polling. [MR !8](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/8)
