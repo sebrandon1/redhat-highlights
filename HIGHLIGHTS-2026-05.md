@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-13: OLM Annotation Linter Prevents Silent Misconfigurations - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint) / [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Discovered an invalid OLM annotation silently ignored across 6 telco-reference config files since December 2025. Built and released [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint) v1.0.0 — a reusable GitHub Action that validates all OLM annotations against the upstream source of truth, catching unknown, misspelled, or misused annotations before they reach clusters. Integrated into telco-reference CI to prevent recurrence. [PR #759](https://github.com/openshift-kni/telco-reference/pull/759) | [PR #760](https://github.com/openshift-kni/telco-reference/pull/760) | [CNF-23812](https://redhat.atlassian.net/browse/CNF-23812)
+
+---
+
 ## 2026-05-13: Shared ZTP Toolkit — 4 New Skills for Lab Management - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Published four reusable Zero Touch Provisioning (ZTP) skills to the team's shared AI plugin marketplace, giving any team member self-service access to hub credential extraction, spoke cluster health monitoring, policy compliance checking, and Redfish BMC management. Completes a 6-skill ZTP toolkit (with the previously shared ztp-reprovision and ci-watch). [MR !9](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/9) | [MR !10](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/10) | [MR !11](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/11) | [MR !12](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/12)
