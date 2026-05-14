@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-14: Cert-Manager Certificate Preservation Backported to OCP 4.20/4.21 - [recert](https://github.com/rh-ecosystem-edge/recert) / [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Backported cert-manager TLS certificate preservation to OCP 4.20 and 4.21 release branches, enabling Image-Based Upgrade (IBU) to maintain key continuity for addon certificates managed by cert-manager. Without this, cert-manager reissues certificates with new keys post-upgrade, breaking continuity. Four PRs across both recert and lifecycle-agent repos. [recert #1516](https://github.com/rh-ecosystem-edge/recert/pull/1516) | [recert #1517](https://github.com/rh-ecosystem-edge/recert/pull/1517) | [LCA #6633](https://github.com/openshift-kni/lifecycle-agent/pull/6633) | [LCA #6634](https://github.com/openshift-kni/lifecycle-agent/pull/6634) | [CNF-21564](https://redhat.atlassian.net/browse/CNF-21564)
+
+---
+
 ## 2026-05-13: OLM Annotation Linter Prevents Silent Misconfigurations - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint) / [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Discovered an invalid OLM annotation silently ignored across 6 telco-reference config files since December 2025. Built and released [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint) v1.0.0 — a reusable GitHub Action that validates all OLM annotations against the upstream source of truth, catching unknown, misspelled, or misused annotations before they reach clusters. Integrated into telco-reference CI to prevent recurrence. [PR #759](https://github.com/openshift-kni/telco-reference/pull/759) | [PR #760](https://github.com/openshift-kni/telco-reference/pull/760) | [CNF-23812](https://redhat.atlassian.net/browse/CNF-23812)
