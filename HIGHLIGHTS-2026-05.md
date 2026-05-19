@@ -4,6 +4,18 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-19: New TLS Audit Skill with Cross-Scanner Comparison - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Created an interactive TLS auditing skill that provides a full compliance dashboard — compliance status, Post-Quantum Cryptography (PQC) readiness, certificate health, cipher grades, and forward secrecy — with drill-down analysis and remediation guidance. Includes cross-comparison between tls-compliance-operator and tls-scanner for ground-truth validation. Tested on OCP 4.22 scanning 104 endpoints.
+
+---
+
+## 2026-05-19: TLS Compliance Operator — 3 Releases Fixing OCP Compatibility - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Shipped three releases (v1.0.7–v1.0.9) fixing critical OpenShift deployment blockers: eliminated Security Context Constraint (SCC) failures preventing pod startup, reduced hostname match false positives from 63 to 8 by adding Kubernetes DNS suffix resolution, and expanded TLS port discovery from 7 to 18 ports covering kubelet, kube-apiserver, Prometheus, and etcd. [PR #164](https://github.com/sebrandon1/tls-compliance-operator/pull/164) | [PR #165](https://github.com/sebrandon1/tls-compliance-operator/pull/165) | [PR #166](https://github.com/sebrandon1/tls-compliance-operator/pull/166)
+
+---
+
 ## 2026-05-14: Cert-Manager Certificate Preservation Backported to OCP 4.20/4.21 - [recert](https://github.com/rh-ecosystem-edge/recert) / [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Backported cert-manager TLS certificate preservation to OCP 4.20 and 4.21 release branches, enabling Image-Based Upgrade (IBU) to maintain key continuity for addon certificates managed by cert-manager. Without this, cert-manager reissues certificates with new keys post-upgrade, breaking continuity. Four PRs across both recert and lifecycle-agent repos. [recert #1516](https://github.com/rh-ecosystem-edge/recert/pull/1516) | [recert #1517](https://github.com/rh-ecosystem-edge/recert/pull/1517) | [LCA #6633](https://github.com/openshift-kni/lifecycle-agent/pull/6633) | [LCA #6634](https://github.com/openshift-kni/lifecycle-agent/pull/6634) | [CNF-21564](https://redhat.atlassian.net/browse/CNF-21564)
