@@ -6,7 +6,7 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ## 2026-05-19: New TLS Audit Skill with Cross-Scanner Comparison - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
-Created an interactive TLS auditing skill that provides a full compliance dashboard — compliance status, Post-Quantum Cryptography (PQC) readiness, certificate health, cipher grades, and forward secrecy — with drill-down analysis and remediation guidance. Includes cross-comparison between tls-compliance-operator and tls-scanner for ground-truth validation. Tested on OCP 4.22 scanning 104 endpoints.
+Created an interactive TLS auditing skill that provides a full compliance dashboard — compliance status, Post-Quantum Cryptography (PQC) readiness, certificate health, cipher grades, and forward secrecy — with drill-down analysis and remediation guidance. Includes cross-comparison between tls-compliance-operator and tls-scanner for ground-truth validation. Tested on OCP 4.22 scanning 104 endpoints. [MR !18](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/18)
 
 ---
 
