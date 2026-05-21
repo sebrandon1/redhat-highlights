@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-21: Quay.io CLI as Shared AI Skill - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Enabled AI assistants to manage Quay.io container registries through natural language by extending the go-quay CLI with log analysis, date filtering, container image publishing, and environment-based authentication, then packaging it as a shared AI skill for the team. Released v1.0.1-v1.0.3 with multi-arch images at `quay.io/bapalm/go-quay`. [PR #87](https://github.com/sebrandon1/go-quay/pull/87) | [PR #88](https://github.com/sebrandon1/go-quay/pull/88) | [PR #89](https://github.com/sebrandon1/go-quay/pull/89) | [PR #90](https://github.com/sebrandon1/go-quay/pull/90) | [PR #91](https://github.com/sebrandon1/go-quay/pull/91) | [MR !19](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/19) | [CNF-24115](https://redhat.atlassian.net/browse/CNF-24115)
+
+---
+
 ## 2026-05-21: Reproducible Cert-Manager CI with Version Pinning - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Eliminated non-deterministic test results by pinning the cert-manager operator to a specific version (v1.19.0) and adding nightly CI that matrices across operator and OCP versions. Automated weekly version detection creates bump PRs, preventing manual tracking. Extracted shared CI into a reusable workflow, reducing duplication by 150+ lines. [PR #32](https://github.com/sebrandon1/cert-manager-scripts/pull/32)
