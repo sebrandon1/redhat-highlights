@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-26: go-quay Test Coverage from 0% to 85.5% - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Improved go-quay library reliability by adding 120 unit tests covering all previously untested code — client HTTP helpers, billing, and the 59-function organization package — plus error path tests for every lib function. Coverage rose from 0% (3 core files untested) to 85.5% across the entire library. Also added robot federation and registry capabilities endpoints, reaching 94.4% API coverage. [PR #100](https://github.com/sebrandon1/go-quay/pull/100) | [PR #103](https://github.com/sebrandon1/go-quay/pull/103) | [PR #105](https://github.com/sebrandon1/go-quay/pull/105) | [PR #106](https://github.com/sebrandon1/go-quay/pull/106) | [#104](https://github.com/sebrandon1/go-quay/issues/104)
+
+---
+
 ## 2026-05-21: Quay.io CLI as Shared AI Skill - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Enabled AI assistants to manage Quay.io container registries through natural language by extending the go-quay CLI with log analysis, date filtering, container image publishing, and environment-based authentication, then packaging it as a shared AI skill for the team. Released v1.0.1-v1.0.3 with multi-arch images at `quay.io/bapalm/go-quay`. [PR #87](https://github.com/sebrandon1/go-quay/pull/87) | [PR #88](https://github.com/sebrandon1/go-quay/pull/88) | [PR #89](https://github.com/sebrandon1/go-quay/pull/89) | [PR #90](https://github.com/sebrandon1/go-quay/pull/90) | [PR #91](https://github.com/sebrandon1/go-quay/pull/91) | [MR !19](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/19) | [CNF-24115](https://redhat.atlassian.net/browse/CNF-24115)
