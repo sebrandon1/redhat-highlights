@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-27: cert-manager Hub-Spoke Trust Validation - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Proved cert-manager's production viability for ACM hub-spoke deployments through 3 live ZTP tests on bare metal, resolving a reviewer blocker on the reference configuration. Key finding: greenfield deployments work automatically (ACM handles CA trust via ManifestWork), but brownfield adoption breaks existing spokes and requires cluster reimport. Documented the full trust flow mechanism and slimmed down the PR to address all reviewer concerns. [PR #773](https://github.com/openshift-kni/telco-reference/pull/773) | [MR !192](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/192) | [Test Results](https://gist.github.com/sebrandon1/483180614951d23174c4e365a9a02a34) | [OCPBUGS-85773](https://issues.redhat.com/browse/OCPBUGS-85773)
+
+---
+
 ## 2026-05-26: go-quay Test Coverage from 0% to 85.5% - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Improved go-quay library reliability by adding 120 unit tests covering all previously untested code — client HTTP helpers, billing, and the 59-function organization package — plus error path tests for every lib function. Coverage rose from 0% (3 core files untested) to 85.5% across the entire library. Also added robot federation and registry capabilities endpoints, reaching 94.4% API coverage. [PR #100](https://github.com/sebrandon1/go-quay/pull/100) | [PR #103](https://github.com/sebrandon1/go-quay/pull/103) | [PR #105](https://github.com/sebrandon1/go-quay/pull/105) | [PR #106](https://github.com/sebrandon1/go-quay/pull/106) | [#104](https://github.com/sebrandon1/go-quay/issues/104)
