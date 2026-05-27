@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-27: Certsuite v5.5.20 Release - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Published certsuite v5.5.20 with probe daemonset skip improvements, a per-node mutex bug fix for platform-alteration-base-image, and preflight 1.19.0 update. Includes 24 merged changes across features, bug fixes, and dependency updates. [v5.5.20](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.20) | [CNFCERT-1420](https://redhat.atlassian.net/browse/CNFCERT-1420)
+
+---
+
 ## 2026-05-27: OLM Annotation Linter v1.0.5 - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
 
 Strengthened Kubernetes operator validation by adding JSON, template, and semver range format checking to the OLM annotation linter, catching invalid annotations before they reach clusters. Also fixed exclude pattern bugs and added CLI short flags for faster developer workflows. [PR #19](https://github.com/openshift-kni/olm-annotation-lint/pull/19) | [PR #20](https://github.com/openshift-kni/olm-annotation-lint/pull/20) | [PR #21](https://github.com/openshift-kni/olm-annotation-lint/pull/21) | [v1.0.5](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.5)
