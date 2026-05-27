@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-27: OLM Annotation Linter v1.0.5 - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
+
+Strengthened Kubernetes operator validation by adding JSON, template, and semver range format checking to the OLM annotation linter, catching invalid annotations before they reach clusters. Also fixed exclude pattern bugs and added CLI short flags for faster developer workflows. [PR #19](https://github.com/openshift-kni/olm-annotation-lint/pull/19) | [PR #20](https://github.com/openshift-kni/olm-annotation-lint/pull/20) | [PR #21](https://github.com/openshift-kni/olm-annotation-lint/pull/21) | [v1.0.5](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.5)
+
+---
+
 ## 2026-05-27: cert-manager Hub-Spoke Trust Validation - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Proved cert-manager's production viability for ACM hub-spoke deployments through 3 live ZTP tests on bare metal, resolving a reviewer blocker on the reference configuration. Key finding: greenfield deployments work automatically (ACM handles CA trust via ManifestWork), but brownfield adoption breaks existing spokes and requires cluster reimport. Documented the full trust flow mechanism and slimmed down the PR to address all reviewer concerns. [PR #773](https://github.com/openshift-kni/telco-reference/pull/773) | [MR !192](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/192) | [Test Results](https://gist.github.com/sebrandon1/483180614951d23174c4e365a9a02a34) | [OCPBUGS-85773](https://issues.redhat.com/browse/OCPBUGS-85773)
