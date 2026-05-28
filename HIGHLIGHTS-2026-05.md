@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-28: DCI Client v1.0.3 Quality & Reliability Overhaul - [go-dci](https://github.com/sebrandon1/go-dci)
+
+Improved DCI API client reliability and maintainability through 12 PRs: added automatic retry with exponential backoff for transient failures, context-based request cancellation, and proper error exit codes. Increased test coverage from 18% to 85%, reduced client code by 21%, and added multi-arch container image releases to quay.io. [v1.0.3](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.3) | [PR #114](https://github.com/sebrandon1/go-dci/pull/114) - [PR #125](https://github.com/sebrandon1/go-dci/pull/125)
+
+---
+
 ## 2026-05-27: Certsuite v5.5.20 Release - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Published certsuite v5.5.20 with probe daemonset skip improvements, a per-node mutex bug fix for platform-alteration-base-image, and preflight 1.19.0 update. Includes 24 merged changes across features, bug fixes, and dependency updates. [v5.5.20](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.20) | [CNFCERT-1420](https://redhat.atlassian.net/browse/CNFCERT-1420)
