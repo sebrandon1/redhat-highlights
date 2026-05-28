@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-28: New CLI for Lab Cluster Provisioning - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Built a Go CLI that replaces manual web-form interaction for Zero Touch Provisioning (ZTP) lab cluster management. Supports MNO, SNO, Hypershift, and ZTP provisioning workflows with parallel environment discovery, config file persistence, shell completion, and a 60-second info cache. Enables engineers to provision, monitor, and fetch kubeconfigs entirely from the terminal — eliminating context-switching to the web UI. 98 tests, 88% lib coverage. [v0.0.1](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.1) | [CNF-24174](https://redhat.atlassian.net/browse/CNF-24174)
+
+---
+
 ## 2026-05-28: DCI Client v1.0.3 Quality & Reliability Overhaul - [go-dci](https://github.com/sebrandon1/go-dci)
 
 Improved DCI API client reliability and maintainability through 12 PRs: added automatic retry with exponential backoff for transient failures, context-based request cancellation, and proper error exit codes. Increased test coverage from 18% to 85%, reduced client code by 21%, and added multi-arch container image releases to quay.io. [v1.0.3](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.3) | [PR #114](https://github.com/sebrandon1/go-dci/pull/114) - [PR #125](https://github.com/sebrandon1/go-dci/pull/125)
