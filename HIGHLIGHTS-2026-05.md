@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-28: OLM Annotation Linter v1.0.7 - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
+
+Hardened operator validation reliability through comprehensive edge case testing (89.8% coverage, 35 tests), stdin support for CI pipelines, config file persistence, and GitHub Action format flexibility. Added 10 improvements including helpful error messages suggesting exact fix flags, performance optimizations, and container hardening. [v1.0.7](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.7)
+
+---
+
 ## 2026-05-28: New CLI for Lab Cluster Provisioning - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Built a Go CLI that replaces manual web-form interaction for Zero Touch Provisioning (ZTP) lab cluster management. Supports MNO, SNO, Hypershift, and ZTP provisioning workflows with parallel environment discovery, config file persistence, shell completion, and a 60-second info cache. Enables engineers to provision, monitor, and fetch kubeconfigs entirely from the terminal — eliminating context-switching to the web UI. 98 tests, 88% lib coverage. [v0.0.1](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.1) | [CNF-24174](https://redhat.atlassian.net/browse/CNF-24174)
