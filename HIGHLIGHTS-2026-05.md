@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-29: Automated Version Drift Prevention - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Eliminated manual version tracking for OpenShift compliance tooling by adding automated registry discovery. A weekly workflow queries Red Hat's container registry for new OCP releases and opens PRs to keep the verification list current — preventing stale-version CI failures before they happen. [PR #104](https://github.com/sebrandon1/compliance-scripts/pull/104) | [v1.0.8](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.8)
+
+---
+
 ## 2026-05-29: Zero-Disruption cert-manager Hub-Spoke Solution - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Solved a production-blocking cert trust problem for Advanced Cluster Management (ACM) hub-spoke deployments by discovering a configuration-only fix using KlusterletConfig with `UseCustomCABundles`. Traced root cause through 3 upstream repos (`ocm`, `sdk-go`, `managedcluster-import-controller`), identified that ACM embeds leaf certs instead of root CAs in klusterlet bootstrap config, and verified end-to-end on live bare metal ZTP that distributing the root CA before replacing hub certs results in zero spoke disruption — including seamless cert rotation. Wrote an optional upstream OCM fix and updated the reference configuration with KlusterletConfig and CA ConfigMap CRs. [PR #773](https://github.com/openshift-kni/telco-reference/pull/773) | [Solution Gist](https://gist.github.com/sebrandon1/7265d68c5add6adb1313dce5b695e40d) | [OCM Fix](https://github.com/open-cluster-management-io/ocm/compare/main...sebrandon1:ocm:fix-bootstrap-ca-use-root-cert) | [OCPBUGS-85774](https://issues.redhat.com/browse/OCPBUGS-85774)
