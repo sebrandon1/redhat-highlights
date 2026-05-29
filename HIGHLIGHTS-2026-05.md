@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-29: Certsuite v5.5.21 — Parallel Test Stability Fix - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Restored certification test reliability for multi-pod deployments by fixing probe pod exhaustion across 7 test functions that were failing with timeouts and out-of-memory kills during parallel execution. Added per-node mutex serialization preserving cross-node parallelism, and extracted a reusable helper for future tests. [PR #3680](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3680) | [v5.5.21](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.21)
+
+---
+
 ## 2026-05-28: OLM Annotation Linter v1.0.7 - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
 
 Hardened operator validation reliability through comprehensive edge case testing (89.8% coverage, 35 tests), stdin support for CI pipelines, config file persistence, and GitHub Action format flexibility. Added 10 improvements including helpful error messages suggesting exact fix flags, performance optimizations, and container hardening. [v1.0.7](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.7)
