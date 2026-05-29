@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for May 2
 
 ---
 
+## 2026-05-29: Succulent-CLI v0.0.2 — Public Release and Code Quality Sprint - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Made the succulent-cli repository public and shipped v0.0.2 with 6 code quality improvements that reduced duplication across provisioning commands by ~120 lines, centralized all API endpoints as constants, and documented every command in the README. Filed 20 prioritized improvement issues to guide future development. [v0.0.2](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.2) | [CNF-24174](https://redhat.atlassian.net/browse/CNF-24174)
+
+---
+
 ## 2026-05-29: Automated Version Drift Prevention - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Eliminated manual version tracking for OpenShift compliance tooling by adding automated registry discovery. A weekly workflow queries Red Hat's container registry for new OCP releases and opens PRs to keep the verification list current — preventing stale-version CI failures before they happen. [PR #104](https://github.com/sebrandon1/compliance-scripts/pull/104) | [v1.0.8](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.8)
