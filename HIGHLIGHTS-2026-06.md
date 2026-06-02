@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-02: Improved Test Suite Code Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Strengthened certification test suite reliability by adding 13 unit tests across 4 packages, raising logging handler coverage from 0% to 30% and network commons coverage from 77% to 94%. Reduces regression risk in core infrastructure used by partner certification workflows. [PR #3685](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3685)
+
+---
+
 ## 2026-06-01: Quay Outage-Resilient CI Pipelines - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Eliminated noisy CI failures and false Slack alerts during Quay.io outages by adding automated registry health checks to image-push workflows. Pushes now gracefully skip when Quay is degraded, saving team time on triage and preventing unnecessary re-runs. [PR #3683](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3683)
