@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-02: TLS Compliance Operator v1.0.11 — Performance and Resilience Tuning - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Shipped 7 improvements to the TLS compliance operator addressing concurrency safety, API server scalability, and user experience. Fixed unbounded goroutine spawning and silent update failures that could cause data loss on large clusters, added paginated listing for clusters with thousands of endpoints, and introduced kubectl get/describe subcommands for faster incident triage. [CNF-24404](https://redhat.atlassian.net/browse/CNF-24404) | [v1.0.11](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.11)
+
+---
+
 ## 2026-06-02: Improved Test Suite Code Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Strengthened certification test suite reliability by adding 13 unit tests across 4 packages, raising logging handler coverage from 0% to 30% and network commons coverage from 77% to 94%. Reduces regression risk in core infrastructure used by partner certification workflows. [PR #3685](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3685)
