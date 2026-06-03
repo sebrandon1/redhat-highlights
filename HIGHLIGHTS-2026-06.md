@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-03: succulent-cli v0.0.3–v0.0.4 Hardening and Feature Release - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Shipped 16 improvements to the ZTP lab cluster management CLI across two releases, resolving all 13 open issues. Added safety gates (`--confirm`) on destructive operations, HTTP retry logic with backoff, vulnerability scanning in CI, and a `--control-plane-only` watch mode that reports cluster readiness ~20 minutes earlier. Enables faster lab iteration and reduces accidental cluster disruption. [CNF-24406](https://redhat.atlassian.net/browse/CNF-24406) | [v0.0.3](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.3) | [v0.0.4](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.4)
+
+---
+
 ## 2026-06-02: TLS Compliance Operator v1.0.11 — Performance and Resilience Tuning - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Shipped 7 improvements to the TLS compliance operator addressing concurrency safety, API server scalability, and user experience. Fixed unbounded goroutine spawning and silent update failures that could cause data loss on large clusters, added paginated listing for clusters with thousands of endpoints, and introduced kubectl get/describe subcommands for faster incident triage. [CNF-24404](https://redhat.atlassian.net/browse/CNF-24404) | [v1.0.11](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.11)
