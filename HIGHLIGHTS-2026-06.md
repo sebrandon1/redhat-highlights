@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-04: Upstream RHCOS Security Hardening Audit and PRs - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Completed a full upstream audit of all 40 compliance hardening groups, identifying 10 settings that can be baked into the Red Hat CoreOS (RHCOS) base image — eliminating per-cluster MachineConfig remediation for every OpenShift deployment. Opened [upstream PR #264](https://github.com/coreos/rhel-coreos-config/pull/264) for sysctl hardening (`dmesg_restrict`, `bpf_jit_harden`) to coreos/rhel-coreos-config. Reconciled stale tracking data across 33 Jira issues and published a [private audit gist](https://gist.github.com/sebrandon1/ce01ddf3ae701591b89400828ab425fa) as a reference backlog. [CNF-21196](https://issues.redhat.com/browse/CNF-21196) | [CNF-23450](https://issues.redhat.com/browse/CNF-23450) | [CNF-22573](https://issues.redhat.com/browse/CNF-22573)
+
+---
+
 ## 2026-06-04: TLS Compliance Operator v1.0.12 — Architecture Refactor and Bug Fixes - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Resolved nightly CI failures that had been broken since June 3rd by identifying and fixing three interconnected bugs: a cache lag race condition in status updates, unsupported pagination calls against the controller-runtime cache, and a blocking semaphore that could stall the work queue. Also completed a major architectural refactor routing all resource types through the controller-runtime work queue for proper concurrency control and automatic retry. [CNF-24404](https://redhat.atlassian.net/browse/CNF-24404) | [v1.0.12](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.12)
