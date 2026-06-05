@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-05: Cert-Manager RAN Removal: The Sequel - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Removed cert-manager from the RAN profile for the second time ahead of 4.22 GA — some features just aren't ready to leave the nest. Cleaned 17 files across telco-reference and RDS, preserving core and hub profiles. [PR #801](https://github.com/openshift-kni/telco-reference/pull/801) | [RDS MR !195](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/195) | [OCPBUGS-86666](https://issues.redhat.com/browse/OCPBUGS-86666)
+
+---
+
 ## 2026-06-05: RHEL 10 Kernel Hardening Gap Analysis - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Investigated CoreOS team review feedback on upstream hardening [PR #264](https://github.com/coreos/rhel-coreos-config/pull/264) and discovered that `dmesg_restrict` is already compiled into the RHEL 10 kernel via [kernel-ark](https://gitlab.com/cki-project/kernel-ark/-/blob/os-build/redhat/configs/common/generic/CONFIG_SECURITY_DMESG_RESTRICT) but silently unset in RHEL 9. Mapped the full sysctl ownership chain (systemd, redhat-release, elfutils, RHCOS overlay) and identified [Fedora systemd](https://src.fedoraproject.org/rpms/systemd) and [fedora-release](https://src.fedoraproject.org/rpms/fedora-release) as the correct upstream targets for `bpf_jit_harden`. [CNF-21196](https://issues.redhat.com/browse/CNF-21196) | [CNF-23450](https://issues.redhat.com/browse/CNF-23450)
