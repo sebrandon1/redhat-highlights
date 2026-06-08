@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-08: Enabled User-Tunable Scan Timeouts for Large Cluster Scanning - [tls-scanner](https://github.com/openshift/tls-scanner)
+
+Unblocked large-cluster and slow-network TLS scanning by making previously hardcoded timeouts configurable via CLI flags. Users can now tune per-target batch timeout and testssl.sh connect timeouts without code changes, reducing scan failures in production environments. [CNF-24706](https://issues.redhat.com/browse/CNF-24706) | [PR #74](https://github.com/openshift/tls-scanner/pull/74)
+
+---
+
 ## 2026-06-08: Eliminated Crash Risk and Resource Leaks in Certification Suite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Fixed two reliability defects in the certification test suite: replaced a panic in Helm client initialization that could crash the entire suite during partner runs, and closed leaked file handles in the results archiver that could exhaust system resources on long-running sessions. [PR #3703](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3703) | [PR #3704](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3704)
