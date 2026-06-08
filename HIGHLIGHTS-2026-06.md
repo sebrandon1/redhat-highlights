@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-08: Eliminated Crash Risk and Resource Leaks in Certification Suite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Fixed two reliability defects in the certification test suite: replaced a panic in Helm client initialization that could crash the entire suite during partner runs, and closed leaked file handles in the results archiver that could exhaust system resources on long-running sessions. [PR #3703](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3703) | [PR #3704](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3704)
+
+---
+
 ## 2026-06-05: Cert-Manager RAN Removal: The Sequel - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Removed cert-manager from the RAN profile for the second time ahead of 4.22 GA — some features just aren't ready to leave the nest. Cleaned 17 files across telco-reference and RDS, preserving core and hub profiles. [PR #801](https://github.com/openshift-kni/telco-reference/pull/801) | [RDS MR !195](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/195) | [OCPBUGS-86666](https://issues.redhat.com/browse/OCPBUGS-86666)
