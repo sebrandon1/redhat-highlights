@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-08: Eliminated CVE Exposure Across 29 Go Repos - [go-skylight](https://github.com/sebrandon1/go-skylight)
+
+Proactively patched two Go standard library CVEs (GO-2026-5039, GO-2026-5037) by bumping the Go toolchain to 1.26.4 across 29 repositories in the sebrandon1 and redhat-best-practices-for-k8s organizations. Eliminated govulncheck CI failures across all affected repos. [CNFCERT-1423](https://redhat.atlassian.net/browse/CNFCERT-1423)
+
+---
+
 ## 2026-06-08: Enabled User-Tunable Scan Timeouts for Large Cluster Scanning - [tls-scanner](https://github.com/openshift/tls-scanner)
 
 Unblocked large-cluster and slow-network TLS scanning by making previously hardcoded timeouts configurable via CLI flags. Users can now tune per-target batch timeout and testssl.sh connect timeouts without code changes, reducing scan failures in production environments. [CNF-24706](https://issues.redhat.com/browse/CNF-24706) | [PR #74](https://github.com/openshift/tls-scanner/pull/74)
