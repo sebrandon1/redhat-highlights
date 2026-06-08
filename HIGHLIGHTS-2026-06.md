@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-08: Hardened CI Reliability Across Kubernetes and OpenShift Actions - [quick-k8s](https://github.com/palmsoftware/quick-k8s), [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Eliminated two classes of CI flakes across the quick-k8s and quick-ocp GitHub Actions. Fixed a k3s multi-node flannel iptables race condition that crashed servers during parallel agent starts, and corrected a mismatched error string that silently bypassed CRC startup retries. Both actions now recover automatically from transient infrastructure failures. [quick-k8s v0.0.70](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.70) | [quick-ocp v0.0.34](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.34) | [PR #128](https://github.com/palmsoftware/quick-k8s/pull/128) | [PR #53](https://github.com/palmsoftware/quick-ocp/pull/53)
+
+---
+
 ## 2026-06-08: Eliminated CVE Exposure Across 29 Go Repos - [go-skylight](https://github.com/sebrandon1/go-skylight)
 
 Proactively patched two Go standard library CVEs (GO-2026-5039, GO-2026-5037) by bumping the Go toolchain to 1.26.4 across 29 repositories in the sebrandon1 and redhat-best-practices-for-k8s organizations. Eliminated govulncheck CI failures across all affected repos. [CNFCERT-1423](https://redhat.atlassian.net/browse/CNFCERT-1423)
