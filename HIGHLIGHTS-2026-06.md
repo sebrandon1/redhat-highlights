@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-09: Added Automated Vulnerability Scanning to CI - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Strengthened supply chain security by adding govulncheck and Trivy scanning to every PR and push. Catches Go dependency CVEs and container image vulnerabilities before they ship — immediately surfaced a real vulnerability in golang.org/x/net requiring a bump. [PR #188](https://github.com/sebrandon1/tls-compliance-operator/pull/188) | [PR #189](https://github.com/sebrandon1/tls-compliance-operator/pull/189)
+
+---
+
 ## 2026-06-08: Hardened CI Reliability Across Kubernetes and OpenShift Actions - [quick-k8s](https://github.com/palmsoftware/quick-k8s), [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Eliminated two classes of CI flakes across the quick-k8s and quick-ocp GitHub Actions. Fixed a k3s multi-node flannel iptables race condition that crashed servers during parallel agent starts, and corrected a mismatched error string that silently bypassed CRC startup retries. Both actions now recover automatically from transient infrastructure failures. [quick-k8s v0.0.70](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.70) | [quick-ocp v0.0.34](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.34) | [PR #128](https://github.com/palmsoftware/quick-k8s/pull/128) | [PR #53](https://github.com/palmsoftware/quick-ocp/pull/53)
