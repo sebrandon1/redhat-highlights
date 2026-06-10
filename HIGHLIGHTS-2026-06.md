@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-10: ImageCertInfo Operator v0.2.17 — Documentation and Release Automation - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Improved developer onboarding and release experience for the image certification operator. Simplified README from 393 to 78 lines with 6 focused documentation guides, and automated install manifest generation with one-command deploy instructions in every GitHub release. [v0.2.17](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.17) | [PR #115](https://github.com/sebrandon1/imagecertinfo-operator/pull/115) | [PR #116](https://github.com/sebrandon1/imagecertinfo-operator/pull/116)
+
+---
+
 ## 2026-06-10: TLS Compliance Operator v1.0.13 — Security, Discovery, and Documentation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Shipped 5 improvements across security, endpoint discovery, and developer experience. Added Trivy and govulncheck vulnerability scanning to CI, fixed unbounded retry backoff that could stall checks for hours, enabled ExternalName Service TLS scanning for external dependencies, added multi-cluster `--kubeconfig`/`--context` support to the kubectl plugin, and simplified the README from 428 to 87 lines with 9 focused documentation guides. [v1.0.13](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.13) | [PR #207](https://github.com/sebrandon1/tls-compliance-operator/pull/207) | [PR #208](https://github.com/sebrandon1/tls-compliance-operator/pull/208) | [PR #209](https://github.com/sebrandon1/tls-compliance-operator/pull/209)
