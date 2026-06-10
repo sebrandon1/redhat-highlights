@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-09: Completed RAN Hardening Upstream Viability Audit - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Completed a full upstream viability audit of all 40 compliance remediation groups, documenting why each can or cannot be upstreamed into the Red Hat Enterprise Linux CoreOS (RHCOS) base image. Evaluated every setting against CoreOS maintainer feedback, Fedora Change Proposals, and RHEL defaults. Only 1 of 40 groups remains viable for upstream (PAM empty passwords, [PR #255](https://github.com/coreos/rhel-coreos-config/pull/255) open). Created 4 new upstream branches on [coreos/rhel-coreos-config](https://github.com/sebrandon1/rhel-coreos-config). Added upstream verdict column, PR history tracking, and filtering to the [compliance dashboard](https://sebrandon1.github.io/compliance-scripts/versions/4.22/remediations.html). Built `/hardening-sync` automation skill. [CNF-22573](https://redhat.atlassian.net/browse/CNF-22573) | [CNF-23530](https://redhat.atlassian.net/browse/CNF-23530)
+
+---
+
 ## 2026-06-09: Added Automated Vulnerability Scanning to CI - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Strengthened supply chain security by adding govulncheck and Trivy scanning to every PR and push. Catches Go dependency CVEs and container image vulnerabilities before they ship — immediately surfaced a real vulnerability in golang.org/x/net requiring a bump. [PR #188](https://github.com/sebrandon1/tls-compliance-operator/pull/188) | [PR #189](https://github.com/sebrandon1/tls-compliance-operator/pull/189)
