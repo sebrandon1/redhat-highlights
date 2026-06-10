@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-10: TLS Compliance Operator v1.0.13 — Security, Discovery, and Documentation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Shipped 5 improvements across security, endpoint discovery, and developer experience. Added Trivy and govulncheck vulnerability scanning to CI, fixed unbounded retry backoff that could stall checks for hours, enabled ExternalName Service TLS scanning for external dependencies, added multi-cluster `--kubeconfig`/`--context` support to the kubectl plugin, and simplified the README from 428 to 87 lines with 9 focused documentation guides. [v1.0.13](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.13) | [PR #207](https://github.com/sebrandon1/tls-compliance-operator/pull/207) | [PR #208](https://github.com/sebrandon1/tls-compliance-operator/pull/208) | [PR #209](https://github.com/sebrandon1/tls-compliance-operator/pull/209)
+
+---
+
 ## 2026-06-09: Completed RAN Hardening Upstream Viability Audit - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Completed a full upstream viability audit of all 40 compliance remediation groups, documenting why each can or cannot be upstreamed into the Red Hat Enterprise Linux CoreOS (RHCOS) base image. Evaluated every setting against CoreOS maintainer feedback, Fedora Change Proposals, and RHEL defaults. Only 1 of 40 groups remains viable for upstream (PAM empty passwords, [PR #255](https://github.com/coreos/rhel-coreos-config/pull/255) open). Created 4 new upstream branches on [coreos/rhel-coreos-config](https://github.com/sebrandon1/rhel-coreos-config). Added upstream verdict column, PR history tracking, and filtering to the [compliance dashboard](https://sebrandon1.github.io/compliance-scripts/versions/4.22/remediations.html). Built `/hardening-sync` automation skill. [CNF-22573](https://redhat.atlassian.net/browse/CNF-22573) | [CNF-23530](https://redhat.atlassian.net/browse/CNF-23530)
