@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-11: One-Command OCP Release Accomplishment Lists - [redhat-highlights](https://github.com/sebrandon1/redhat-highlights)
+
+Eliminated hours of manual cross-referencing across Jira, GitHub, and highlights repos when managers request release-cycle accomplishment summaries. The new `/accomplishment-list` skill automatically pulls version-labeled Jira issues, tuning epics, upstream PRs, and highlights into a structured three-section document — ready for leadership in minutes instead of hours.
+
+---
+
 ## 2026-06-10: ImageCertInfo Operator v0.2.17 — Documentation and Release Automation - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Improved developer onboarding and release experience for the image certification operator. Simplified README from 393 to 78 lines with 6 focused documentation guides, and automated install manifest generation with one-command deploy instructions in every GitHub release. [v0.2.17](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.17) | [PR #115](https://github.com/sebrandon1/imagecertinfo-operator/pull/115) | [PR #116](https://github.com/sebrandon1/imagecertinfo-operator/pull/116)
