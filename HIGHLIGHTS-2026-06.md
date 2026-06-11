@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-11: Restored Cert-Manager to RAN for IBU Testing - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Unblocked Image Based Upgrade (IBU) testing by restoring cert-manager to the Radio Access Network (RAN) profile now that 4.22 branches are cut. Restored 17 files across telco-reference and Reference Design Specifications (RDS), with README updated to align with ACME-only issuer guidance and kubeconfig trust documentation. [PR #805](https://github.com/openshift-kni/telco-reference/pull/805) | [RDS MR !198](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/198)
+
+---
+
 ## 2026-06-11: TLS Config Lint v1.1.3 — Production Readiness for Growing User Base - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Prepared the TLS source-code linter for broader adoption with 10 PRs in a single session. Streamlined the README for new users, fixed binary file scanning issues, added false-positive test coverage across all 6 languages, enriched SARIF output with documentation links for GitHub Code Scanning, added per-language finding breakdowns and scan-duration metrics, and tripled CI self-test coverage from 5 to 15 scenarios — ensuring every supported language (Go, Python, Node.js, C++, Java, Rust) is individually validated end-to-end. [v1.1.3](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.1.3) | [PR #16](https://github.com/sebrandon1/tls-config-lint/pull/16) | [PR #17](https://github.com/sebrandon1/tls-config-lint/pull/17) | [PR #37](https://github.com/sebrandon1/tls-config-lint/pull/37) | [PR #38](https://github.com/sebrandon1/tls-config-lint/pull/38) | [PR #39](https://github.com/sebrandon1/tls-config-lint/pull/39) | [PR #40](https://github.com/sebrandon1/tls-config-lint/pull/40) | [PR #41](https://github.com/sebrandon1/tls-config-lint/pull/41) | [PR #42](https://github.com/sebrandon1/tls-config-lint/pull/42) | [PR #43](https://github.com/sebrandon1/tls-config-lint/pull/43) | [PR #44](https://github.com/sebrandon1/tls-config-lint/pull/44)
