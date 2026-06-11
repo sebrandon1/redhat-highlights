@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-11: Batch Patch Releases Across 11 Org Repos - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Shipped patch releases for all 11 redhat-best-practices-for-k8s repositories with unreleased commits, delivering 93 changes including panic-to-error conversions, security hardening (bcrypt cost fix, credential externalization), a race condition fix, health endpoints, and Go 1.26.4 CVE remediation. Ensures partners and downstream consumers run on the latest secure, tested code. [certsuite v5.5.22](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.22) | [collector v0.0.55](https://github.com/redhat-best-practices-for-k8s/collector/releases/tag/v0.0.55) | [kpi-collection-tool v0.0.3](https://github.com/redhat-best-practices-for-k8s/kpi-collection-tool/releases/tag/v0.0.3) | [checks v0.0.26](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.26) | [oct v0.0.64](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.64)
+
+---
+
 ## 2026-06-11: Restored Cert-Manager to RAN for IBU Testing - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Unblocked Image Based Upgrade (IBU) testing by restoring cert-manager to the Radio Access Network (RAN) profile now that 4.22 branches are cut. Restored 17 files across telco-reference and Reference Design Specifications (RDS), with README updated to align with ACME-only issuer guidance and kubeconfig trust documentation. [PR #805](https://github.com/openshift-kni/telco-reference/pull/805) | [RDS MR !198](https://gitlab.cee.redhat.com/reference-configurations/reference-design-specifications/-/merge_requests/198)
