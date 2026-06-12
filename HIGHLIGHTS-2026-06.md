@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-12: TLS Operator v1.0.16 — Observability, Supply Chain, and Release Automation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Improved operational reliability by adding health check metrics that detect stalled scan goroutines with automatic Prometheus alerting, strengthened supply chain security with SBOM generation on every release, and automated major version git tag tracking so users referencing `v1` always get the latest. [v1.0.16](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.16) | [PR #214](https://github.com/sebrandon1/tls-compliance-operator/pull/214) | [PR #215](https://github.com/sebrandon1/tls-compliance-operator/pull/215) | [PR #216](https://github.com/sebrandon1/tls-compliance-operator/pull/216)
+
+---
+
 ## 2026-06-12: Faster OLM Linter CI with Pre-Built Image Pipeline - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
 
 Accelerated CI for all OLM annotation linter consumers by switching the GitHub Action from building source on every run to pulling a pre-built multi-arch container image. Fixed the release pipeline to keep the `v1` major version image tag in sync with every release, ensuring action users always get the latest version automatically. [PR #54](https://github.com/openshift-kni/olm-annotation-lint/pull/54) | [v1.0.9](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.9)
