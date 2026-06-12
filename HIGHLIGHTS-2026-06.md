@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-12: Faster OLM Linter CI with Pre-Built Image Pipeline - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
+
+Accelerated CI for all OLM annotation linter consumers by switching the GitHub Action from building source on every run to pulling a pre-built multi-arch container image. Fixed the release pipeline to keep the `v1` major version image tag in sync with every release, ensuring action users always get the latest version automatically. [PR #54](https://github.com/openshift-kni/olm-annotation-lint/pull/54) | [v1.0.9](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.9)
+
+---
+
 ## 2026-06-11: Batch Patch Releases Across 11 Org Repos - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Shipped patch releases for all 11 redhat-best-practices-for-k8s repositories with unreleased commits, delivering 93 changes including panic-to-error conversions, security hardening (bcrypt cost fix, credential externalization), a race condition fix, health endpoints, and Go 1.26.4 CVE remediation. Ensures partners and downstream consumers run on the latest secure, tested code. [certsuite v5.5.22](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.22) | [collector v0.0.55](https://github.com/redhat-best-practices-for-k8s/collector/releases/tag/v0.0.55) | [kpi-collection-tool v0.0.3](https://github.com/redhat-best-practices-for-k8s/kpi-collection-tool/releases/tag/v0.0.3) | [checks v0.0.26](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.26) | [oct v0.0.64](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.64)
