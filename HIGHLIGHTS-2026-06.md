@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-15: Quay Repository Popularity Dashboard - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Enabled instant visibility into container image usage across Quay.io namespaces by adding a `--table` flag that surfaces pull counts, 30-day push activity, tag health, and multi-arch status in a single command — eliminating manual API queries for image popularity analysis. [PR #110](https://github.com/sebrandon1/go-quay/pull/110)
+
+---
+
 ## 2026-06-12: Lab Environment Automation and Cluster Maintenance - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Built a reusable `/labuser-environments` skill for automated lab cluster debugging, then used it to audit and clean all three nightly CI OpenShift clusters (4.14, 4.16, 4.17). Removed 33 orphaned PersistentVolumes, a 188-day-old stale namespace, and reclaimed 19 GB of Docker artifacts from the jumphost. Initiated OCP upgrades to latest patch levels (4.14.66, 4.17.54), keeping nightly CI infrastructure current and reducing resource sprawl that can cause flaky test failures. [PR #1492](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1492)
