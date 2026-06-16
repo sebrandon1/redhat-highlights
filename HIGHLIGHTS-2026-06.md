@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-16: AI Skill Portfolio Optimization — Token Cost Reduction - [billerica-lab](https://github.com/redhat-best-practices-for-k8s/billerica-lab)
+
+Reduced Claude Code token consumption across the team's AI skill portfolio by consolidating 55 skills to 49, trimming 1,779 lines (12.6%) of redundant instructions, and shortening all skill descriptions under 70 characters. Created a reusable `/skill-cleanup` diagnostic skill for ongoing optimization — enabling faster, cheaper AI-assisted workflows across lab management and team tooling.
+
+---
+
 ## 2026-06-16: OLM Annotation Linter v1.0.10 — OLM v1 Support and CI Integration - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
 
 Extended the OLM annotation linter to validate next-generation OLM v1 bundle annotations and ClusterExtension resources, preventing misconfigurations before they reach clusters. Added JUnit XML output for broader CI/CD compatibility, structured GitHub Action outputs for conditional workflows, and enforced a 70% coverage threshold. [v1.0.10](https://github.com/openshift-kni/olm-annotation-lint/releases/tag/v1.0.10) | [PR #56](https://github.com/openshift-kni/olm-annotation-lint/pull/56) | [PR #57](https://github.com/openshift-kni/olm-annotation-lint/pull/57) | [PR #58](https://github.com/openshift-kni/olm-annotation-lint/pull/58) | [PR #59](https://github.com/openshift-kni/olm-annotation-lint/pull/59)
