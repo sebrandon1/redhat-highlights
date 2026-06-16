@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-16: Compliance Tooling CI and Workflow Hardening - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Strengthened CI reliability and workflow correctness for the OpenShift compliance automation toolkit. Added Python test execution to CI (41 tests now gate every PR), fixed a workflow bug where scan results were collected before scans finished — producing empty output — and eliminated a direct-push policy violation in the dashboard update process. [PR #118](https://github.com/sebrandon1/compliance-scripts/pull/118) | [PR #119](https://github.com/sebrandon1/compliance-scripts/pull/119)
+
+---
+
 ## 2026-06-15: Quay Repository Popularity Dashboard - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Enabled instant visibility into container image usage across Quay.io namespaces by adding a `--table` flag that surfaces pull counts, 30-day push activity, tag health, and multi-arch status in a single command — eliminating manual API queries for image popularity analysis. [PR #110](https://github.com/sebrandon1/go-quay/pull/110)
