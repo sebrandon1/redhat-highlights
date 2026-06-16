@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-16: Restored CI Across 5 Repos — Node.js 20 Deprecation Fix - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Unblocked all CI pipelines across 5 redhat-best-practices-for-k8s repositories by removing the deprecated `depends-on-action` GitHub Action, which broke on June 16 when GitHub enforced Node.js 24. Shipped and merged PRs same-day across certsuite, certsuite-operator, certsuite-operator-plugin, certsuite-qe, and collector — restoring CI for the entire team. [CNFCERT-1424](https://redhat.atlassian.net/browse/CNFCERT-1424) | [certsuite #3731](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3731) | [certsuite-operator #317](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/317) | [certsuite-operator-plugin #12](https://github.com/redhat-best-practices-for-k8s/certsuite-operator-plugin/pull/12) | [certsuite-qe #1498](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1498) | [collector #705](https://github.com/redhat-best-practices-for-k8s/collector/pull/705)
+
+---
+
 ## 2026-06-16: AI Skill Portfolio Optimization — Token Cost Reduction - [billerica-lab](https://github.com/redhat-best-practices-for-k8s/billerica-lab)
 
 Reduced Claude Code token consumption across the team's AI skill portfolio by consolidating 55 skills to 49, trimming 1,779 lines (12.6%) of redundant instructions, and shortening all skill descriptions under 70 characters. Created a reusable `/skill-cleanup` diagnostic skill for ongoing optimization — enabling faster, cheaper AI-assisted workflows across lab management and team tooling.
