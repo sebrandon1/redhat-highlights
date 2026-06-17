@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-17: Eliminated Hyperthreading Test Panic on Multi-Node Clusters - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Fixed a nil pointer panic in the hyperthreading detection test that crashed 6 times per run on multi-node OpenShift clusters when nodes lacked probe pods. Partners now get reliable test results instead of panic-cluttered logs. [PR #3735](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3735) | [#3732](https://github.com/redhat-best-practices-for-k8s/certsuite/issues/3732)
+
+---
+
 ## 2026-06-17: Standardized HTTP Retry Logic in Lab CLI - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Improved ZTP lab CLI reliability by fixing two kubeconfig download endpoints that bypassed retry logic, causing silent failures on transient network errors. All HTTP operations now consistently retry with exponential backoff, and added memory exhaustion protections. [PR #60](https://github.com/sebrandon1/succulent-cli/pull/60)
