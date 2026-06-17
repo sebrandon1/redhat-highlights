@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-17: Standardized HTTP Retry Logic in Lab CLI - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Improved ZTP lab CLI reliability by fixing two kubeconfig download endpoints that bypassed retry logic, causing silent failures on transient network errors. All HTTP operations now consistently retry with exponential backoff, and added memory exhaustion protections. [PR #60](https://github.com/sebrandon1/succulent-cli/pull/60)
+
+---
+
 ## 2026-06-17: Optimized Regex Performance in Autodiscovery - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Eliminated redundant regex compilation during test autodiscovery by moving `regexp.MustCompile()` from inside the label parsing loop to package initialization — reducing CPU waste during cluster resource discovery and following Go performance best practices. [PR #3733](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3733)
