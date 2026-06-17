@@ -4,6 +4,18 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-17: Optimized Regex Performance in Autodiscovery - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Eliminated redundant regex compilation during test autodiscovery by moving `regexp.MustCompile()` from inside the label parsing loop to package initialization — reducing CPU waste during cluster resource discovery and following Go performance best practices. [PR #3733](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3733)
+
+---
+
+## 2026-06-17: Improved Error Debugging Across Certsuite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Enhanced debugging capabilities across the certification test suite by fixing inconsistent error wrapping — replaced `%v` and `%s` with `%w` in `fmt.Errorf` calls to preserve error chains. Enables proper error inspection with `errors.Is` and `errors.As`, improving root cause analysis during partner test failures. [PR #3730](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3730)
+
+---
+
 ## 2026-06-16: Restored CI Across 5 Repos — Node.js 20 Deprecation Fix - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Unblocked all CI pipelines across 5 redhat-best-practices-for-k8s repositories by removing the deprecated `depends-on-action` GitHub Action, which broke on June 16 when GitHub enforced Node.js 24. Shipped and merged PRs same-day across certsuite, certsuite-operator, certsuite-operator-plugin, certsuite-qe, and collector — restoring CI for the entire team. [CNFCERT-1424](https://redhat.atlassian.net/browse/CNFCERT-1424) | [certsuite #3731](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3731) | [certsuite-operator #317](https://github.com/redhat-best-practices-for-k8s/certsuite-operator/pull/317) | [certsuite-operator-plugin #12](https://github.com/redhat-best-practices-for-k8s/certsuite-operator-plugin/pull/12) | [certsuite-qe #1498](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1498) | [collector #705](https://github.com/redhat-best-practices-for-k8s/collector/pull/705)
