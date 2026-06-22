@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-22: Quick-OCP v0.0.35 — ARM64 Support and Action Outputs - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Broadened OpenShift Local GitHub Action platform reach with ARM64 architecture detection and added structured action outputs for cluster credentials and versions, enabling downstream CI workflows to consume cluster details programmatically. Hardened reliability with improved error detection and portable path handling across 9 merged PRs. [v0.0.35](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.35) | [PR #57](https://github.com/palmsoftware/quick-ocp/pull/57) | [PR #58](https://github.com/palmsoftware/quick-ocp/pull/58) | [PR #59](https://github.com/palmsoftware/quick-ocp/pull/59)
+
+---
+
 ## 2026-06-18: Hardened quick-k8s CI Reliability and Upgraded to KinD v0.32.0 - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Improved CI reliability and developer experience across 8 merged PRs: added shell error handling, kubectl timeouts, and input validation to prevent silent failures; added deployment summaries, troubleshooting docs, and integration guides; upgraded to KinD v0.32.0 with Kubernetes v1.36.1 — all passing 28-job CI matrix. [CNF-25223](https://redhat.atlassian.net/browse/CNF-25223)
