@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-23: First External Adoption of TLS Compliance Operator - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Achieved first external adoption of the TLS Compliance Operator — KubeVirt's cluster-network-addons-operator now integrates it for TLS endpoint validation. Submitted a version bump PR from v0.0.10 to v1.0.16, bringing health check metrics, Software Bill of Materials (SBOM) generation, and improved observability to their CI pipeline. [PR #2834](https://github.com/kubevirt/cluster-network-addons-operator/pull/2834)
+
+---
+
 ## 2026-06-23: OCP 5.0 Compliance Dashboard and Scan Reproducibility - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Extended compliance dashboard to track OpenShift Container Platform (OCP) 5.0 on RHEL 10/RHCOS 10.2, enabling side-by-side comparison of 914 checks against the 4.22 baseline — surfacing 22 vanilla fixes and 1 regression. Added content image pinning to exports for reproducible scans and fixed version discovery for v5.x releases. [PR #123](https://github.com/sebrandon1/compliance-scripts/pull/123) | [PR #127](https://github.com/sebrandon1/compliance-scripts/pull/127) | [PR #128](https://github.com/sebrandon1/compliance-scripts/pull/128) | [v1.0.10](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.10)
