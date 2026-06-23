@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-23: TLS Config Lint Tech Debt and Release Automation - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+Strengthened TLS source-code linter quality by adding 17 unit tests for SARIF output (previously untested), eliminating duplicated severity-mapping logic, and automating GitHub Releases on tag push. Modernized CI with pinned tool versions and caching, reducing build fragility from raw curl downloads. [PR #51](https://github.com/sebrandon1/tls-config-lint/pull/51)
+
+---
+
 ## 2026-06-23: Hardened CI with Content Image Update and E8 Baseline - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Improved compliance CI reliability by bumping the OpenSCAP content image to v0.1.81 and the cluster provisioning action to v0.0.35, ensuring tests run against the latest security profiles. Added an OCP 5.0 E8 expected-results baseline (112 checks) for future regression detection as CRC bundles become available. [PR #130](https://github.com/sebrandon1/compliance-scripts/pull/130)
