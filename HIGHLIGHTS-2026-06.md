@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-23: OCP 5.0 Compliance Dashboard and Scan Reproducibility - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Extended compliance dashboard to track OpenShift Container Platform (OCP) 5.0 on RHEL 10/RHCOS 10.2, enabling side-by-side comparison of 914 checks against the 4.22 baseline — surfacing 22 vanilla fixes and 1 regression. Added content image pinning to exports for reproducible scans and fixed version discovery for v5.x releases. [PR #123](https://github.com/sebrandon1/compliance-scripts/pull/123) | [PR #127](https://github.com/sebrandon1/compliance-scripts/pull/127) | [PR #128](https://github.com/sebrandon1/compliance-scripts/pull/128) | [v1.0.10](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.0.10)
+
+---
+
 ## 2026-06-22: Quick-OCP v0.0.35 — ARM64 Support and Action Outputs - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Broadened OpenShift Local GitHub Action platform reach with ARM64 architecture detection and added structured action outputs for cluster credentials and versions, enabling downstream CI workflows to consume cluster details programmatically. Hardened reliability with improved error detection and portable path handling across 9 merged PRs. [v0.0.35](https://github.com/palmsoftware/quick-ocp/releases/tag/v0.0.35) | [PR #57](https://github.com/palmsoftware/quick-ocp/pull/57) | [PR #58](https://github.com/palmsoftware/quick-ocp/pull/58) | [PR #59](https://github.com/palmsoftware/quick-ocp/pull/59)
