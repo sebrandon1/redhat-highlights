@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-24: Expanded TLS Plugin UX and CI Safety - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Accelerated TLS compliance adoption by shipping 5 kubectl plugin improvements in a single session: certificate chain/key details for security audits, JSON output for CI gating, label selector filtering, version identification, and race detection in CI to catch concurrency bugs before release. [PR #225](https://github.com/sebrandon1/tls-compliance-operator/pull/225), [PR #226](https://github.com/sebrandon1/tls-compliance-operator/pull/226), [PR #227](https://github.com/sebrandon1/tls-compliance-operator/pull/227), [PR #228](https://github.com/sebrandon1/tls-compliance-operator/pull/228), [PR #229](https://github.com/sebrandon1/tls-compliance-operator/pull/229)
+
+---
+
 ## 2026-06-23: Automated Script Reference Validation in CI - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Prevented broken script and documentation references from reaching main by adding a static validation CI job that checks Makefile targets, script cross-references, source paths, syntax, and permissions on every PR. Fixed 3 existing bugs and eliminated 207 lines of duplicated code across 26 files. [PR #43](https://github.com/sebrandon1/cert-manager-scripts/pull/43), [PR #44](https://github.com/sebrandon1/cert-manager-scripts/pull/44)
