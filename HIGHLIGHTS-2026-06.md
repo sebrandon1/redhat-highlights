@@ -4,6 +4,18 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-23: Automated Script Reference Validation in CI - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Prevented broken script and documentation references from reaching main by adding a static validation CI job that checks Makefile targets, script cross-references, source paths, syntax, and permissions on every PR. Fixed 3 existing bugs and eliminated 207 lines of duplicated code across 26 files. [PR #43](https://github.com/sebrandon1/cert-manager-scripts/pull/43), [PR #44](https://github.com/sebrandon1/cert-manager-scripts/pull/44)
+
+---
+
+## 2026-06-22: Jira Epic Hygiene Across 16 Issues - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Brought 16 Jira issues (1 Feature, 15 Epics) from failing hygiene bot scores to passing thresholds, unblocking release tracking for cert-manager, RAN hardening, and code modernization work. Created a reusable `/epic-style-review` skill that scores and fixes epics against the readiness rubric automatically. [TELCOSTRAT-204](https://redhat.atlassian.net/browse/TELCOSTRAT-204), [CNF-18992](https://redhat.atlassian.net/browse/CNF-18992)
+
+---
+
 ## 2026-06-23: TLS Config Lint Tech Debt and Release Automation - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Strengthened TLS source-code linter quality by adding 17 unit tests for SARIF output (previously untested), eliminating duplicated severity-mapping logic, and automating GitHub Releases on tag push. Modernized CI with pinned tool versions and caching, reducing build fragility from raw curl downloads. [PR #51](https://github.com/sebrandon1/tls-config-lint/pull/51)
