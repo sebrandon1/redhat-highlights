@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-25: HTTP01 Proxy Deployment Guide & Live Validation - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Unblocked reviewer adoption of the HTTP01 Challenge Proxy feature by publishing a deployment guide with pre-built multi-arch images, an enhanced verification script, and live validation on a baremetal OCP 5.0 cluster. Discovered and fixed 3 bugs during testing that would have blocked every reviewer. [PR #398](https://github.com/openshift/cert-manager-operator/pull/398), [CM-716](https://issues.redhat.com/browse/CM-716)
+
+---
+
 ## 2026-06-25: Certsuite QE Tech Debt Sweep — 10 PRs Merged - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Improved Quality Engineering (QE) test harness reliability and maintainability by fixing security permissions, eliminating ~150 lines of duplicated boilerplate, replacing unsafe polling patterns, and centralizing scattered constants. Reduced onboarding friction for contributors and eliminated silent error-swallowing that masked test infrastructure failures. [PR #1506](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1506), [PR #1507](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1507), [PR #1508](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1508), [PR #1509](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1509), [PR #1510](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1510), [PR #1511](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1511), [PR #1512](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1512), [PR #1513](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1513), [PR #1514](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1514), [PR #1515](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1515)
