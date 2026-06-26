@@ -4,6 +4,18 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-26: Root-Caused Kernel 7.0 vsock Bug Blocking CRC on Ubuntu 26.04 - [crc](https://github.com/crc-org/crc)
+
+Identified the exact kernel commit (CVE-2026-46214) causing 100% OpenShift Local (CRC) startup failure on Ubuntu 26.04 GitHub Actions runners. Through systematic elimination of vsock namespace mode, nftables firewall, library bumps, and system networking mode, traced the root cause to a vsock accept queue leak in kernel 7.0.0 fixed in 7.0.9. Unblocked ubuntu-26.04 adoption planning for CI consumers of the quick-ocp GitHub Action. [Issue #5283](https://github.com/crc-org/crc/issues/5283)
+
+---
+
+## 2026-06-23: Enhanced CRC Preflight Check Reporting - [crc](https://github.com/crc-org/crc)
+
+Improved developer experience for OpenShift Local environment validation by enhancing `crc setup --check-only` to report all preflight checks with PASS/FAIL/SKIP status table instead of stopping on the first failure. Enables faster environment debugging — users see the full picture in one command instead of fixing issues one at a time. Supports both human-readable table and JSON output.
+
+---
+
 ## 2026-06-26: succulent-cli Plugin for ZTP Lab Management - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Streamlined Zero Touch Provisioning (ZTP) lab operations by shipping a Claude Code skill that unifies cluster lifecycle management across Single Node OpenShift (SNO), Multi-Node OpenShift (MNO), ZTP hub/spoke, and Hypershift architectures. Engineers can now provision, monitor, and manage test environments using natural language instead of memorizing CLI flags and workflows. [MR !32](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/32)
