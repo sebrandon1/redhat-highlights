@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-26: go-dci Plugin for DCI Certification Workflows - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Accelerated Red Hat Distributed CI (DCI) adoption by shipping a Claude Code skill that wraps the go-dci CLI for certification job management, test result tracking, and component querying. Provides a lightweight alternative to full MCP server integration — just install the binary and use natural language to interact with DCI workflows. [MR !31](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/31)
+
+---
+
 ## 2026-06-25: HTTP01 Proxy Deployment Guide & Live Validation - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Unblocked reviewer adoption of the HTTP01 Challenge Proxy feature by publishing a deployment guide with pre-built multi-arch images, an enhanced verification script, and live validation on a baremetal OCP 5.0 cluster. Discovered and fixed 3 bugs during testing that would have blocked every reviewer. [PR #398](https://github.com/openshift/cert-manager-operator/pull/398), [CM-716](https://issues.redhat.com/browse/CM-716)
