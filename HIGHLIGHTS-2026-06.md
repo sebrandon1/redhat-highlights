@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-26: succulent-cli Plugin for ZTP Lab Management - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Streamlined Zero Touch Provisioning (ZTP) lab operations by shipping a Claude Code skill that unifies cluster lifecycle management across Single Node OpenShift (SNO), Multi-Node OpenShift (MNO), ZTP hub/spoke, and Hypershift architectures. Engineers can now provision, monitor, and manage test environments using natural language instead of memorizing CLI flags and workflows. [MR !32](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/32)
+
+---
+
 ## 2026-06-26: go-dci Plugin for DCI Certification Workflows - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Accelerated Red Hat Distributed CI (DCI) adoption by shipping a Claude Code skill that wraps the go-dci CLI for certification job management, test result tracking, and component querying. Provides a lightweight alternative to full MCP server integration — just install the binary and use natural language to interact with DCI workflows. [MR !31](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/31)
