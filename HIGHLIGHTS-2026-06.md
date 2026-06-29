@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-29: Published ZTP AI Skills Blog on The Source - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Published internal blog post detailing how five Claude Code skills encode tribal knowledge for managing the full Zero Touch Provisioning (ZTP) lifecycle on OpenShift edge clusters - covering credentials, status monitoring, policy compliance, BMC management, and reprovisioning. Enables any team member to manage complex ZTP workflows conversationally. [Blog Post](https://source.redhat.com/projects_and_programs/ai/share_ai/using_ai_blog/teaching_ai_to_manage_ztp_encoding_tribal_knowledge_into_reusable_skills) | [MR !6](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/6) | [MR !9](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/9) | [MR !10](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/10) | [MR !11](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/11) | [MR !12](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/12)
+
+---
+
 ## 2026-06-29: Released quick-k8s v0.0.74 with Automated Dependency Management - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Reduced manual maintenance burden by automating KinD version updates — the last dependency without a nightly update workflow. Released v0.0.74 with 9 changes including ubuntu-26.04 runner support and 7 dependency updates (k3s, Istio, Calico, cert-manager, operator-sdk, actions/cache, actions/checkout). Also generated 20 new improvement issues from a codebase analysis to build out the project roadmap. [v0.0.74](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.74) | [PR #192](https://github.com/palmsoftware/quick-k8s/pull/192) | [PR #193](https://github.com/palmsoftware/quick-k8s/pull/193)
