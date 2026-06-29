@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-29: Released quick-k8s v0.0.74 with Automated Dependency Management - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Reduced manual maintenance burden by automating KinD version updates — the last dependency without a nightly update workflow. Released v0.0.74 with 9 changes including ubuntu-26.04 runner support and 7 dependency updates (k3s, Istio, Calico, cert-manager, operator-sdk, actions/cache, actions/checkout). Also generated 20 new improvement issues from a codebase analysis to build out the project roadmap. [v0.0.74](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.74) | [PR #192](https://github.com/palmsoftware/quick-k8s/pull/192) | [PR #193](https://github.com/palmsoftware/quick-k8s/pull/193)
+
+---
+
 ## 2026-06-26: Root-Caused Kernel 7.0 vsock Bug Blocking CRC on Ubuntu 26.04 - [crc](https://github.com/crc-org/crc)
 
 Identified the exact kernel commit (CVE-2026-46214) causing 100% OpenShift Local (CRC) startup failure on Ubuntu 26.04 GitHub Actions runners. Through systematic elimination of vsock namespace mode, nftables firewall, library bumps, and system networking mode, traced the root cause to a vsock accept queue leak in kernel 7.0.0 fixed in 7.0.9. Unblocked ubuntu-26.04 adoption planning for CI consumers of the quick-ocp GitHub Action. [Issue #5283](https://github.com/crc-org/crc/issues/5283)
