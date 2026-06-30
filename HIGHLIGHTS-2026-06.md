@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-30: Multi-Algorithm Certificate Testing for IBU Safety - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Enabled CI validation of all 5 key algorithms (ECDSA P-256/P-384, RSA 2048/4096, Ed25519) during Image-Based Upgrade testing, directly supporting lifecycle-agent PKCS#8 normalization ([PR #7610](https://github.com/openshift-kni/lifecycle-agent/pull/7610)). Without multi-algorithm coverage, normalization bugs could cause silent certificate loss and upgrade rollbacks in telco RAN production. [v0.0.13](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.13) | [PR #45](https://github.com/sebrandon1/cert-manager-scripts/pull/45)
+
+---
+
 ## 2026-06-29: Published ZTP AI Skills Blog on The Source - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Published internal blog post detailing how five Claude Code skills encode tribal knowledge for managing the full Zero Touch Provisioning (ZTP) lifecycle on OpenShift edge clusters - covering credentials, status monitoring, policy compliance, BMC management, and reprovisioning. Enables any team member to manage complex ZTP workflows conversationally. [Blog Post](https://source.redhat.com/projects_and_programs/ai/share_ai/using_ai_blog/teaching_ai_to_manage_ztp_encoding_tribal_knowledge_into_reusable_skills) | [MR !6](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/6) | [MR !9](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/9) | [MR !10](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/10) | [MR !11](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/11) | [MR !12](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/12)
