@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for June 
 
 ---
 
+## 2026-06-30: Resolved Post-Quantum TLS API Compatibility for Downstream Consumer - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Unblocked KubeVirt's adoption of TLS Compliance Operator v1.0.18 by diagnosing a breaking API compatibility issue — the new Post-Quantum Cryptography (PQC) readiness condition added between v0.0.10 and v1.0.18 caused their e2e test to fail on exact condition array matching. Fixed the downstream test expectations and bumped to the latest release. [PR #2834](https://github.com/kubevirt/cluster-network-addons-operator/pull/2834)
+
+---
+
 ## 2026-06-30: Eliminated Dead Code and Config Bugs in Certification Suite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved certification test suite reliability by fixing three latent bugs: unreachable error handling that masked a potential silent failure in cluster autodiscovery, a misleading log message that sent operators chasing the wrong log level during troubleshooting, and a YAML case mismatch that silently dropped user configuration for StatefulSet scaling exclusions. Also merged a code organization refactor splitting a 500-line identifier file into maintainable category-specific modules. [PR #3749](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3749) | [PR #3753](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3753) | [PR #3754](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3754) | [PR #3755](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3755)
