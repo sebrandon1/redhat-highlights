@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-06: OCP 4.22 Nightly Test Coverage for Certsuite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Enabled day-one OpenShift 4.22 certification testing by releasing quick-ocp v0.0.37 with CRC v2.62.0 support and adding non-intrusive and intrusive nightly test workflows to certsuite. Ensures partner certification validation keeps pace with the latest OpenShift release. [PR #3772](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3772) | [PR #68](https://github.com/palmsoftware/quick-ocp/pull/68) | [CNFCERT-1440](https://redhat.atlassian.net/browse/CNFCERT-1440)
+
+---
+
 ## 2026-07-06: 97% Token Reduction in Jira Automation Skills - [claude-skills](https://github.com/sebrandon1/claude-skills)
 
 Reduced AI token consumption by 97% across four Jira-integrated automation skills by adding parser scripts that compress 200-400KB of raw API responses to 5-10KB of actionable data. Also rebased 84 pull requests across 44 repositories, updated status summaries on 15 epics, and freshened 56 Jira issues — all in a single automated session. These optimizations cut operational costs and enable faster, more efficient weekly planning preparation.
