@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-08: Cert-Manager Hub-Spoke Trust Production Validation - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Eliminated deployment risk for ACM hub-spoke certificate management by completing full end-to-end validation (OCP 4.21→4.22, ACM 2.13) confirming zero-downtime certificate rotation without manual intervention. Verified ConfigMap label fix, root CA trust chain, and seamless spoke reconnection during hub cert rollout. [PR #773](https://github.com/openshift-kni/telco-reference/pull/773) | [Verification Report](https://gist.github.com/sebrandon1/bba27f3e662c16e62fb552ea24c90d02)
+
+---
+
 ## 2026-07-06: OCP 4.22 Nightly Test Coverage for Certsuite - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Enabled day-one OpenShift 4.22 certification testing by releasing quick-ocp v0.0.37 with CRC v2.62.0 support and adding non-intrusive and intrusive nightly test workflows to certsuite. Ensures partner certification validation keeps pace with the latest OpenShift release. [PR #3772](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3772) | [PR #68](https://github.com/palmsoftware/quick-ocp/pull/68) | [CNFCERT-1440](https://redhat.atlassian.net/browse/CNFCERT-1440)
