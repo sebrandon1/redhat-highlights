@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-09: Consoleless Cluster Fix and Test Toolkit Hardening - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts) / [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Unblocked cert-manager deployment on consoleless RAN clusters by identifying that the original fix (PR #424) used a CVO-only annotation that OLM ignores, then implementing the correct runtime capability detection pattern used by 8+ other OpenShift operators. QE verified the fix on their RAN cluster. Additionally hardened the cert-manager test toolkit (v0.0.14) with 6 merged improvements: word-splitting safety, non-interactive CI mode, CI lint alignment, and duplicate code extraction — closing 6 issues. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) | [CNF-25367](https://redhat.atlassian.net/browse/CNF-25367) | [Release v0.0.14](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.14)
+
+---
+
 ## 2026-07-08: Cert-Manager Hub-Spoke Trust Production Validation - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Eliminated deployment risk for ACM hub-spoke certificate management by completing full end-to-end validation (OCP 4.21→4.22, ACM 2.13) confirming zero-downtime certificate rotation without manual intervention. Verified ConfigMap label fix, root CA trust chain, and seamless spoke reconnection during hub cert rollout. [PR #773](https://github.com/openshift-kni/telco-reference/pull/773) | [Verification Report](https://gist.github.com/sebrandon1/bba27f3e662c16e62fb552ea24c90d02)
