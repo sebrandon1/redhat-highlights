@@ -4,9 +4,15 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
-## 2026-07-09: Consoleless Cluster Fix and Test Toolkit Hardening - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts) / [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+## 2026-07-09: Cert-Manager Test Toolkit Hardening - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
-Unblocked cert-manager deployment on consoleless RAN clusters by identifying that the original fix (PR #424) used a CVO-only annotation that OLM ignores, then implementing the correct runtime capability detection pattern used by 8+ other OpenShift operators. QE verified the fix on their RAN cluster. Additionally hardened the cert-manager test toolkit (v0.0.14) with 6 merged improvements: word-splitting safety, non-interactive CI mode, CI lint alignment, and duplicate code extraction — closing 6 issues. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) | [CNF-25367](https://redhat.atlassian.net/browse/CNF-25367) | [Release v0.0.14](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.14)
+Improved CI reliability and automation readiness of the cert-manager test toolkit by fixing word-splitting bugs, adding non-interactive mode for pipeline usage, fixing silent pass-through in diagnostics, aligning CI lint scope, extracting duplicate code, and adding cert-manager v1.20.0 to the test matrix. Closed 6 issues in one release. [v0.0.14](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.14)
+
+---
+
+## 2026-07-08: Consoleless Cluster Fix for cert-manager-operator - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Unblocked cert-manager deployment on consoleless RAN clusters by identifying that the original fix (PR #424) used a CVO-only annotation that OLM ignores, then implementing the correct runtime capability detection pattern used by 8+ other OpenShift operators. All 11 CI jobs pass. QE verified the fix on their consoleless RAN cluster. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) | [CNF-25367](https://redhat.atlassian.net/browse/CNF-25367)
 
 ---
 
