@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-09: Fixed ECDSA Certificate Preservation During Image-Based Upgrades - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Eliminated Image-Based Upgrade (IBU) failures caused by cert-manager ECDSA certificates by adding native PKCS#8 and SEC1 key format support to recert. Validated with a full 4.22.0→4.22.3 IBU where all ECDSA (P-256, P-384) and RSA cert-manager secrets survived the upgrade. [PR #1758](https://github.com/rh-ecosystem-edge/recert/pull/1758) | [Validation Report](https://gist.github.com/sebrandon1/e99c965ba099d2d7ebf1bf53331b5c5a) | [OCPBUGS-94076](https://issues.redhat.com/browse/OCPBUGS-94076)
+
+---
+
 ## 2026-07-09: Cert-Manager Test Toolkit Hardening - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Improved CI reliability and automation readiness of the cert-manager test toolkit by fixing word-splitting bugs, adding non-interactive mode for pipeline usage, fixing silent pass-through in diagnostics, aligning CI lint scope, extracting duplicate code, and adding cert-manager v1.20.0 to the test matrix. Closed 6 issues in one release. [v0.0.14](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.14)
