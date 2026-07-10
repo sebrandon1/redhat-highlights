@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-10: Quick-K8s v0.0.75 Platform Hardening Release - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Strengthened CI reliability for Kubernetes testing across 29 merged PRs by removing deprecated k3s and macOS support to reduce maintenance surface, extracting shared utilities to eliminate duplicated code, consolidating 10 nightly workflows into one reusable workflow, and fixing numerous cluster creation and CNI issues. Adds nightly test coverage for cert-manager, ingress-nginx, metrics-server, and operator-sdk. [v0.0.75](https://github.com/palmsoftware/quick-k8s/releases/tag/v0.0.75)
+
+---
+
 ## 2026-07-10: TLS Compliance Operator v1.0.19 Security Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Eliminated exposure to Go crypto/tls privacy leak vulnerability (GO-2026-5856) by bumping the toolchain to Go 1.26.5 across both the build pipeline and container image. Resolved failing CI on two dependency update PRs, merged them, and cut a signed multi-arch release with SBOM. [v1.0.19](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.19)
