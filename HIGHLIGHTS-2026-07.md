@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-10: TLS Compliance Operator v1.0.19 Security Release - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Eliminated exposure to Go crypto/tls privacy leak vulnerability (GO-2026-5856) by bumping the toolchain to Go 1.26.5 across both the build pipeline and container image. Resolved failing CI on two dependency update PRs, merged them, and cut a signed multi-arch release with SBOM. [v1.0.19](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.0.19)
+
+---
+
 ## 2026-07-09: Fixed ECDSA Certificate Preservation During Image-Based Upgrades - [recert](https://github.com/rh-ecosystem-edge/recert)
 
 Eliminated Image-Based Upgrade (IBU) failures caused by cert-manager ECDSA certificates by adding native PKCS#8 and SEC1 key format support to recert. Validated with a full 4.22.0→4.22.3 IBU where all ECDSA (P-256, P-384) and RSA cert-manager secrets survived the upgrade. [PR #1758](https://github.com/rh-ecosystem-edge/recert/pull/1758) | [Validation Report](https://gist.github.com/sebrandon1/e99c965ba099d2d7ebf1bf53331b5c5a) | [OCPBUGS-94076](https://issues.redhat.com/browse/OCPBUGS-94076)
