@@ -4,9 +4,9 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
-## 2026-07-10: Documentation Overhaul Across 22 Best Practices Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s)
+## 2026-07-10: Documentation Overhaul Across 41 Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s) and [sebrandon1](https://github.com/sebrandon1)
 
-Reduced onboarding friction and eliminated misleading documentation across 22 repositories by fixing wrong function signatures that would fail to compile, adding missing build instructions to 3 repos with zero setup docs, documenting 40+ undocumented packages and features, correcting stale Go versions, and updating old org references. Created 20 pull requests and set GitHub descriptions for 8 repos.
+Eliminated misleading documentation and reduced contributor onboarding friction across 41 repositories spanning two GitHub orgs. Fixed wrong function signatures that would fail to compile, added build instructions to repos with zero setup docs, documented 40+ undocumented packages, corrected stale Go versions across 12 repos, and replaced defunct org references. Merged 19 PRs across redhat-best-practices-for-k8s and pushed updates directly to 17 sebrandon1 repos. Set GitHub descriptions for 11 repos. [certsuite #3781](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3781) | [privileged-daemonset #368](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset/pull/368) | [checks #52](https://github.com/redhat-best-practices-for-k8s/checks/pull/52) | [collector #712](https://github.com/redhat-best-practices-for-k8s/collector/pull/712) | [telco-bot #144](https://github.com/redhat-best-practices-for-k8s/telco-bot/pull/144)
 
 ---
 
