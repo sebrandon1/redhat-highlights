@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-13: Cert-Manager Test Toolkit Tech-Debt Elimination - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Eliminated all 7 tech-debt issues from the cert-manager test toolkit — consolidated 10 duplicate version-query scripts into 2, replaced 8 hand-rolled retry loops with shared library functions, resolved 67 ShellCheck violations (reducing exclusions from 8 codes to 2), and expanded CI coverage to DNS-01 and self-signed flows. Reduces maintenance burden and strengthens regression detection for cert-manager IBU validation. [v0.0.16](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.16) | [#104](https://github.com/sebrandon1/cert-manager-scripts/pull/104) [#105](https://github.com/sebrandon1/cert-manager-scripts/pull/105) [#106](https://github.com/sebrandon1/cert-manager-scripts/pull/106) [#107](https://github.com/sebrandon1/cert-manager-scripts/pull/107) [#108](https://github.com/sebrandon1/cert-manager-scripts/pull/108) [#109](https://github.com/sebrandon1/cert-manager-scripts/pull/109) [#110](https://github.com/sebrandon1/cert-manager-scripts/pull/110)
+
+---
+
 ## 2026-07-13: Go 1.26.5 Toolchain Standardization Across 18 Repos - [redhat-best-practices-for-k8s](https://github.com/redhat-best-practices-for-k8s)
 
 Eliminated version drift and potential security exposure across all 18 active Go repositories in the org by standardizing on `go 1.26` with `toolchain go1.26.5`. Audited every repo (public and private), created PRs, monitored CI, and merged all 18 — ensuring consistent, secure builds org-wide. [certsuite #3783](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3783) | [checks #53](https://github.com/redhat-best-practices-for-k8s/checks/pull/53) | [oct #467](https://github.com/redhat-best-practices-for-k8s/oct/pull/467)
