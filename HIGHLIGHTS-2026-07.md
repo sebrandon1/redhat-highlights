@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-13: Shared Checks Library v0.0.27 Release and Certsuite Migration Update - [checks](https://github.com/redhat-best-practices-for-k8s/checks)
+
+Released checks library v0.0.27 with Go 1.26.5 toolchain upgrade and Kubernetes dependency bumps, then rebased the certsuite migration PR to use it. This PR eliminates ~14,600 lines of duplicate test implementations across 9 test suites by moving all 102 compliance checks into a shared library consumable by both the certsuite CLI and the bps-operator. [v0.0.27](https://github.com/redhat-best-practices-for-k8s/checks/releases/tag/v0.0.27) | [certsuite #3554](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3554)
+
+---
+
 ## 2026-07-10: Security Hardening and UX Improvements - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Eliminated three security vulnerabilities (memory exhaustion, information disclosure, crypto/tls privacy leak) and fixed reprovision timeout bug blocking lab cluster management. Added config set/edit commands eliminating manual YAML editing. Six PRs merged addressing brainstorm analysis findings. [v0.0.7](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.7) | [#110](https://github.com/sebrandon1/succulent-cli/pull/110) [#111](https://github.com/sebrandon1/succulent-cli/pull/111) [#112](https://github.com/sebrandon1/succulent-cli/pull/112) [#113](https://github.com/sebrandon1/succulent-cli/pull/113) [#114](https://github.com/sebrandon1/succulent-cli/pull/114) [#115](https://github.com/sebrandon1/succulent-cli/pull/115)
