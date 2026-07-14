@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-14: Compliance Dashboard Tech-Debt and Security Sweep - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Closed all 11 open tech-debt and security issues — extracted shared Python/JS modules, added schema validation and shell smoke tests, deduplicated dry-run and namespace helpers, created a reusable Jekyll layout (eliminating 800+ lines of copy-paste), added type annotations to all Python scripts, and hardened Liquid templates against injection. 10 PRs merged. [v1.1.2](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.1.2) | [#243](https://github.com/sebrandon1/compliance-scripts/pull/243) [#244](https://github.com/sebrandon1/compliance-scripts/pull/244) [#245](https://github.com/sebrandon1/compliance-scripts/pull/245) [#246](https://github.com/sebrandon1/compliance-scripts/pull/246) [#247](https://github.com/sebrandon1/compliance-scripts/pull/247) [#248](https://github.com/sebrandon1/compliance-scripts/pull/248) [#249](https://github.com/sebrandon1/compliance-scripts/pull/249) [#250](https://github.com/sebrandon1/compliance-scripts/pull/250) [#251](https://github.com/sebrandon1/compliance-scripts/pull/251) [#252](https://github.com/sebrandon1/compliance-scripts/pull/252)
+
+---
+
 ## 2026-07-13: Cert-Manager Test Toolkit Tech-Debt Elimination - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Eliminated all 7 tech-debt issues from the cert-manager test toolkit — consolidated 10 duplicate version-query scripts into 2, replaced 8 hand-rolled retry loops with shared library functions, resolved 67 ShellCheck violations (reducing exclusions from 8 codes to 2), and expanded CI coverage to DNS-01 and self-signed flows. Reduces maintenance burden and strengthens regression detection for cert-manager IBU validation. [v0.0.16](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.16) | [#104](https://github.com/sebrandon1/cert-manager-scripts/pull/104) [#105](https://github.com/sebrandon1/cert-manager-scripts/pull/105) [#106](https://github.com/sebrandon1/cert-manager-scripts/pull/106) [#107](https://github.com/sebrandon1/cert-manager-scripts/pull/107) [#108](https://github.com/sebrandon1/cert-manager-scripts/pull/108) [#109](https://github.com/sebrandon1/cert-manager-scripts/pull/109) [#110](https://github.com/sebrandon1/cert-manager-scripts/pull/110)
