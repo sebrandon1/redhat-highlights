@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-14: Consoleless and Baremetal CI Coverage for cert-manager-operator - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Closed two blind spots in cert-manager-operator's test matrix by adding e2e tests and Prow CI jobs for consoleless and baremetal clusters. Consoleless job validates the operator correctly adapts when Console capability is absent (RAN/RDS profiles). Baremetal job provisions Equinix Metal clusters and validates the HTTP01 Challenge Proxy controller correctly rejects unsupported platforms. Also fixed Jira validation (target version, status) that was blocking PR merges. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) | [PR #398](https://github.com/openshift/cert-manager-operator/pull/398) | [openshift/release #81900](https://github.com/openshift/release/pull/81900) | [openshift/release #81902](https://github.com/openshift/release/pull/81902) | [OCPBUGS-85579](https://issues.redhat.com/browse/OCPBUGS-85579) | [CM-716](https://issues.redhat.com/browse/CM-716)
+
+---
+
 ## 2026-07-14: Active ML-KEM Post-Quantum Probing for TLS Compliance - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Enabled active post-quantum cryptography (PQC) detection across OpenShift clusters by adding ML-KEM key exchange probing to the TLS compliance operator. Endpoints are now explicitly tested for Module-Lattice-Based Key Encapsulation Mechanism (ML-KEM) support rather than relying on passive negotiation — verified on a live OCP 4.19 cluster where multus was identified as TLS 1.3-capable but lacking ML-KEM support. Strengthens organizational readiness for CNSA 2.0 compliance requirements. [v1.1.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.0) | [PR #252](https://github.com/sebrandon1/tls-compliance-operator/pull/252) | [#251](https://github.com/sebrandon1/tls-compliance-operator/issues/251)
