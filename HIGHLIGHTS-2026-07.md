@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-14: Active ML-KEM Post-Quantum Probing for TLS Compliance - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Enabled active post-quantum cryptography (PQC) detection across OpenShift clusters by adding ML-KEM key exchange probing to the TLS compliance operator. Endpoints are now explicitly tested for Module-Lattice-Based Key Encapsulation Mechanism (ML-KEM) support rather than relying on passive negotiation — verified on a live OCP 4.19 cluster where multus was identified as TLS 1.3-capable but lacking ML-KEM support. Strengthens organizational readiness for CNSA 2.0 compliance requirements. [v1.1.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.0) | [PR #252](https://github.com/sebrandon1/tls-compliance-operator/pull/252) | [#251](https://github.com/sebrandon1/tls-compliance-operator/issues/251)
+
+---
+
 ## 2026-07-14: Quay API Client Tech-Debt Elimination - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Resolved all 10 tech-debt issues in the Quay.io API client library — consolidated duplicated HTTP helpers, standardized error handling across 94 call sites, split a 984-line monolith into 8 domain files, replaced 205 os.Exit calls with proper error returns, and removed dead code. Improves maintainability and testability for container registry automation. [v1.0.9](https://github.com/sebrandon1/go-quay/releases/tag/v1.0.9) | [#150](https://github.com/sebrandon1/go-quay/pull/150) [#151](https://github.com/sebrandon1/go-quay/pull/151) [#152](https://github.com/sebrandon1/go-quay/pull/152) [#153](https://github.com/sebrandon1/go-quay/pull/153) [#154](https://github.com/sebrandon1/go-quay/pull/154) [#155](https://github.com/sebrandon1/go-quay/pull/155) [#156](https://github.com/sebrandon1/go-quay/pull/156) [#157](https://github.com/sebrandon1/go-quay/pull/157) [#158](https://github.com/sebrandon1/go-quay/pull/158)
