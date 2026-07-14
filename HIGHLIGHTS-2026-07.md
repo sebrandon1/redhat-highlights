@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-14: Quay API Client Tech-Debt Elimination - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Resolved all 10 tech-debt issues in the Quay.io API client library — consolidated duplicated HTTP helpers, standardized error handling across 94 call sites, split a 984-line monolith into 8 domain files, replaced 205 os.Exit calls with proper error returns, and removed dead code. Improves maintainability and testability for container registry automation. [v1.0.9](https://github.com/sebrandon1/go-quay/releases/tag/v1.0.9) | [#150](https://github.com/sebrandon1/go-quay/pull/150) [#151](https://github.com/sebrandon1/go-quay/pull/151) [#152](https://github.com/sebrandon1/go-quay/pull/152) [#153](https://github.com/sebrandon1/go-quay/pull/153) [#154](https://github.com/sebrandon1/go-quay/pull/154) [#155](https://github.com/sebrandon1/go-quay/pull/155) [#156](https://github.com/sebrandon1/go-quay/pull/156) [#157](https://github.com/sebrandon1/go-quay/pull/157) [#158](https://github.com/sebrandon1/go-quay/pull/158)
+
+---
+
 ## 2026-07-14: Compliance Dashboard Tech-Debt and Security Sweep - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Closed all 11 open tech-debt and security issues — extracted shared Python/JS modules, added schema validation and shell smoke tests, deduplicated dry-run and namespace helpers, created a reusable Jekyll layout (eliminating 800+ lines of copy-paste), added type annotations to all Python scripts, and hardened Liquid templates against injection. 10 PRs merged. [v1.1.2](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.1.2) | [#243](https://github.com/sebrandon1/compliance-scripts/pull/243) [#244](https://github.com/sebrandon1/compliance-scripts/pull/244) [#245](https://github.com/sebrandon1/compliance-scripts/pull/245) [#246](https://github.com/sebrandon1/compliance-scripts/pull/246) [#247](https://github.com/sebrandon1/compliance-scripts/pull/247) [#248](https://github.com/sebrandon1/compliance-scripts/pull/248) [#249](https://github.com/sebrandon1/compliance-scripts/pull/249) [#250](https://github.com/sebrandon1/compliance-scripts/pull/250) [#251](https://github.com/sebrandon1/compliance-scripts/pull/251) [#252](https://github.com/sebrandon1/compliance-scripts/pull/252)
