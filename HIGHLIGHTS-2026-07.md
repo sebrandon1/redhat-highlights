@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-17: Quick-OCP v1.0.0 Production Release - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Shipped the first stable release of the Quick-OCP GitHub Action, enabling reliable OpenShift cluster deployment on free-tier CI runners. Resolved all 5 open issues — GitHub API rate limiting, duplicate package installs, and 3 documentation gaps (monitoring, image preloading, troubleshooting) — then cut v1.0.0 with full multi-version OCP support (4.18-4.22). Reduces setup friction for teams needing OpenShift integration testing in CI. [v1.0.0](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.0) | [PR #112](https://github.com/palmsoftware/quick-ocp/pull/112) | [PR #113](https://github.com/palmsoftware/quick-ocp/pull/113) | [PR #114](https://github.com/palmsoftware/quick-ocp/pull/114) | [PR #115](https://github.com/palmsoftware/quick-ocp/pull/115) | [PR #116](https://github.com/palmsoftware/quick-ocp/pull/116) | [PR #117](https://github.com/palmsoftware/quick-ocp/pull/117)
+
+---
+
 ## 2026-07-17: Cert-Manager CI Audit and Multi-Cloud Coverage Expansion - [release](https://github.com/openshift/release)
 
 Audited cert-manager-operator CI and identified 8 testing gaps by comparing against peer operators. Addressed the top 3: promoted TechPreview and multi-cloud e2e tests to always-run (closing blind spots for istio-csr, trust-manager, GCP, and AWS STS credential modes), and added 5 daily periodic jobs providing nightly regression signal across AWS, GCP, and Azure — previously zero periodic testing existed. [PR #82098](https://github.com/openshift/release/pull/82098) | [PR #82099](https://github.com/openshift/release/pull/82099) | [PR #82100](https://github.com/openshift/release/pull/82100) | [CNF-25922](https://redhat.atlassian.net/browse/CNF-25922) | [CNF-25927](https://redhat.atlassian.net/browse/CNF-25927) | [CNF-25921](https://redhat.atlassian.net/browse/CNF-25921)
