@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-17: Cert-Manager CI Audit and Multi-Cloud Coverage Expansion - [release](https://github.com/openshift/release)
+
+Audited cert-manager-operator CI and identified 8 testing gaps by comparing against peer operators. Addressed the top 3: promoted TechPreview and multi-cloud e2e tests to always-run (closing blind spots for istio-csr, trust-manager, GCP, and AWS STS credential modes), and added 5 daily periodic jobs providing nightly regression signal across AWS, GCP, and Azure — previously zero periodic testing existed. [PR #82098](https://github.com/openshift/release/pull/82098) | [PR #82099](https://github.com/openshift/release/pull/82099) | [PR #82100](https://github.com/openshift/release/pull/82100) | [CNF-25922](https://redhat.atlassian.net/browse/CNF-25922) | [CNF-25927](https://redhat.atlassian.net/browse/CNF-25927) | [CNF-25921](https://redhat.atlassian.net/browse/CNF-25921)
+
+---
+
 ## 2026-07-16: Hybrid ML-KEM Precision and Documentation for TLS Compliance - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Addressed community feedback to distinguish hybrid ML-KEM (classical + post-quantum combined) from pure ML-KEM, critical for government customers tracking CNSA 2.0 requirements. Expanded post-quantum detection from 1 to all 3 Go 1.26 hybrid curves (X25519MLKEM768, SecP256r1MLKEM768, SecP384r1MLKEM1024), closing a gap where two curves went undetected. Audited and fixed 19 documentation gaps across 13 files to support growing community adoption. [v1.1.3](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.3) | [PR #276](https://github.com/sebrandon1/tls-compliance-operator/pull/276) | [PR #277](https://github.com/sebrandon1/tls-compliance-operator/pull/277)
