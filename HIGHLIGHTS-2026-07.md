@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-20: Certsuite-Probe v0.0.41 Release - [certsuite-probe](https://github.com/redhat-best-practices-for-k8s/certsuite-probe)
+
+Fixed broken CI automation caused by an overly broad branch protection ruleset that blocked all automated PR workflows. Narrowed scope to default branch only, unblocking the testssl.sh update pipeline. Released v0.0.41 with updated testssl.sh v3.2.4, refreshed base images, and modernized CI actions. Cleaned up 65 stale branches. [v0.0.41](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/releases/tag/v0.0.41) | [PR #108](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/pull/108)
+
+---
+
 ## 2026-07-20: Quick-K8s v1.0.0 Stable Release - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Shipped the first stable release of the Quick-K8s GitHub Action with 49 improvements since v0.0.75. Key additions: MetalLB LoadBalancer support, multi-CNI choice (Cilium/Flannel/Calico), SHA256 binary verification, script injection hardening, dry-run mode, structured logging, and deployment summaries. Enables teams to deploy production-grade Kubernetes test clusters on free-tier GitHub Actions runners with a single action reference. [v1.0.0](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.0)
