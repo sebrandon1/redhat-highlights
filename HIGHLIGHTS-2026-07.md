@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-20: Quick-K8s v1.0.0 Stable Release - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Shipped the first stable release of the Quick-K8s GitHub Action with 49 improvements since v0.0.75. Key additions: MetalLB LoadBalancer support, multi-CNI choice (Cilium/Flannel/Calico), SHA256 binary verification, script injection hardening, dry-run mode, structured logging, and deployment summaries. Enables teams to deploy production-grade Kubernetes test clusters on free-tier GitHub Actions runners with a single action reference. [v1.0.0](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.0)
+
+---
+
 ## 2026-07-17: Quick-OCP v1.0.0 Production Release - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Shipped the first stable release of the Quick-OCP GitHub Action, enabling reliable OpenShift cluster deployment on free-tier CI runners. Resolved all 5 open issues — GitHub API rate limiting, duplicate package installs, and 3 documentation gaps (monitoring, image preloading, troubleshooting) — then cut v1.0.0 with full multi-version OCP support (4.18-4.22). Reduces setup friction for teams needing OpenShift integration testing in CI. [v1.0.0](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.0) | [PR #112](https://github.com/palmsoftware/quick-ocp/pull/112) | [PR #113](https://github.com/palmsoftware/quick-ocp/pull/113) | [PR #114](https://github.com/palmsoftware/quick-ocp/pull/114) | [PR #115](https://github.com/palmsoftware/quick-ocp/pull/115) | [PR #116](https://github.com/palmsoftware/quick-ocp/pull/116) | [PR #117](https://github.com/palmsoftware/quick-ocp/pull/117)
