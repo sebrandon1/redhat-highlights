@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-21: Recert — Expanded cert-manager Certificate CR Field Coverage and Cluster Verification - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Extended recert's cert-manager Certificate CR rename pass to update all SAN-related spec fields (ipAddresses, uris, emailAddresses) during IBU, preventing cert-manager from reissuing certificates with stale values. Extracted a shared `replace_string_array` helper with `ARRAY_FIELDS` const for maintainability. Validated all 5 spec field types on a live OCP cluster (cnfdt16) with a self-signed issuer, confirming cert-manager populates IP SANs, URI SANs, and email SANs into X.509 certificates. 19 unit tests covering IPv4, IPv6, SPIFFE URIs, and email addresses. [PR #1833](https://github.com/rh-ecosystem-edge/recert/pull/1833) | [PR #1192](https://github.com/rh-ecosystem-edge/recert/pull/1192) (original feature)
+
+---
+
 ## 2026-07-21: TLS Config Lint v1.1.8 — Developer-Facing Suppression and Reporting - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Shipped 5 new capabilities enabling teams to adopt TLS scanning with minimal friction: inline suppression comments (`tls-lint:ignore`), per-file exceptions, severity overrides, CSV/JSON report export, and local CLI mode. Nearly doubled test coverage (168 → 310 tests), uncovering and fixing a macOS bash compatibility bug. Reduces false-positive noise that previously blocked adoption in legacy codebases. [v1.1.8](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.1.8) | [PR #72](https://github.com/sebrandon1/tls-config-lint/pull/72) | [PR #73](https://github.com/sebrandon1/tls-config-lint/pull/73) | [PR #74](https://github.com/sebrandon1/tls-config-lint/pull/74) | [PR #75](https://github.com/sebrandon1/tls-config-lint/pull/75) | [PR #76](https://github.com/sebrandon1/tls-config-lint/pull/76) | [PR #77](https://github.com/sebrandon1/tls-config-lint/pull/77) | [PR #79](https://github.com/sebrandon1/tls-config-lint/pull/79)
