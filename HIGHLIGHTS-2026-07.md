@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-21: TLS Config Lint v1.1.8 — Developer-Facing Suppression and Reporting - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+Shipped 5 new capabilities enabling teams to adopt TLS scanning with minimal friction: inline suppression comments (`tls-lint:ignore`), per-file exceptions, severity overrides, CSV/JSON report export, and local CLI mode. Nearly doubled test coverage (168 → 310 tests), uncovering and fixing a macOS bash compatibility bug. Reduces false-positive noise that previously blocked adoption in legacy codebases. [v1.1.8](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.1.8) | [PR #72](https://github.com/sebrandon1/tls-config-lint/pull/72) | [PR #73](https://github.com/sebrandon1/tls-config-lint/pull/73) | [PR #74](https://github.com/sebrandon1/tls-config-lint/pull/74) | [PR #75](https://github.com/sebrandon1/tls-config-lint/pull/75) | [PR #76](https://github.com/sebrandon1/tls-config-lint/pull/76) | [PR #77](https://github.com/sebrandon1/tls-config-lint/pull/77) | [PR #79](https://github.com/sebrandon1/tls-config-lint/pull/79)
+
+---
+
 ## 2026-07-21: Upstream RHCOS Security Hardening Strategy - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
 
 Shifted OpenShift node security hardening from downstream MachineConfig workarounds to upstream-first approach. Researched all 40 compliance hardening groups, filed the first upstream PR to blacklist 5 unused filesystem kernel modules directly in RHCOS (reducing attack surface per CIS Benchmark Level 1), ran fresh OCP 5.0 compliance scans validating 914 checks, and identified 3 additional upstream candidates (audit profile, etcd encryption, OAuth timeouts). Accepted by CoreOS maintainer on first review. [PR #289](https://github.com/coreos/rhel-coreos-config/pull/289) | [CNF-25994](https://redhat.atlassian.net/browse/CNF-25994) | [Strategy Analysis](https://gist.github.com/sebrandon1/7dd9f057db0a58df295842d434216fd6)
