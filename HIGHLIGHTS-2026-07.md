@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-21: Upstream RHCOS Security Hardening Strategy - [rhel-coreos-config](https://github.com/coreos/rhel-coreos-config)
+
+Shifted OpenShift node security hardening from downstream MachineConfig workarounds to upstream-first approach. Researched all 40 compliance hardening groups, filed the first upstream PR to blacklist 5 unused filesystem kernel modules directly in RHCOS (reducing attack surface per CIS Benchmark Level 1), ran fresh OCP 5.0 compliance scans validating 914 checks, and identified 3 additional upstream candidates (audit profile, etcd encryption, OAuth timeouts). Accepted by CoreOS maintainer on first review. [PR #289](https://github.com/coreos/rhel-coreos-config/pull/289) | [CNF-25994](https://redhat.atlassian.net/browse/CNF-25994) | [Strategy Analysis](https://gist.github.com/sebrandon1/7dd9f057db0a58df295842d434216fd6)
+
+---
+
 ## 2026-07-20: Certsuite-Probe v0.0.41 Release - [certsuite-probe](https://github.com/redhat-best-practices-for-k8s/certsuite-probe)
 
 Fixed broken CI automation caused by an overly broad branch protection ruleset that blocked all automated PR workflows. Narrowed scope to default branch only, unblocking the testssl.sh update pipeline. Released v0.0.41 with updated testssl.sh v3.2.4, refreshed base images, and modernized CI actions. Cleaned up 65 stale branches. [v0.0.41](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/releases/tag/v0.0.41) | [PR #108](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/pull/108)
