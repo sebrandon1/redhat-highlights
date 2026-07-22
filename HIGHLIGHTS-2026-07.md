@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-22: Recert Integration Test Framework — In-Repo CI Replacing Flaky Prow Jobs - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Built a containerized integration test suite (20 scenarios) for recert, replacing flaky external Prow CI with fast, reliable in-repo GitHub Actions checks. Covers all supported key types (RSA 2048/4096, ECDSA P-256/P-384), cert-manager Certificate CR rename, Ed25519 rejection, and etcd connectivity. Runs identically locally (`make integration-test`) and in CI. [PR #1843](https://github.com/rh-ecosystem-edge/recert/pull/1843)
+
+---
+
 ## 2026-07-21: Recert — Expanded cert-manager Certificate CR Field Coverage and Cluster Verification - [recert](https://github.com/rh-ecosystem-edge/recert)
 
 Extended recert's cert-manager Certificate CR rename pass to update all SAN-related spec fields (ipAddresses, uris, emailAddresses) during IBU, preventing cert-manager from reissuing certificates with stale values. Extracted a shared `replace_string_array` helper with `ARRAY_FIELDS` const for maintainability. Validated all 5 spec field types on a live OCP cluster (cnfdt16) with a self-signed issuer, confirming cert-manager populates IP SANs, URI SANs, and email SANs into X.509 certificates. 19 unit tests covering IPv4, IPv6, SPIFFE URIs, and email addresses. [PR #1833](https://github.com/rh-ecosystem-edge/recert/pull/1833) | [PR #1192](https://github.com/rh-ecosystem-edge/recert/pull/1192) (original feature)
