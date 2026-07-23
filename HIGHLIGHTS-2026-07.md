@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-23: Container Registry Tag Hygiene - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Prevented user confusion by auditing all 100 Quay.io image tags against GitHub releases and removing 8 orphaned dev/test tags (v1.2.0-fips, hybrid-mlkem, gateway-api-test, etc.) that were manually pushed during feature development but never released. Verified CI workflows only produce legitimate release tags — no automation gap to fix, just a one-time cleanup.
+
+---
+
 ## 2026-07-22: Recert Integration Test Framework — In-Repo CI Replacing Flaky Prow Jobs - [recert](https://github.com/rh-ecosystem-edge/recert)
 
 Built a containerized integration test suite (20 scenarios) for recert, replacing flaky external Prow CI with fast, reliable in-repo GitHub Actions checks. Covers all supported key types (RSA 2048/4096, ECDSA P-256/P-384), cert-manager Certificate CR rename, Ed25519 rejection, and etcd connectivity. Runs identically locally (`make integration-test`) and in CI. [PR #1843](https://github.com/rh-ecosystem-edge/recert/pull/1843)
