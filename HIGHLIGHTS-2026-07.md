@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-23: kubectl Plugin UX Overhaul - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Accelerated TLS compliance workflows by shipping 10 UX improvements to the kubectl-tlsreport plugin across 10 merged PRs: shell completion, empty-result feedback, column alignment with CRD, `--tls-version`/`--grade`/`--min-grade` filters, annotation-based `rescan` command, `target list/create/delete` subcommands, and prebuilt plugin binaries in GitHub releases. [#323](https://github.com/sebrandon1/tls-compliance-operator/pull/323), [#324](https://github.com/sebrandon1/tls-compliance-operator/pull/324), [#325](https://github.com/sebrandon1/tls-compliance-operator/pull/325), [#326](https://github.com/sebrandon1/tls-compliance-operator/pull/326), [#328](https://github.com/sebrandon1/tls-compliance-operator/pull/328), [#330](https://github.com/sebrandon1/tls-compliance-operator/pull/330), [#333](https://github.com/sebrandon1/tls-compliance-operator/pull/333), [#334](https://github.com/sebrandon1/tls-compliance-operator/pull/334), [#335](https://github.com/sebrandon1/tls-compliance-operator/pull/335), [#336](https://github.com/sebrandon1/tls-compliance-operator/pull/336)
+
+---
+
 ## 2026-07-23: Container Registry Tag Hygiene - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Prevented user confusion by auditing all 100 Quay.io image tags against GitHub releases and removing 8 orphaned dev/test tags (v1.2.0-fips, hybrid-mlkem, gateway-api-test, etc.) that were manually pushed during feature development but never released. Verified CI workflows only produce legitimate release tags — no automation gap to fix, just a one-time cleanup.
