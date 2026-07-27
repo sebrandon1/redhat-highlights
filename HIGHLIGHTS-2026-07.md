@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-27: Fixed Resource Leak in Upgrade Polling Loop - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Improved Single Node OpenShift upgrade reliability by fixing a file descriptor leak in the etcd health-check polling loop — deferred HTTP response closes accumulated on every tick without executing, risking resource exhaustion during slow upgrades. Also added a per-request timeout to prevent indefinite hangs. Includes 4 new unit tests. [PR #8048](https://github.com/openshift-kni/lifecycle-agent/pull/8048)
+
+---
+
 ## 2026-07-27: Unblocked 6+ PRs by Fixing Flaky E2E Test - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Improved CI reliability by diagnosing and fixing a flaky end-to-end test condition matcher that blocked 6+ open pull requests with intermittent failures. Root cause: non-deterministic Kubernetes API response ordering exposed a logic bug where "match any" mode short-circuited on the first mismatch instead of continuing to search. One-line fix with regression test. [PR #464](https://github.com/openshift/cert-manager-operator/pull/464) | [CNF-26150](https://redhat.atlassian.net/browse/CNF-26150)
