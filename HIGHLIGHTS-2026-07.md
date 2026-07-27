@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-27: Unblocked 6+ PRs by Fixing Flaky E2E Test - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Improved CI reliability by diagnosing and fixing a flaky end-to-end test condition matcher that blocked 6+ open pull requests with intermittent failures. Root cause: non-deterministic Kubernetes API response ordering exposed a logic bug where "match any" mode short-circuited on the first mismatch instead of continuing to search. One-line fix with regression test. [PR #464](https://github.com/openshift/cert-manager-operator/pull/464) | [CNF-26150](https://redhat.atlassian.net/browse/CNF-26150)
+
+---
+
 ## 2026-07-27: Quick-K8s v1.0.1 CI Reliability Fix - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Restored certsuite CI reliability by fixing OLM pod wait logic that failed when Kubernetes recreated catalog pods during startup — a race condition causing false timeouts on healthy clusters. Also fixed a nightly workflow bug that proposed kindest/node version downgrades due to incomplete Docker Hub API pagination. [v1.0.1](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.1) | [#339](https://github.com/palmsoftware/quick-k8s/pull/339) | [#340](https://github.com/palmsoftware/quick-k8s/pull/340) | [#341](https://github.com/palmsoftware/quick-k8s/pull/341)
