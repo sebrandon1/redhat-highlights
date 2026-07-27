@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-27: Restored Recert Cluster Rename CI - [release](https://github.com/openshift/release)
+
+Resolved a week-long 100% CI failure blocking all recert PRs by diagnosing and fixing the bare-metal Single Node OpenShift (SNO) rename test. Root cause: the test polled the node at its original IP after recert changed it, causing SSH timeouts. Fix polls both IPs, also fixed silent log collection failure. Affects 18 CI jobs across OCP 4.14–5.0. [PR #82507](https://github.com/openshift/release/pull/82507)
+
+---
+
 ## 2026-07-23: Cert-Manager Operator Test Coverage and Bug Discovery - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Strengthened operator reliability by auditing all 12 packages for test gaps, adding 3,337 lines of unit tests covering previously untested critical paths, and uncovering 2 latent bugs — including one that silently drops error diagnostics during IstioCSR failures. Filed 4 Jiras including a GA-blocking resource cleanup gap. [PR #461](https://github.com/openshift/cert-manager-operator/pull/461), [PR #462](https://github.com/openshift/cert-manager-operator/pull/462), [PR #463](https://github.com/openshift/cert-manager-operator/pull/463), [CNF-26102](https://redhat.atlassian.net/browse/CNF-26102), [CNF-26103](https://redhat.atlassian.net/browse/CNF-26103), [CNF-26104](https://redhat.atlassian.net/browse/CNF-26104), [CNF-26105](https://redhat.atlassian.net/browse/CNF-26105)
