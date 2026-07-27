@@ -22,9 +22,9 @@ Prevented user confusion by auditing all 100 Quay.io image tags against GitHub r
 
 ---
 
-## 2026-07-22: Recert Integration Test Framework — In-Repo CI Replacing Flaky Prow Jobs - [recert](https://github.com/rh-ecosystem-edge/recert)
+## 2026-07-27: Recert Integration Test Framework — In-Repo CI Replacing Flaky Prow Jobs - [recert](https://github.com/rh-ecosystem-edge/recert)
 
-Built a containerized integration test suite (20 scenarios) for recert, replacing flaky external Prow CI with fast, reliable in-repo GitHub Actions checks. Covers all supported key types (RSA 2048/4096, ECDSA P-256/P-384), cert-manager Certificate CR rename, Ed25519 rejection, and etcd connectivity. Runs identically locally (`make integration-test`) and in CI. [PR #1843](https://github.com/rh-ecosystem-edge/recert/pull/1843)
+Built a containerized integration test suite (23 scenarios) for recert, replacing flaky external Prow CI with fast, reliable in-repo GitHub Actions checks. Tests run in parallel (~3 min wall-clock vs ~9 min sequential), cover all supported key types, cert/key replacement, cert-manager CR handling, and etcd connectivity. Per-test timing in CI output pinpoints slow tests instantly. [PR #1843](https://github.com/rh-ecosystem-edge/recert/pull/1843), [CNF-26037](https://redhat.atlassian.net/browse/CNF-26037)
 
 ---
 
