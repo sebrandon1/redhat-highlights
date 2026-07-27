@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-27: Quick-K8s v1.0.1 CI Reliability Fix - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Restored certsuite CI reliability by fixing OLM pod wait logic that failed when Kubernetes recreated catalog pods during startup — a race condition causing false timeouts on healthy clusters. Also fixed a nightly workflow bug that proposed kindest/node version downgrades due to incomplete Docker Hub API pagination. [v1.0.1](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.1) | [#339](https://github.com/palmsoftware/quick-k8s/pull/339) | [#340](https://github.com/palmsoftware/quick-k8s/pull/340) | [#341](https://github.com/palmsoftware/quick-k8s/pull/341)
+
+---
+
 ## 2026-07-27: Restored Recert Cluster Rename CI - [release](https://github.com/openshift/release)
 
 Resolved a week-long 100% CI failure blocking all recert PRs by diagnosing and fixing the bare-metal Single Node OpenShift (SNO) rename test. Root cause: the test polled the node at its original IP after recert changed it, causing SSH timeouts. Fix polls both IPs, also fixed silent log collection failure. Affects 18 CI jobs across OCP 4.14–5.0. [PR #82507](https://github.com/openshift/release/pull/82507)
