@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-28: Upstream Cert-Manager Contributions - [cert-manager](https://github.com/cert-manager/cert-manager)
+
+Improved cert-manager operator experience and code quality with two upstream contributions: surfaced certificate expiration dates in `kubectl get cert -o wide` output — eliminating a common pain point reported by operators — and fixed 37 error-wrapping anti-patterns across 14 files that broke Go's `errors.Is()`/`errors.As()` error inspection chains. [PR #9080](https://github.com/cert-manager/cert-manager/pull/9080), [PR #9079](https://github.com/cert-manager/cert-manager/pull/9079), Closes [#4927](https://github.com/cert-manager/cert-manager/issues/4927)
+
+---
+
 ## 2026-07-27: Fixed Resource Leak in Upgrade Polling Loop - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Improved Single Node OpenShift upgrade reliability by fixing a file descriptor leak in the etcd health-check polling loop — deferred HTTP response closes accumulated on every tick without executing, risking resource exhaustion during slow upgrades. Also added a per-request timeout to prevent indefinite hangs. Includes 4 new unit tests. [PR #8048](https://github.com/openshift-kni/lifecycle-agent/pull/8048)
