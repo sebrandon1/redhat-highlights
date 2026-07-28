@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-28: New Releases for Privileged-DaemonSet and OCT - [privileged-daemonset](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset), [oct](https://github.com/redhat-best-practices-for-k8s/oct)
+
+Improved certsuite testing infrastructure reliability with two upstream library releases. Released privileged-daemonset v1.0.75 with 46 new unit tests covering all library functions — taking the library from zero test coverage to comprehensive branch-level validation — plus Go 1.26 toolchain updates. Released Offline Catalog Tool (OCT) v0.0.65 with Go 1.26 update and dependency maintenance. [v1.0.75](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset/releases/tag/v1.0.75) | [PR #375](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset/pull/375) | [v0.0.65](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.65)
+
+---
+
 ## 2026-07-28: Upstream Cert-Manager Contributions - [cert-manager](https://github.com/cert-manager/cert-manager)
 
 Improved cert-manager operator experience and code quality with two upstream contributions: surfaced certificate expiration dates in `kubectl get cert -o wide` output — eliminating a common pain point reported by operators — and fixed 37 error-wrapping anti-patterns across 14 files that broke Go's `errors.Is()`/`errors.As()` error inspection chains. [PR #9080](https://github.com/cert-manager/cert-manager/pull/9080), [PR #9079](https://github.com/cert-manager/cert-manager/pull/9079), Closes [#4927](https://github.com/cert-manager/cert-manager/issues/4927)
