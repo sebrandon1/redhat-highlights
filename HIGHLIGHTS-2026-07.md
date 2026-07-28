@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-28: Eliminated N+1 API Pattern in Cluster Discovery - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Reduced Kubernetes API server load during test discovery by replacing per-label API calls with single bulk queries and in-memory filtering. With N label selectors, this eliminates N-1 sequential round-trips per namespace — reducing apiserver pressure and speeding up test initialization. Also fixed a latent duplicate-results bug. [PR #3823](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3823)
+
+---
+
 ## 2026-07-28: New Releases for Privileged-DaemonSet and OCT - [privileged-daemonset](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset), [oct](https://github.com/redhat-best-practices-for-k8s/oct)
 
 Improved certsuite testing infrastructure reliability with two upstream library releases. Released privileged-daemonset v1.0.75 with 46 new unit tests covering all library functions — taking the library from zero test coverage to comprehensive branch-level validation — plus Go 1.26 toolchain updates. Released Offline Catalog Tool (OCT) v0.0.65 with Go 1.26 update and dependency maintenance. [v1.0.75](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset/releases/tag/v1.0.75) | [PR #375](https://github.com/redhat-best-practices-for-k8s/privileged-daemonset/pull/375) | [v0.0.65](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.65)
