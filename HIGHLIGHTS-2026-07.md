@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-30: Unblocked Cross-Repo Dependency Update Pipeline - [bps-operator](https://github.com/sebrandon1/bps-operator), [checks-qe](https://github.com/redhat-best-practices-for-k8s/checks-qe)
+
+Resolved a cross-repository CI failure blocking the checks library v0.0.27 upgrade in bps-operator. Diagnosed a check rename (`read-only-file-system` to `read-only-root-file-system`) that broke 3 end-to-end test scenarios in the upstream checks-qe test image. Fixed the upstream image, merged both PRs, and restored the dependency update pipeline. [bps-operator PR #122](https://github.com/sebrandon1/bps-operator/pull/122) | [checks-qe PR #47](https://github.com/redhat-best-practices-for-k8s/checks-qe/pull/47)
+
+---
+
 ## 2026-07-28: Eliminated N+1 API Pattern in Cluster Discovery - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Reduced Kubernetes API server load during test discovery by replacing per-label API calls with single bulk queries and in-memory filtering. With N label selectors, this eliminates N-1 sequential round-trips per namespace — reducing apiserver pressure and speeding up test initialization. Also fixed a latent duplicate-results bug. [PR #3823](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3823)
