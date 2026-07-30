@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-30: Resolved Cross-Repo Dependency Failures Blocking CI - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite), [oct](https://github.com/redhat-best-practices-for-k8s/oct)
+
+Unblocked certsuite CI by resolving 3 Dependabot PRs with incompatible transitive dependencies. Diagnosed a controller-runtime interface mismatch (k8s.io v0.36.x vs controller-runtime v0.23.x) and executed a full Helm v3-to-v4 migration across 2 repos (oct interface changes first, then certsuite consumer code), releasing oct v0.0.66 to bridge the gap. [PR #3833](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3833) | [PR #3834](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3834) | [oct PR #476](https://github.com/redhat-best-practices-for-k8s/oct/pull/476) | [oct v0.0.66](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.66)
+
+---
+
 ## 2026-07-30: Separated Cert-Manager Hub Monitoring from Blocked RAN Delivery - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Unblocked hub-side root CA expiration monitoring by splitting it from the RAN cert-manager work that won't land until November. Reverted the premature RAN cert-manager restore, closed the combined PR, and created two focused PRs — enabling the hub monitoring to ship independently while RAN remains cleanly deferred. [PR #881](https://github.com/openshift-kni/telco-reference/pull/881) | [PR #882](https://github.com/openshift-kni/telco-reference/pull/882) | [OCPBUGS-85777](https://issues.redhat.com/browse/OCPBUGS-85777)
