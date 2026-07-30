@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-30: Separated Cert-Manager Hub Monitoring from Blocked RAN Delivery - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Unblocked hub-side root CA expiration monitoring by splitting it from the RAN cert-manager work that won't land until November. Reverted the premature RAN cert-manager restore, closed the combined PR, and created two focused PRs — enabling the hub monitoring to ship independently while RAN remains cleanly deferred. [PR #881](https://github.com/openshift-kni/telco-reference/pull/881) | [PR #882](https://github.com/openshift-kni/telco-reference/pull/882) | [OCPBUGS-85777](https://issues.redhat.com/browse/OCPBUGS-85777)
+
+---
+
 ## 2026-07-30: Unblocked Cross-Repo Dependency Update Pipeline - [bps-operator](https://github.com/sebrandon1/bps-operator), [checks-qe](https://github.com/redhat-best-practices-for-k8s/checks-qe)
 
 Resolved a cross-repository CI failure blocking the checks library v0.0.27 upgrade in bps-operator. Diagnosed a check rename (`read-only-file-system` to `read-only-root-file-system`) that broke 3 end-to-end test scenarios in the upstream checks-qe test image. Fixed the upstream image, merged both PRs, and restored the dependency update pipeline. [bps-operator PR #122](https://github.com/sebrandon1/bps-operator/pull/122) | [checks-qe PR #47](https://github.com/redhat-best-practices-for-k8s/checks-qe/pull/47)
