@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for July 
 
 ---
 
+## 2026-07-30: Eliminated Endpoint Starvation Bug in TLS Operator - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Fixed two compounding bugs causing TLS endpoints to stay stuck in "Pending" status indefinitely — reported by a user whose 226-endpoint cluster had endpoints unscanned for 21+ minutes. Resolved a cache-startup race condition and worker-pool starvation during retry backoff, plus a deployment rollout deadlock. Released [v1.1.6](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.6). [PR #384](https://github.com/sebrandon1/tls-compliance-operator/pull/384) | [#383](https://github.com/sebrandon1/tls-compliance-operator/issues/383)
+
+---
+
 ## 2026-07-30: Resolved Cross-Repo Dependency Failures Blocking CI - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite), [oct](https://github.com/redhat-best-practices-for-k8s/oct)
 
 Unblocked certsuite CI by resolving 3 Dependabot PRs with incompatible transitive dependencies. Diagnosed a controller-runtime interface mismatch (k8s.io v0.36.x vs controller-runtime v0.23.x) and executed a full Helm v3-to-v4 migration across 2 repos (oct interface changes first, then certsuite consumer code), releasing oct v0.0.66 to bridge the gap. [PR #3833](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3833) | [PR #3834](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3834) | [oct PR #476](https://github.com/redhat-best-practices-for-k8s/oct/pull/476) | [oct v0.0.66](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.66)
