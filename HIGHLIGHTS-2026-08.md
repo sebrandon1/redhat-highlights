@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-05: First Unit Test Coverage for Recert etcd Key Generation - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Added the first-ever unit tests for recert's etcd key path generation, a critical function with zero test coverage used across 22 call sites. Fixed duplicate entries in the resource-to-plural mapping and established a single source of truth that automatically guards against future regressions. [PR #1883](https://github.com/rh-ecosystem-edge/recert/pull/1883), [CNF-26415](https://redhat.atlassian.net/browse/CNF-26415)
+
+---
+
 ## 2026-08-05: Eliminated Unit Test Backlog - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Strengthened regression safety by closing all 5 open testing gaps in a single PR — 26 tests across controller, webhook, and TLS profile paths that previously had zero coverage. Code coverage increased from 55% to 65.8%. Added CI benchmark workflow for ongoing performance visibility. [PR #430](https://github.com/sebrandon1/tls-compliance-operator/pull/430)
