@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-10: Released OCT v0.0.67 with Helm v4 Migration - [oct](https://github.com/redhat-best-practices-for-k8s/oct)
+
+Modernized the Offline Catalog Tool (OCT) by migrating from Helm v3 to v4, keeping the certification toolchain aligned with the latest Helm ecosystem and ensuring disconnected CNF certification environments stay compatible as Helm v3 reaches end-of-life. [v0.0.67](https://github.com/redhat-best-practices-for-k8s/oct/releases/tag/v0.0.67), [PR #476](https://github.com/redhat-best-practices-for-k8s/oct/pull/476)
+
+---
+
 ## 2026-08-10: Shipped Certsuite Probe v0.0.42 - [certsuite-probe](https://github.com/redhat-best-practices-for-k8s/certsuite-probe)
 
 Kept the certification probe image current with the latest UBI9 security patches and CI tooling updates, ensuring CNF certification tests run against a hardened, up-to-date base. [v0.0.42](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/releases/tag/v0.0.42)
