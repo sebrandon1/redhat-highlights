@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-10: Shipped Certsuite Probe v0.0.42 - [certsuite-probe](https://github.com/redhat-best-practices-for-k8s/certsuite-probe)
+
+Kept the certification probe image current with the latest UBI9 security patches and CI tooling updates, ensuring CNF certification tests run against a hardened, up-to-date base. [v0.0.42](https://github.com/redhat-best-practices-for-k8s/certsuite-probe/releases/tag/v0.0.42)
+
+---
+
 ## 2026-08-10: Closed 5 Documentation Gaps for User Self-Service - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Reduced support burden by documenting previously undiscoverable features — SSRF validation rules, per-resource skip/extra-ports annotations, pre-built plugin binaries, and missing compliance statuses. Users can now self-serve on installation, troubleshooting, and configuration without digging through source code. [PR #458](https://github.com/sebrandon1/tls-compliance-operator/pull/458)
