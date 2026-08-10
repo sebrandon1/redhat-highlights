@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-10: Closed 5 Documentation Gaps for User Self-Service - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Reduced support burden by documenting previously undiscoverable features — SSRF validation rules, per-resource skip/extra-ports annotations, pre-built plugin binaries, and missing compliance statuses. Users can now self-serve on installation, troubleshooting, and configuration without digging through source code. [PR #458](https://github.com/sebrandon1/tls-compliance-operator/pull/458)
+
+---
+
 ## 2026-08-10: Hardened CI and Eliminated Tech Debt - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Shipped 7 tech-debt PRs in a single release, enforcing mypy type checking, un-suppressing SC2086 shellcheck violations across 34 scripts, adding 71 new unit tests, and replacing hardcoded registry references with a single configurable variable. CI now catches regressions on push to main that previously slipped through undetected. [v1.1.3](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.1.3), PRs [#300](https://github.com/sebrandon1/compliance-scripts/pull/300)–[#306](https://github.com/sebrandon1/compliance-scripts/pull/306)
