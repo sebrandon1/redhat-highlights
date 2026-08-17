@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-17: Shipped Certsuite v5.5.24 - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Delivered a Cloud Native Function (CNF) certification release that reduces false failures on Single Node OpenShift (SNO) and performance-profile workloads, adds forbidden-capability security checks, and keeps the toolchain current with Helm v4. Partners get more accurate results without extra waiver overhead. [v5.5.24](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.24), [PR #3851](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3851), [PR #3850](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3850), [PR #3808](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3808)
+
+---
+
 ## 2026-08-13: Improved Lifecycle Agent IPC Test Coverage and Reliability - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Strengthened IP Configuration (IPC) controller reliability by fixing two broken tests on main and adding 54 new unit tests covering critical networking validation logic (IPv4/IPv6 address comparison, CIDR matching, dual-stack status verification). Raised coverage on previously untested IPv6 validation from 0% to 78%, reducing risk of undetected regressions in IP configuration changes during Single Node OpenShift (SNO) upgrades. [PR #8404](https://github.com/openshift-kni/lifecycle-agent/pull/8404), [CNF-26599](https://issues.redhat.com/browse/CNF-26599)
