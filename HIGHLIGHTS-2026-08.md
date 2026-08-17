@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-17: Closed Recert Crypto Test Gap - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Reduced risk of silent certificate-regeneration failures in cluster recertification by expanding recert's GitHub Actions suite to 29 scenarios. Coverage now includes PKCS#8 keys, IPv6 names, kubeconfig and token files, and etcd TLS secrets — catching crypto bugs before they reach hour-long cluster tests. [PR #1843](https://github.com/rh-ecosystem-edge/recert/pull/1843), [CNF-26037](https://redhat.atlassian.net/browse/CNF-26037)
+
+---
+
 ## 2026-08-17: Shipped Certsuite v5.5.24 - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Delivered a Cloud Native Function (CNF) certification release that reduces false failures on Single Node OpenShift (SNO) and performance-profile workloads, adds forbidden-capability security checks, and keeps the toolchain current with Helm v4. Partners get more accurate results without extra waiver overhead. [v5.5.24](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.24), [PR #3851](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3851), [PR #3850](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3850), [PR #3808](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3808)
