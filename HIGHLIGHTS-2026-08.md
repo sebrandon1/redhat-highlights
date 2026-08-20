@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-20: Made Quay Calls Cancellable - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Gave Quay API consumers cancellable, deadline-aware requests so hung registry calls no longer stall automation. Shipped a verb-first CLI so create, delete, and update are obvious, then released v1.1.0 with an explicit breaking-change notice. [PR #203](https://github.com/sebrandon1/go-quay/pull/203), [PR #204](https://github.com/sebrandon1/go-quay/pull/204), [v1.1.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.1.0)
+
+---
+
 ## 2026-08-20: Closed TLS Workflow Gaps - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Gave operators live TLS visibility, GitHub code-scanning reports, and gRPC Gateway coverage without re-running one-shot scans or extra certificate tooling. Shipped seven enhancements: HTML/SARIF export, get --watch, target update/filters, GRPCRoute discovery, and cert serial/fingerprint/IP SANs. [PRs #520](https://github.com/sebrandon1/tls-compliance-operator/pull/520)–[#526](https://github.com/sebrandon1/tls-compliance-operator/pull/526)
