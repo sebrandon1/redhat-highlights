@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-20: Closed TLS Workflow Gaps - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Gave operators live TLS visibility, GitHub code-scanning reports, and gRPC Gateway coverage without re-running one-shot scans or extra certificate tooling. Shipped seven enhancements: HTML/SARIF export, get --watch, target update/filters, GRPCRoute discovery, and cert serial/fingerprint/IP SANs. [PRs #520](https://github.com/sebrandon1/tls-compliance-operator/pull/520)–[#526](https://github.com/sebrandon1/tls-compliance-operator/pull/526)
+
+---
+
 ## 2026-08-20: Hardened Lab Cluster CLI - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Reduced risk of accidental cluster disruption and unsafe credential fetches in the Zero Touch Provisioning (ZTP) lab CLI. Shipped v0.0.8 with dry-run safety, host-key checking, reserved-IP rejection, and response size caps, plus status, health, and cache commands that cut time spent in the web UI. [v0.0.8](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.8)
