@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-20: Eliminated Unsecured-Port False Passes - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Stopped plaintext Cloud Native Function (CNF) ports from passing certification by accident. Cross-node probe timeouts counted as a pass, and OpenSSL 3 TLS 1.3 output was misread as plaintext. Node-local probing and cipher parsing close that gap. [PR #3869](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3869)
+
+---
+
 ## 2026-08-20: Made Quay Calls Cancellable - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Gave Quay API consumers cancellable, deadline-aware requests so hung registry calls no longer stall automation. Shipped a verb-first CLI so create, delete, and update are obvious, then released v1.1.0 with an explicit breaking-change notice. [PR #203](https://github.com/sebrandon1/go-quay/pull/203), [PR #204](https://github.com/sebrandon1/go-quay/pull/204), [v1.1.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.1.0)
