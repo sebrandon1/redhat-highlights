@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-20: Hardened Lab Cluster CLI - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Reduced risk of accidental cluster disruption and unsafe credential fetches in the Zero Touch Provisioning (ZTP) lab CLI. Shipped v0.0.8 with dry-run safety, host-key checking, reserved-IP rejection, and response size caps, plus status, health, and cache commands that cut time spent in the web UI. [v0.0.8](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.8)
+
+---
+
 ## 2026-08-19: Unblocked QE CI Timeouts - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Restored Quality Engineering (QE) pull-request velocity by stopping Kind-cluster jobs from hanging six hours on a stuck Ubuntu package update. Three open Dependabot PRs were blocked by false cancellations; skipping the install when pip is already on the runner unblocked the pipeline. [PR #1575](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1575)
