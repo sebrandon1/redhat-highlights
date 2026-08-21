@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-21: Made PQC Dashboard Trustworthy - [tls-operator-audit](https://github.com/sebrandon1/tls-operator-audit)
+
+Stopped skipped operators from showing as scan failures on the post-quantum cryptography dashboard, restored certificate expiry, and made concurrent cluster scans safe. Leadership can trust Module-Lattice Key Encapsulation Mechanism (ML-KEM) status instead of chasing false errors. [PR #95](https://github.com/sebrandon1/tls-operator-audit/pull/95), [PR #96](https://github.com/sebrandon1/tls-operator-audit/pull/96), [PR #97](https://github.com/sebrandon1/tls-operator-audit/pull/97), [PR #98](https://github.com/sebrandon1/tls-operator-audit/pull/98)
+
+---
+
 ## 2026-08-21: Prevented OLM Production Crashes via Nil Pointer Fix - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
 
 Eliminated production crash risk in Operator Lifecycle Manager by discovering a nil pointer dereference during test coverage work. PatchDeployment accessed fields before nil check, causing panic instead of returning error. Fixed with 3-line change and added comprehensive 455-line test suite covering all deployment CRUD operations. Coverage improved 0%→82% for deployment.go, establishes testing pattern for 13 remaining untested files. [PR #3899](https://github.com/operator-framework/operator-lifecycle-manager/pull/3899)
