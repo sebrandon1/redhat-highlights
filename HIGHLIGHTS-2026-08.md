@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-21: Improved go-dci CLI UX - [go-dci](https://github.com/sebrandon1/go-dci)
+
+Eliminated guesswork for Distributed CI (DCI) CLI users by adding help text and examples to all 34 commands, making the `jobs` command general-purpose with a `--certsuite` filter flag, and standardizing JSON list output with a `total` field. Shipped as v1.0.9. [PR #230](https://github.com/sebrandon1/go-dci/pull/230), [PR #231](https://github.com/sebrandon1/go-dci/pull/231), [PR #232](https://github.com/sebrandon1/go-dci/pull/232), [v1.0.9](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.9)
+
+---
+
 ## 2026-08-21: Shipped TLS Operator v1.1.10 - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Gave cluster operators a one-command install and standard kubectl plugin packaging for Transport Layer Security (TLS) and post-quantum readiness scans. v1.1.10 adds live watch, GitHub code-scanning reports, HTML dashboards, gRPC route coverage, and a circuit breaker so failing endpoints stop wasting scan cycles. [v1.1.10](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.10)
