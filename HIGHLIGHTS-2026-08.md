@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-21: Cleared OLM Linter Backlog - [olm-annotation-lint](https://github.com/openshift-kni/olm-annotation-lint)
+
+Cleared a 20-PR backlog on the Operator Lifecycle Manager (OLM) annotation linter so operator authors get ignore comments, timeouts, per-rule config, safer JUnit, and bundle checks on main instead of waiting on stacked reviews. [PRs #122](https://github.com/openshift-kni/olm-annotation-lint/pull/122)–[#141](https://github.com/openshift-kni/olm-annotation-lint/pull/141)
+
+---
+
 ## 2026-08-21: Improved go-dci CLI UX - [go-dci](https://github.com/sebrandon1/go-dci)
 
 Eliminated guesswork for Distributed CI (DCI) CLI users by adding help text and examples to all 34 commands, making the `jobs` command general-purpose with a `--certsuite` filter flag, and standardizing JSON list output with a `total` field. Shipped as v1.0.9. [PR #230](https://github.com/sebrandon1/go-dci/pull/230), [PR #231](https://github.com/sebrandon1/go-dci/pull/231), [PR #232](https://github.com/sebrandon1/go-dci/pull/232), [v1.0.9](https://github.com/sebrandon1/go-dci/releases/tag/v1.0.9)
