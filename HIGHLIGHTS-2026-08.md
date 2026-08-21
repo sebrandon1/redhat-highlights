@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-21: Shipped TLS Operator v1.1.10 - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Gave cluster operators a one-command install and standard kubectl plugin packaging for Transport Layer Security (TLS) and post-quantum readiness scans. v1.1.10 adds live watch, GitHub code-scanning reports, HTML dashboards, gRPC route coverage, and a circuit breaker so failing endpoints stop wasting scan cycles. [v1.1.10](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.10)
+
+---
+
 ## 2026-08-21: Made PQC Dashboard Trustworthy - [tls-operator-audit](https://github.com/sebrandon1/tls-operator-audit)
 
 Stopped skipped operators from showing as scan failures on the post-quantum cryptography dashboard, restored certificate expiry, and made concurrent cluster scans safe. Leadership can trust Module-Lattice Key Encapsulation Mechanism (ML-KEM) status instead of chasing false errors. [PR #95](https://github.com/sebrandon1/tls-operator-audit/pull/95), [PR #96](https://github.com/sebrandon1/tls-operator-audit/pull/96), [PR #97](https://github.com/sebrandon1/tls-operator-audit/pull/97), [PR #98](https://github.com/sebrandon1/tls-operator-audit/pull/98)
