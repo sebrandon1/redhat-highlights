@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-24: Eliminated TLS Report Data Loss on Operator Shutdown - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Prevented Transport Layer Security (TLS) compliance reports from getting permanently stuck in "Pending" during operator restarts by adding a graceful shutdown drain. In-flight endpoint checks now finish before the process exits, eliminating silent data loss that required manual rescans to recover. Released as v1.1.11. [PR #534](https://github.com/sebrandon1/tls-compliance-operator/pull/534)
+
+---
+
 ## 2026-08-24: Fixed Five Silent Recert Bugs via Unit Testing - [recert](https://github.com/rh-ecosystem-edge/recert)
 
 Eliminated five correctness bugs in OpenShift cluster recertification — panics on unexpected etcd keys, silent UTF-8 data corruption, broken CN parsing for `system:admin`-style names, and wasted JSON parsing — by adding 115 unit tests across 18 files. Bugs could cause runtime crashes or silently corrupt certificate data during cluster re-cert operations. [PR #1918](https://github.com/rh-ecosystem-edge/recert/pull/1918), [CNF-26734](https://redhat.atlassian.net/browse/CNF-26734)
