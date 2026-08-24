@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-24: Fixed Five Silent Recert Bugs via Unit Testing - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Eliminated five correctness bugs in OpenShift cluster recertification — panics on unexpected etcd keys, silent UTF-8 data corruption, broken CN parsing for `system:admin`-style names, and wasted JSON parsing — by adding 115 unit tests across 18 files. Bugs could cause runtime crashes or silently corrupt certificate data during cluster re-cert operations. [PR #1918](https://github.com/rh-ecosystem-edge/recert/pull/1918), [CNF-26734](https://redhat.atlassian.net/browse/CNF-26734)
+
+---
+
 ## 2026-08-21: Made TLS Scan Results Actionable - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Gave cluster operators one place to see remaining Transport Layer Security (TLS) risk, full reports for automation, and live progress on long rescans so empty or hung-looking command output is not mistaken for a failure. Shipped four user-experience fixes and verified them on a 294-endpoint lab cluster. [PR #529](https://github.com/sebrandon1/tls-compliance-operator/pull/529), [PR #530](https://github.com/sebrandon1/tls-compliance-operator/pull/530), [PR #531](https://github.com/sebrandon1/tls-compliance-operator/pull/531), [PR #532](https://github.com/sebrandon1/tls-compliance-operator/pull/532)
