@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-25: Fixed CI-Blocking Report Field Mismatch - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Unblocked Quality Engineering (QE) test automation by fixing a silent field-key mismatch that caused all reason-based assertions to return empty strings, failing CI across networking and access control suites. Consolidated duplicated logic into a shared helper, added readiness guards to prevent test flakes, and restored all 40 CI checks to green. [PR #1577](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1577)
+
+---
+
 ## 2026-08-25: Unblocked Checks Library Migration - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Completed complex rebase of PR #3554, unblocking the migration to centralized check implementations across all certification tools. Eliminates 3,800 lines of duplicated logic, enables one-time fixes to benefit all tools, and reduces maintenance cost. Verified library completeness and integrated probe diagnostics. [PR #3554](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3554)
