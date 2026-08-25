@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-25: Unblocked Checks Library Migration - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Completed complex rebase of PR #3554, unblocking the migration to centralized check implementations across all certification tools. Eliminates 3,800 lines of duplicated logic, enables one-time fixes to benefit all tools, and reduces maintenance cost. Verified library completeness and integrated probe diagnostics. [PR #3554](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3554)
+
+---
+
 ## 2026-08-24: Eliminated TLS Report Data Loss on Operator Shutdown - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Prevented Transport Layer Security (TLS) compliance reports from getting permanently stuck in "Pending" during operator restarts by adding a graceful shutdown drain. In-flight endpoint checks now finish before the process exits, eliminating silent data loss that required manual rescans to recover. Released as v1.1.11. [PR #534](https://github.com/sebrandon1/tls-compliance-operator/pull/534)
