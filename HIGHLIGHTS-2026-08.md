@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Augus
 
 ---
 
+## 2026-08-26: Unified TLS and Image Certification Posture in One View - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator) / [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Enabled single-command security posture visibility by linking two independent Kubernetes operators so TLS compliance reports automatically surface Red Hat image certification data — health grades, vulnerability counts across all severities, publisher info, end-of-life status, and CVE identifiers. Eliminates manual cross-referencing across tools for compliance audits. [PR #151](https://github.com/sebrandon1/imagecertinfo-operator/pull/151), [PR #154](https://github.com/sebrandon1/imagecertinfo-operator/pull/154), [PR #536](https://github.com/sebrandon1/tls-compliance-operator/pull/536), [PR #538](https://github.com/sebrandon1/tls-compliance-operator/pull/538)
+
+---
+
 ## 2026-08-25: Fixed CI-Blocking Report Field Mismatch - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Unblocked Quality Engineering (QE) test automation by fixing a silent field-key mismatch that caused all reason-based assertions to return empty strings, failing CI across networking and access control suites. Consolidated duplicated logic into a shared helper, added readiness guards to prevent test flakes, and restored all 40 CI checks to green. [PR #1577](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1577)
