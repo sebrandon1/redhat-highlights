@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-03: Operator Release & Expanded CI Coverage - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Released imagecertinfo-operator v0.2.23, expanding CI to cover native arm64 runners alongside amd64 — catching arch-specific failures before they reach production. Also automated Docker base-image updates via Dependabot, closing a gap where base-image vulnerabilities could otherwise go undetected between releases. [v0.2.23](https://github.com/sebrandon1/imagecertinfo-operator/releases/tag/v0.2.23) | [PR #174](https://github.com/sebrandon1/imagecertinfo-operator/pull/174) | [PR #173](https://github.com/sebrandon1/imagecertinfo-operator/pull/173)
+
+---
+
 ## 2026-09-03: STARTTLS Support Ends False Negatives - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Removed false negatives in TLS compliance scanning by adding STARTTLS support for email, directory, and database services (SMTP, IMAP, LDAP, PostgreSQL). These endpoints were previously reported as unencrypted, masking their true security posture from operators. Ships with 21 new tests across all four protocols and full CI green. [PR #547](https://github.com/sebrandon1/tls-compliance-operator/pull/547)
