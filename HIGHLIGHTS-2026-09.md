@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-04: Stabilized cert-manager-operator CI pipelines - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Improved CI reliability and reduced developer friction by eliminating flaky E2E failures caused by shell-quoting bugs in Ginkgo label filtering. Optimized CI resource allocations (500m CPU / 1Gi+ RAM) and refactored operator status polling to significantly reduce test duration, ensuring faster PR validation. [PR #464](https://github.com/openshift/cert-manager-operator/pull/464) | [openshift/release PR #84571](https://github.com/openshift/release/pull/84571) | [CNF-26150](https://issues.redhat.com/browse/CNF-26150)
+
+---
+
 ## 2026-09-04: Severity Filter for Compliance Dashboard - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Shipped v1.1.4, adding a severity filter to the OpenShift compliance dashboard so operators can isolate HIGH/MEDIUM/LOW/MANUAL check groups at a glance — eliminating manual scrolling through hundreds of results. Shareable filtered views via URL hash persistence. [v1.1.4](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.1.4) | [PR #383](https://github.com/sebrandon1/compliance-scripts/pull/383) | [PR #384](https://github.com/sebrandon1/compliance-scripts/pull/384)
