@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-04: Regression Tests for 7 recert Cert Rotation Fixes - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Protected unbroken cert rotation across OpenShift upgrades by adding integration tests for 7 recert bug fixes, each proven to fail pre-fix and pass post-fix (30 scenarios per run, CI green). Regression coverage now guards cert/key regeneration, spiffe SAN rewrites, and etcd encryption round-trips — preventing silent cluster state corruption and unplanned downtime. [PR #1833](https://github.com/rh-ecosystem-edge/recert/pull/1833) | [PR #1827](https://github.com/rh-ecosystem-edge/recert/pull/1827) | [PR #1936](https://github.com/rh-ecosystem-edge/recert/pull/1936) | [PR #1937](https://github.com/rh-ecosystem-edge/recert/pull/1937) | [PR #1938](https://github.com/rh-ecosystem-edge/recert/pull/1938) | [PR #1939](https://github.com/rh-ecosystem-edge/recert/pull/1939) | [PR #1940](https://github.com/rh-ecosystem-edge/recert/pull/1940)
+
+---
+
 ## 2026-09-04: Stabilized cert-manager-operator CI pipelines - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Improved CI reliability and reduced developer friction by eliminating flaky E2E failures caused by shell-quoting bugs in Ginkgo label filtering. Optimized CI resource allocations (500m CPU / 1Gi+ RAM) and refactored operator status polling to significantly reduce test duration, ensuring faster PR validation. [PR #464](https://github.com/openshift/cert-manager-operator/pull/464) | [openshift/release PR #84571](https://github.com/openshift/release/pull/84571) | [CNF-26150](https://issues.redhat.com/browse/CNF-26150)
