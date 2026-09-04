@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-04: Severity Filter for Compliance Dashboard - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Shipped v1.1.4, adding a severity filter to the OpenShift compliance dashboard so operators can isolate HIGH/MEDIUM/LOW/MANUAL check groups at a glance — eliminating manual scrolling through hundreds of results. Shareable filtered views via URL hash persistence. [v1.1.4](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.1.4) | [PR #383](https://github.com/sebrandon1/compliance-scripts/pull/383) | [PR #384](https://github.com/sebrandon1/compliance-scripts/pull/384)
+
+---
+
 ## 2026-09-03: Automated TLS Operator Release Pipeline - [tls-operator-audit](https://github.com/sebrandon1/tls-operator-audit)
 
 Eliminated manual release overhead by automating the full release workflow — tagging, pushing, and publishing GitHub releases with categorized changelogs. This ensures consistent, auditable version history for the TLS compliance scanning tool used across OpenShift environments. [v0.0.3](https://github.com/sebrandon1/tls-operator-audit/releases/tag/v0.0.3)
