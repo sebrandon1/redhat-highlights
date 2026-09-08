@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-08: Reliable TLS Report Output - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Improved CLI reliability by ensuring `kubectl tlsreport` reports broken-pipe and output failures instead of silently succeeding. Added regression coverage and merged the fix with all 29 CI checks passing, preventing incomplete compliance reports from being mistaken for successful exports. [PR #559](https://github.com/sebrandon1/tls-compliance-operator/pull/559)
+
 ## 2026-09-08: OCP 5.1 Compliance Baseline & Scan Reproducibility Finding - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Established the OCP 5.1 compliance baseline across E8, CIS, Moderate, and PCI-DSS profiles with Compliance Operator v1.8.2 and v1.9.0. Identified root cause of 4 unexpected PASS results vs. 5.0: a mutable content image was silently updated, revealing a reproducibility risk when scan images aren't digest-pinned. [PR #386](https://github.com/sebrandon1/compliance-scripts/pull/386)
