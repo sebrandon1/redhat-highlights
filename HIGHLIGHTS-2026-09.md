@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-08: OCP 5.1 Compliance Baseline & Scan Reproducibility Finding - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Established the OCP 5.1 compliance baseline across E8, CIS, Moderate, and PCI-DSS profiles with Compliance Operator v1.8.2 and v1.9.0. Identified root cause of 4 unexpected PASS results vs. 5.0: a mutable content image was silently updated, revealing a reproducibility risk when scan images aren't digest-pinned. [PR #386](https://github.com/sebrandon1/compliance-scripts/pull/386)
+
+---
+
 ## 2026-09-04: Regression Tests for 7 recert Cert Rotation Fixes - [recert](https://github.com/rh-ecosystem-edge/recert)
 
 Protected unbroken cert rotation across OpenShift upgrades by adding integration tests for 7 recert bug fixes, each proven to fail pre-fix and pass post-fix (30 scenarios per run, CI green). Regression coverage now guards cert/key regeneration, spiffe SAN rewrites, and etcd encryption round-trips — preventing silent cluster state corruption and unplanned downtime. [PR #1833](https://github.com/rh-ecosystem-edge/recert/pull/1833) | [PR #1827](https://github.com/rh-ecosystem-edge/recert/pull/1827) | [PR #1936](https://github.com/rh-ecosystem-edge/recert/pull/1936) | [PR #1937](https://github.com/rh-ecosystem-edge/recert/pull/1937) | [PR #1938](https://github.com/rh-ecosystem-edge/recert/pull/1938) | [PR #1939](https://github.com/rh-ecosystem-edge/recert/pull/1939) | [PR #1940](https://github.com/rh-ecosystem-edge/recert/pull/1940)
