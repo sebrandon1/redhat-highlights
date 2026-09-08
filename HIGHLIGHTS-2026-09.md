@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-08: cert-manager-scripts v0.0.20 Release - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Accelerated OpenShift cert-manager testing by parallelizing installation and diagnostics, cutting sequential wait times. Fixed a race condition in namespace teardown that caused intermittent reinstall failures, and locked CI tooling to shfmt 3.14.0 to eliminate formatter drift across contributors. [v0.0.20](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.20)
+
+---
+
 ## 2026-09-08: Reliable TLS Report Output - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Improved CLI reliability by ensuring `kubectl tlsreport` reports broken-pipe and output failures instead of silently succeeding. Added regression coverage and merged the fix with all 29 CI checks passing, preventing incomplete compliance reports from being mistaken for successful exports. [PR #559](https://github.com/sebrandon1/tls-compliance-operator/pull/559)
