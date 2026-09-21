@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-21: Reliable OpenShift CI Release - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Improved OpenShift CI reliability and shipped quick-ocp v1.0.3 by adding a Quay bundle-cache fallback and fixing CRC startup on Ubuntu 26.04. This reduces failed cluster provisioning, improves recovery from mirror outages, and broadens dependable GitHub Actions coverage. [Release v1.0.3](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.3) | [PR #191](https://github.com/palmsoftware/quick-ocp/pull/191) | [PR #192](https://github.com/palmsoftware/quick-ocp/pull/192)
+
+---
+
 ## 2026-09-18: TLS Compliance Release v1.1.14 - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Delivered v1.1.14 with STARTTLS support, stronger TLS posture visibility, more reliable CLI reporting, and expanded validation coverage. This improves compliance accuracy for OpenShift operators and reduces release risk through comprehensive green CI validation. [Release v1.1.14](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.14) | [PR #547](https://github.com/sebrandon1/tls-compliance-operator/pull/547) | [PR #559](https://github.com/sebrandon1/tls-compliance-operator/pull/559) | [PR #560](https://github.com/sebrandon1/tls-compliance-operator/pull/560) | [PR #562](https://github.com/sebrandon1/tls-compliance-operator/pull/562) | [PR #569](https://github.com/sebrandon1/tls-compliance-operator/pull/569) | [PR #570](https://github.com/sebrandon1/tls-compliance-operator/pull/570)
