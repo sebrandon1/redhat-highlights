@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-21: Precache Pull Safety - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Reduced upgrade and recovery risk by hardening the precache worker against invalid thread-count settings that could hang or panic image pulls. Added unit coverage for malformed, zero, negative, and valid values. [PR #9154](https://github.com/openshift-kni/lifecycle-agent/pull/9154) | [CNF-27157](https://issues.redhat.com/browse/CNF-27157)
+
+---
+
 ## 2026-09-21: cert-manager-scripts v0.0.21 Release - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Strengthened OpenShift cert-manager test coverage and operator day-2 tooling: nightly now covers OCP 4.22 and Image-Based Upgrade Scenario 1 smoke, plus expiry checks, Grafana dashboards, and safer rollback when installs fail mid-way. Reduces blind spots before customer upgrades and cuts time spent cleaning half-broken lab clusters. [v0.0.21](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.21) | [PR #188](https://github.com/sebrandon1/cert-manager-scripts/pull/188) | [PR #189](https://github.com/sebrandon1/cert-manager-scripts/pull/189) | [PR #190](https://github.com/sebrandon1/cert-manager-scripts/pull/190) | [PR #191](https://github.com/sebrandon1/cert-manager-scripts/pull/191) | [PR #192](https://github.com/sebrandon1/cert-manager-scripts/pull/192) | [PR #193](https://github.com/sebrandon1/cert-manager-scripts/pull/193)
