@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-21: cert-manager-scripts v0.0.21 Release - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Strengthened OpenShift cert-manager test coverage and operator day-2 tooling: nightly now covers OCP 4.22 and Image-Based Upgrade Scenario 1 smoke, plus expiry checks, Grafana dashboards, and safer rollback when installs fail mid-way. Reduces blind spots before customer upgrades and cuts time spent cleaning half-broken lab clusters. [v0.0.21](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.21) | [PR #188](https://github.com/sebrandon1/cert-manager-scripts/pull/188) | [PR #189](https://github.com/sebrandon1/cert-manager-scripts/pull/189) | [PR #190](https://github.com/sebrandon1/cert-manager-scripts/pull/190) | [PR #191](https://github.com/sebrandon1/cert-manager-scripts/pull/191) | [PR #192](https://github.com/sebrandon1/cert-manager-scripts/pull/192) | [PR #193](https://github.com/sebrandon1/cert-manager-scripts/pull/193)
+
+---
+
 ## 2026-09-21: Reliable OpenShift CI Release - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Improved OpenShift CI reliability and shipped quick-ocp v1.0.3 by adding a Quay bundle-cache fallback and fixing CRC startup on Ubuntu 26.04. This reduces failed cluster provisioning, improves recovery from mirror outages, and broadens dependable GitHub Actions coverage. [Release v1.0.3](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.3) | [PR #191](https://github.com/palmsoftware/quick-ocp/pull/191) | [PR #192](https://github.com/palmsoftware/quick-ocp/pull/192)
