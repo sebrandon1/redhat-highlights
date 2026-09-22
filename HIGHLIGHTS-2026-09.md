@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-22: TLS Security Scanning Release - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+Expanded TLS security coverage and developer usability by shipping `tls-config-lint` v1.2.1 with detections across 10 languages, incremental/baseline workflows, richer reports, and scanner/SARIF performance improvements—reducing missed misconfigurations and speeding CI adoption. [Release v1.2.1](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.2.1) | [PR #93](https://github.com/sebrandon1/tls-config-lint/pull/93) | [PR #94](https://github.com/sebrandon1/tls-config-lint/pull/94) | [PR #95](https://github.com/sebrandon1/tls-config-lint/pull/95)
+
+---
+
 ## 2026-09-22: Serving Secret Integrity POC - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
 
 Reduced operator outage and security risk by proving OLM can detect malformed, expired, mismatched, or modified serving credentials and regenerate them safely. Added 17 unit cases and two webhook e2e scenarios, with CI-equivalent checks passing. [PR #3928](https://github.com/operator-framework/operator-lifecycle-manager/pull/3928)
