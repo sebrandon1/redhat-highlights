@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-22: Serving Secret Integrity POC - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
+
+Reduced operator outage and security risk by proving OLM can detect malformed, expired, mismatched, or modified serving credentials and regenerate them safely. Added 17 unit cases and two webhook e2e scenarios, with CI-equivalent checks passing. [PR #3928](https://github.com/operator-framework/operator-lifecycle-manager/pull/3928)
+
+---
+
 ## 2026-09-21: Precache Pull Safety - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
 
 Reduced upgrade and recovery risk by hardening the precache worker against invalid thread-count settings that could hang or panic image pulls. Added unit coverage for malformed, zero, negative, and valid values. [PR #9154](https://github.com/openshift-kni/lifecycle-agent/pull/9154) | [CNF-27157](https://issues.redhat.com/browse/CNF-27157)
