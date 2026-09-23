@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-23: Reliable Batch URL Reports - [ocp-doc-checker](https://github.com/sebrandon1/ocp-doc-checker)
+
+Improved trust in documentation audits by safely encoding JSON and reporting failed URL checks separately, with sensitive URL data redacted. Teams can distinguish outdated documentation from scan failures and automate against valid reports. [PR #71](https://github.com/sebrandon1/ocp-doc-checker/pull/71) | [PR #72](https://github.com/sebrandon1/ocp-doc-checker/pull/72)
+
+---
+
 ## 2026-09-22: TLS Security Scanning Release - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Expanded TLS security coverage and developer usability by shipping `tls-config-lint` v1.2.1 with detections across 10 languages, incremental/baseline workflows, richer reports, and scanner/SARIF performance improvements—reducing missed misconfigurations and speeding CI adoption. [Release v1.2.1](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.2.1) | [PR #93](https://github.com/sebrandon1/tls-config-lint/pull/93) | [PR #94](https://github.com/sebrandon1/tls-config-lint/pull/94) | [PR #95](https://github.com/sebrandon1/tls-config-lint/pull/95)
