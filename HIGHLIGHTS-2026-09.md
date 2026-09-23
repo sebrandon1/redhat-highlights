@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-23: Actionable DNS Webhook Errors - [cert-manager](https://github.com/cert-manager/cert-manager)
+
+Made DNS-01 failures faster to diagnose by preserving Kubernetes API reason/message details from DNS webhook errors instead of generic request failures. Added regression coverage for both webhook actions and confirmed the behavior against a live OpenShift Challenge, then restored the controller and removed test resources. [PR #9387](https://github.com/cert-manager/cert-manager/pull/9387)
+
+---
+
 ## 2026-09-23: Reliable Batch URL Reports - [ocp-doc-checker](https://github.com/sebrandon1/ocp-doc-checker)
 
 Improved trust in documentation audits by safely encoding JSON and reporting failed URL checks separately, with sensitive URL data redacted. Teams can distinguish outdated documentation from scan failures and automate against valid reports. [PR #71](https://github.com/sebrandon1/ocp-doc-checker/pull/71) | [PR #72](https://github.com/sebrandon1/ocp-doc-checker/pull/72)
