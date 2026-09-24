@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-24: Reliable Cross-Platform Release - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Shipped v0.0.9 with validated Linux and macOS downloads for Intel and Arm systems, plus checksums, giving users a reliable upgrade path. It adds provisioning readiness monitoring and audit history, and strengthens request handling and security scanning. [Release v0.0.9](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.9) | [PR #168](https://github.com/sebrandon1/succulent-cli/pull/168) | [PR #176](https://github.com/sebrandon1/succulent-cli/pull/176) | [PR #177](https://github.com/sebrandon1/succulent-cli/pull/177)
+
+---
+
 ## 2026-09-23: Actionable DNS Webhook Errors - [cert-manager](https://github.com/cert-manager/cert-manager)
 
 Made DNS-01 failures faster to diagnose by preserving Kubernetes API reason/message details from DNS webhook errors instead of generic request failures. Added regression coverage for both webhook actions and confirmed the behavior against a live OpenShift Challenge, then restored the controller and removed test resources. [PR #9387](https://github.com/cert-manager/cert-manager/pull/9387)
