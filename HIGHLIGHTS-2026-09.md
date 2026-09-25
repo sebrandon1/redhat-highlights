@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-25: Clearer Certification Results - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Improved certification accuracy by adding Transport Layer Security checks for minimum versions and plaintext service ports, while distinguishing probe outages from workload noncompliance. The release also adds OpenShift Container Platform 4.22 support and refreshed dependencies, giving teams clearer results and broader platform coverage. [Release v5.5.25](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.25) | [PR #3456](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3456) | [PR #3614](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3614) | [PR #3865](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3865) | [PR #3904](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3904)
+
+---
+
 ## 2026-09-24: Reliable Cross-Platform Release - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Shipped v0.0.9 with validated Linux and macOS downloads for Intel and Arm systems, plus checksums, giving users a reliable upgrade path. It adds provisioning readiness monitoring and audit history, and strengthens request handling and security scanning. [Release v0.0.9](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.0.9) | [PR #168](https://github.com/sebrandon1/succulent-cli/pull/168) | [PR #176](https://github.com/sebrandon1/succulent-cli/pull/176) | [PR #177](https://github.com/sebrandon1/succulent-cli/pull/177)
