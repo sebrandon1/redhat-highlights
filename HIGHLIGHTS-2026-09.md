@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-29: Lower-Noise OpenShift Nightlies - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Reduced wasted nightly test time and noisy failures by checking operator-catalog availability before provisioning OpenShift clusters, then removing cert-manager v1.18.1 from the default matrix after repeated API-server certificate failures. The v1.19.2/v1.20.1 matrix stays ready for future bundles; PR validation completed with 17 passed and six catalog-gated skips. [PR #197](https://github.com/sebrandon1/cert-manager-scripts/pull/197) | [PR #198](https://github.com/sebrandon1/cert-manager-scripts/pull/198)
+
+---
+
 ## 2026-09-25: Clearer Certification Results - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Improved certification accuracy by adding Transport Layer Security checks for minimum versions and plaintext service ports, while distinguishing probe outages from workload noncompliance. The release also adds OpenShift Container Platform 4.22 support and refreshed dependencies, giving teams clearer results and broader platform coverage. [Release v5.5.25](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.25) | [PR #3456](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3456) | [PR #3614](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3614) | [PR #3865](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3865) | [PR #3904](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3904)
