@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-29: Safer Cluster Provisioning - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Reduced credential exposure and runner disruption during automated cluster setup. Five merged changes store secrets in private temporary files, block unverifiable downloads, confine host workarounds to supported runners and restore their state, and limit the memory watchdog to the cluster virtual machine. [PR #200](https://github.com/palmsoftware/quick-ocp/pull/200) | [PR #201](https://github.com/palmsoftware/quick-ocp/pull/201) | [PR #202](https://github.com/palmsoftware/quick-ocp/pull/202) | [PR #203](https://github.com/palmsoftware/quick-ocp/pull/203) | [PR #204](https://github.com/palmsoftware/quick-ocp/pull/204)
+
+---
+
 ## 2026-09-29: More Reliable Operator Checks - [bps-operator](https://github.com/sebrandon1/bps-operator)
 
 Strengthened the operator’s automated release checks so teams catch regressions earlier and spend less time chasing flaky failures. The work modernizes event reporting, checks Go module consistency, raises required coverage to 60%, and stabilizes OpenShift resource readiness. All three pull requests passed continuous integration (CI) and merged. [PR #185](https://github.com/sebrandon1/bps-operator/pull/185) | [PR #186](https://github.com/sebrandon1/bps-operator/pull/186) | [PR #187](https://github.com/sebrandon1/bps-operator/pull/187)
