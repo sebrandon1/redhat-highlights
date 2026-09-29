@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-29: More Reliable Operator Checks - [bps-operator](https://github.com/sebrandon1/bps-operator)
+
+Strengthened the operator’s automated release checks so teams catch regressions earlier and spend less time chasing flaky failures. The work modernizes event reporting, checks Go module consistency, raises required coverage to 60%, and stabilizes OpenShift resource readiness. All three pull requests passed continuous integration (CI) and merged. [PR #185](https://github.com/sebrandon1/bps-operator/pull/185) | [PR #186](https://github.com/sebrandon1/bps-operator/pull/186) | [PR #187](https://github.com/sebrandon1/bps-operator/pull/187)
+
+---
+
 ## 2026-09-29: Lower-Noise OpenShift Nightlies - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Reduced wasted nightly test time and noisy failures by checking operator-catalog availability before provisioning OpenShift clusters, then removing cert-manager v1.18.1 from the default matrix after repeated API-server certificate failures. The v1.19.2/v1.20.1 matrix stays ready for future bundles; PR validation completed with 17 passed and six catalog-gated skips. [PR #197](https://github.com/sebrandon1/cert-manager-scripts/pull/197) | [PR #198](https://github.com/sebrandon1/cert-manager-scripts/pull/198)
