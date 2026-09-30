@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-30: Repeatable Operator Validation - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Enabled repeatable OpenShift security validation with independent installs of the Transport Layer Security (TLS) Compliance and Image Cert Info operators from their latest releases. A dedicated continuous integration (CI) workflow verifies both deployments become available, helping teams test telco hardening without manual setup. [PR #206](https://github.com/palmsoftware/quick-ocp/pull/206) | [CNF-27951](https://redhat.atlassian.net/browse/CNF-27951)
+
+---
+
 ## 2026-09-29: Safer Cluster Provisioning - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Reduced credential exposure and runner disruption during automated cluster setup. Five merged changes store secrets in private temporary files, block unverifiable downloads, confine host workarounds to supported runners and restore their state, and limit the memory watchdog to the cluster virtual machine. [PR #200](https://github.com/palmsoftware/quick-ocp/pull/200) | [PR #201](https://github.com/palmsoftware/quick-ocp/pull/201) | [PR #202](https://github.com/palmsoftware/quick-ocp/pull/202) | [PR #203](https://github.com/palmsoftware/quick-ocp/pull/203) | [PR #204](https://github.com/palmsoftware/quick-ocp/pull/204)
