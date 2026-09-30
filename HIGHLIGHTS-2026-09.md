@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-30: Safer OpenShift Test Clusters - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Made automated OpenShift test clusters safer and more dependable with verified downloads, protected registry credentials, and runner changes scoped to supported hosts. It also adds repeatable security-operator validation and directs deprecated OpenShift 4.19 requests to 4.20. Released as v1.0.5. [Release v1.0.5](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.5) | [PR #198](https://github.com/palmsoftware/quick-ocp/pull/198) | [PR #200](https://github.com/palmsoftware/quick-ocp/pull/200) | [PR #201](https://github.com/palmsoftware/quick-ocp/pull/201) | [PR #202](https://github.com/palmsoftware/quick-ocp/pull/202) | [PR #203](https://github.com/palmsoftware/quick-ocp/pull/203) | [PR #204](https://github.com/palmsoftware/quick-ocp/pull/204) | [PR #205](https://github.com/palmsoftware/quick-ocp/pull/205) | [PR #206](https://github.com/palmsoftware/quick-ocp/pull/206)
+
+---
+
 ## 2026-09-30: Scan Window Controls for TLS Probing - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Reduced unintended endpoint disruption by letting operators restrict Transport Layer Security (TLS) scans to a daily maintenance window with timezone support. Teams can now prevent probes from firing during peak traffic while keeping an unconditional baseline scan on startup. Verified on a live OpenShift cluster and released as v1.1.15. [PR #582](https://github.com/sebrandon1/tls-compliance-operator/pull/582) | [Release v1.1.15](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.15) | [CNF-27953](https://redhat.atlassian.net/browse/CNF-27953)
