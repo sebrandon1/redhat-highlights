@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Septe
 
 ---
 
+## 2026-09-30: Scan Window Controls for TLS Probing - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Reduced unintended endpoint disruption by letting operators restrict Transport Layer Security (TLS) scans to a daily maintenance window with timezone support. Teams can now prevent probes from firing during peak traffic while keeping an unconditional baseline scan on startup. Verified on a live OpenShift cluster and released as v1.1.15. [PR #582](https://github.com/sebrandon1/tls-compliance-operator/pull/582) | [Release v1.1.15](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.15) | [CNF-27953](https://redhat.atlassian.net/browse/CNF-27953)
+
+---
+
 ## 2026-09-30: Repeatable Operator Validation - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Enabled repeatable OpenShift security validation with independent installs of the Transport Layer Security (TLS) Compliance and Image Cert Info operators from their latest releases. A dedicated continuous integration (CI) workflow verifies both deployments become available, helping teams test telco hardening without manual setup. [PR #206](https://github.com/palmsoftware/quick-ocp/pull/206) | [CNF-27951](https://redhat.atlassian.net/browse/CNF-27951)
