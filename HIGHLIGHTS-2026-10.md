@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-13: Responsive Scan Cancellation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Kept compliance scan shutdown responsive by making stalled plaintext endpoint probes stop immediately when canceled. This prevents one unresponsive service from holding up a scan; a regression test verifies the fix, and all 29 automated checks passed. [PR #595](https://github.com/sebrandon1/tls-compliance-operator/pull/595) | [CNF-28547](https://redhat.atlassian.net/browse/CNF-28547)
+
+---
+
 ## 2026-10-09: TLS Compliance Operator v1.1.17 Released - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Shipped v1.1.17 with Go 1.27.2 and updated dependencies, eliminating 17 known stdlib and network-layer CVEs. Operator is now live on OperatorHub.io and the OpenShift Community Catalog, enabling teams to install it directly from the OLM catalog. [Release v1.1.17](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.17) | [PR #592](https://github.com/sebrandon1/tls-compliance-operator/pull/592) | [OperatorHub PR](https://github.com/k8s-operatorhub/community-operators/pull/9519) | [OpenShift Catalog PR](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11525)
