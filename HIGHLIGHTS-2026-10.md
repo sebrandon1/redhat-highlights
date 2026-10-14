@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-14: TLS Linter Bug Backlog Cleared - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
+
+A security scanner that silently misses findings is worse than one that fails loudly. Cleared the TLS linter's bug backlog: four of ten supported languages (Ruby, PHP, C#, Kotlin) had files skipped, custom rules rejected, and broken remediation docs. Four fixes merged; test coverage up 38 percent. [PR #103](https://github.com/sebrandon1/tls-config-lint/pull/103) | [PR #104](https://github.com/sebrandon1/tls-config-lint/pull/104) | [PR #105](https://github.com/sebrandon1/tls-config-lint/pull/105) | [PR #106](https://github.com/sebrandon1/tls-config-lint/pull/106)
+
+---
+
 ## 2026-10-13: Responsive Scan Cancellation - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Kept compliance scan shutdown responsive by making stalled plaintext endpoint probes stop immediately when canceled. This prevents one unresponsive service from holding up a scan; a regression test verifies the fix, and all 29 automated checks passed. [PR #595](https://github.com/sebrandon1/tls-compliance-operator/pull/595) | [CNF-28547](https://redhat.atlassian.net/browse/CNF-28547)
