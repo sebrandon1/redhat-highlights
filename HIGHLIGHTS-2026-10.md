@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-14: Nightly Certification CI Restored - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Restored two nightly certification workflows after 107+ consecutive failures each had blinded the team to real regressions since June. Root-caused a silent test-cleanup bug that corrupted cluster state nightly, fixed it, remediated both clusters, and verified both workflows green — rebuilding trustworthy overnight certification signal for OpenShift 4.14 and 4.16. [PR #1624](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1624) | [4.14 validation run](https://github.com/redhat-best-practices-for-k8s/certsuite/actions/runs/38580152371) | [4.16 validation run](https://github.com/redhat-best-practices-for-k8s/certsuite/actions/runs/38580158350)
+
+---
+
 ## 2026-10-14: TLS Linter Bug Backlog Cleared - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 A security scanner that silently misses findings is worse than one that fails loudly. Cleared the TLS linter's bug backlog: four of ten supported languages (Ruby, PHP, C#, Kotlin) had files skipped, custom rules rejected, and broken remediation docs. Four fixes merged; test coverage up 38 percent. [PR #103](https://github.com/sebrandon1/tls-config-lint/pull/103) | [PR #104](https://github.com/sebrandon1/tls-config-lint/pull/104) | [PR #105](https://github.com/sebrandon1/tls-config-lint/pull/105) | [PR #106](https://github.com/sebrandon1/tls-config-lint/pull/106)
