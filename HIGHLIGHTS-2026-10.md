@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-15: Eliminated Nightly Cluster Deployment Failures - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Stopped nightly test-cluster deployments from silently failing — roughly one job per night was lost and needed manual re-runs. Deployments now pull the multi-gigabyte OpenShift bundle from a pre-seeded cache with automatic retries instead of a flaky external mirror; first overnight validation ran fully green. [PR #215](https://github.com/palmsoftware/quick-ocp/pull/215) | [Soak run](https://github.com/palmsoftware/quick-ocp/actions/runs/38806586074)
+
+---
+
 ## 2026-10-14: Nightly Certification CI Restored - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Restored two nightly certification workflows after 107+ consecutive failures each had blinded the team to real regressions since June. Root-caused a silent test-cleanup bug that corrupted cluster state nightly, fixed it, remediated both clusters, and verified both workflows green — rebuilding trustworthy overnight certification signal for OpenShift 4.14 and 4.16. [PR #1624](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1624) | [4.14 validation run](https://github.com/redhat-best-practices-for-k8s/certsuite/actions/runs/38580152371) | [4.16 validation run](https://github.com/redhat-best-practices-for-k8s/certsuite/actions/runs/38580158350)
