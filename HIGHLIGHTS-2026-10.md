@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-19: Expanded Certification Smoke Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Expanded pre-merge regression coverage for the Kubernetes certification suite by 24 percent: twelve new scenario tests exercise permissions, storage, process and custom-resource checks with known-good and known-bad workloads. Also cut test-log noise 95 percent, making failures far faster to diagnose. [PR #3974](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3974) | [CNFCERT-1504](https://redhat.atlassian.net/browse/CNFCERT-1504)
+
+---
+
 ## 2026-10-15: Eliminated Nightly Cluster Deployment Failures - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Stopped nightly test-cluster deployments from silently failing — roughly one job per night was lost and needed manual re-runs. Deployments now pull the multi-gigabyte OpenShift bundle from a pre-seeded cache with automatic retries instead of a flaky external mirror; first overnight validation ran fully green. [PR #215](https://github.com/palmsoftware/quick-ocp/pull/215) | [Soak run](https://github.com/palmsoftware/quick-ocp/actions/runs/38806586074)
