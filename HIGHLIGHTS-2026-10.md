@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-20: Fixed Duplicate Scans And Orphaned Reports - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Fixed two operator bugs found while validating the earlier scan fix: reports now clean up automatically when a scan target is deleted on OpenShift, and new endpoints are no longer scanned twice on first discovery. Both verified on a live cluster; all 29 automated checks passed. [PR #606](https://github.com/sebrandon1/tls-compliance-operator/pull/606) | [PR #607](https://github.com/sebrandon1/tls-compliance-operator/pull/607) | [CNF-28748](https://redhat.atlassian.net/browse/CNF-28748) | [CNF-28749](https://redhat.atlassian.net/browse/CNF-28749)
+
+---
+
 ## 2026-10-20: Stalled Endpoint Scan Fix - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Stopped stalled endpoints from delaying compliance scans: three more probe types (legacy SSLv3, mail-protocol upgrades) now respect per-probe timeouts and cancellation, so one silent server can no longer hold a scan for minutes. Regression tests added, verified on a live cluster, all 29 automated checks passed. [PR #602](https://github.com/sebrandon1/tls-compliance-operator/pull/602) | [Issue #600](https://github.com/sebrandon1/tls-compliance-operator/issues/600) | [CNF-28711](https://redhat.atlassian.net/browse/CNF-28711)
