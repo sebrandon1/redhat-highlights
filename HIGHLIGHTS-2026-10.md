@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-20: Safer Registry CLI Changes - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Reduced the risk of undetected regressions in the Quay registry command-line tool: command-line test coverage rose from 64 to 89 percent and library coverage from 79 to 85 percent. Added an automated coverage gate and removed a misleading no-op nightly job. Seven PRs merged, all CI green. [PR #265](https://github.com/sebrandon1/go-quay/pull/265) | [PR #266](https://github.com/sebrandon1/go-quay/pull/266) | [PR #267](https://github.com/sebrandon1/go-quay/pull/267) | [PR #268](https://github.com/sebrandon1/go-quay/pull/268) | [PR #269](https://github.com/sebrandon1/go-quay/pull/269) | [PR #270](https://github.com/sebrandon1/go-quay/pull/270) | [PR #271](https://github.com/sebrandon1/go-quay/pull/271) | [CNF-28704](https://redhat.atlassian.net/browse/CNF-28704) | [CNF-28710](https://redhat.atlassian.net/browse/CNF-28710)
+
+---
+
 ## 2026-10-19: Expanded Certification Smoke Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Expanded pre-merge regression coverage for the Kubernetes certification suite by 24 percent: twelve new scenario tests exercise permissions, storage, process and custom-resource checks with known-good and known-bad workloads. Also cut test-log noise 95 percent, making failures far faster to diagnose. [PR #3974](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3974) | [CNFCERT-1504](https://redhat.atlassian.net/browse/CNFCERT-1504)
