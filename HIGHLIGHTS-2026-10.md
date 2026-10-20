@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-20: Stalled Endpoint Scan Fix - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Stopped stalled endpoints from delaying compliance scans: three more probe types (legacy SSLv3, mail-protocol upgrades) now respect per-probe timeouts and cancellation, so one silent server can no longer hold a scan for minutes. Regression tests added, verified on a live cluster, all 29 automated checks passed. [PR #602](https://github.com/sebrandon1/tls-compliance-operator/pull/602) | [Issue #600](https://github.com/sebrandon1/tls-compliance-operator/issues/600) | [CNF-28711](https://redhat.atlassian.net/browse/CNF-28711)
+
+---
+
 ## 2026-10-20: Safer Registry CLI Changes - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Reduced the risk of undetected regressions in the Quay registry command-line tool: command-line test coverage rose from 64 to 89 percent and library coverage from 79 to 85 percent. Added an automated coverage gate and removed a misleading no-op nightly job. Seven PRs merged, all CI green. [PR #265](https://github.com/sebrandon1/go-quay/pull/265) | [PR #266](https://github.com/sebrandon1/go-quay/pull/266) | [PR #267](https://github.com/sebrandon1/go-quay/pull/267) | [PR #268](https://github.com/sebrandon1/go-quay/pull/268) | [PR #269](https://github.com/sebrandon1/go-quay/pull/269) | [PR #270](https://github.com/sebrandon1/go-quay/pull/270) | [PR #271](https://github.com/sebrandon1/go-quay/pull/271) | [CNF-28704](https://redhat.atlassian.net/browse/CNF-28704) | [CNF-28710](https://redhat.atlassian.net/browse/CNF-28710)
