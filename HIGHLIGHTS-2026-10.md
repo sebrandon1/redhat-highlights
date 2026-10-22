@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-22: Smoke Suite Runs 4.5x Faster - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Cut certification smoke-suite runtime 78 percent (1,076 to 237 seconds) while expanding coverage with new operator and OLM scenarios. Faster pre-merge feedback removes a bottleneck for every contributor, and the new batching and parallel-lane design lets tests be added without growing runtime. [PR #3979](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3979) | [PR #3980](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3980) | [PR #3981](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3981) | [CNFCERT-1505](https://redhat.atlassian.net/browse/CNFCERT-1505) | [CNFCERT-1514](https://redhat.atlassian.net/browse/CNFCERT-1514)
+
+---
+
 ## 2026-10-20: Eliminated Duplicate Scans And CI Drift - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Hardened the TLS compliance operator: duplicate scans can no longer run concurrently on any scan path, and a new continuous integration (CI) drift check blocks tool upgrades that leave generated files stale, preventing contributor confusion and accidental commits. A full documentation audit closed every accuracy gap found. [PR #610](https://github.com/sebrandon1/tls-compliance-operator/pull/610) | [PR #611](https://github.com/sebrandon1/tls-compliance-operator/pull/611) | [PR #612](https://github.com/sebrandon1/tls-compliance-operator/pull/612) | [CNF-28756](https://redhat.atlassian.net/browse/CNF-28756) | [CNF-28767](https://redhat.atlassian.net/browse/CNF-28767) | [CNF-28769](https://redhat.atlassian.net/browse/CNF-28769)
