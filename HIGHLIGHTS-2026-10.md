@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-23: Unit Coverage 24 To 94 Percent - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Gave the certification quality engineering (QE) harness a full regression safety net: unit coverage rose from 24 to 94 percent across every shared test-utility package (25 pull requests), surfacing and fixing three latent crash bugs along the way. The suite still runs in ten seconds. [PR #1627](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1627) | [PR #1651](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1651) | [CNF-26078](https://redhat.atlassian.net/browse/CNF-26078)
+
+---
+
 ## 2026-10-22: Smoke Suite Runs 4.5x Faster - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Cut certification smoke-suite runtime 78 percent (1,076 to 237 seconds) while expanding coverage with new operator and OLM scenarios. Faster pre-merge feedback removes a bottleneck for every contributor, and the new batching and parallel-lane design lets tests be added without growing runtime. [PR #3979](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3979) | [PR #3980](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3980) | [PR #3981](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3981) | [CNFCERT-1505](https://redhat.atlassian.net/browse/CNFCERT-1505) | [CNFCERT-1514](https://redhat.atlassian.net/browse/CNFCERT-1514)
