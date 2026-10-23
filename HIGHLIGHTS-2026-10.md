@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-23: TLS Scanner CI Coverage For Two KNI Operators - [release](https://github.com/openshift/release)
+
+Closed a security compliance gap for TALM and Lifecycle Agent operators by adding Transport Layer Security (TLS) scanner CI jobs: on-demand presubmits for pull request validation and weekly periodics for continuous monitoring. Failures alert `#telco-platform-alerts` on Slack, catching regressions before release. [PR #87492](https://github.com/openshift/release/pull/87492) | [PR #87491](https://github.com/openshift/release/pull/87491) | [CNF-25933](https://redhat.atlassian.net/browse/CNF-25933) | [CNF-25934](https://redhat.atlassian.net/browse/CNF-25934)
+
+---
+
 ## 2026-10-23: Unit Coverage 24 To 94 Percent - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Gave the certification quality engineering (QE) harness a full regression safety net: unit coverage rose from 24 to 94 percent across every shared test-utility package (25 pull requests), surfacing and fixing three latent crash bugs along the way. The suite still runs in ten seconds. [PR #1627](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1627) | [PR #1651](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1651) | [CNF-26078](https://redhat.atlassian.net/browse/CNF-26078)
