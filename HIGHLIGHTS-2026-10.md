@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-26: Closed Vulnerability In Registry Tooling - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Shipped go-quay v1.2.4, closing a known Go vulnerability (GO-2026-6809) for everyone consuming the library and command-line tool, and correcting documentation that taught deprecated commands. A new automated check prevents those misleading examples from returning. Five merged pull requests; all release builds passed. [Release v1.2.4](https://github.com/sebrandon1/go-quay/releases/tag/v1.2.4) | [PR #275](https://github.com/sebrandon1/go-quay/pull/275) | [PR #272](https://github.com/sebrandon1/go-quay/pull/272) | [PR #273](https://github.com/sebrandon1/go-quay/pull/273) | [PR #274](https://github.com/sebrandon1/go-quay/pull/274) | [PR #276](https://github.com/sebrandon1/go-quay/pull/276)
+
+---
+
 ## 2026-10-23: TLS Scanner CI Coverage For Two KNI Operators - [release](https://github.com/openshift/release)
 
 Closed a security compliance gap for TALM and Lifecycle Agent operators by adding Transport Layer Security (TLS) scanner CI jobs: on-demand presubmits for pull request validation and weekly periodics for continuous monitoring. Failures alert `#telco-platform-alerts` on Slack, catching regressions before release. [PR #87492](https://github.com/openshift/release/pull/87492) | [PR #87491](https://github.com/openshift/release/pull/87491) | [CNF-25933](https://redhat.atlassian.net/browse/CNF-25933) | [CNF-25934](https://redhat.atlassian.net/browse/CNF-25934)
