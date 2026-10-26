@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-26: Retired 9,200 Lines Of Dead Code - [cluster-group-upgrades-operator](https://github.com/openshift-kni/cluster-group-upgrades-operator)
+
+Retired a deprecated single-node cluster backup/restore path from the lifecycle operator, deleting 9,200 lines of unused code and one published container image that still required security patching. Added three automated gates plus a compatibility test proving existing configurations keep working, so the removal stays enforced rather than trusted. [PR #13814](https://github.com/openshift-kni/cluster-group-upgrades-operator/pull/13814) | [release PR #87736](https://github.com/openshift/release/pull/87736) | [CNF-27466](https://redhat.atlassian.net/browse/CNF-27466)
+
+---
+
 ## 2026-10-26: Local Targets Catch CI Failures Before Push - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Contributors can now catch a red pipeline before pushing: new make targets reproduce every CI static check, compile the integration suites, and enforce a race-enabled 92 percent coverage floor. Fewer failed runs, faster feedback, less wasted CI capacity. [PR #1667](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1667) | [CNFCERT-1524](https://redhat.atlassian.net/browse/CNFCERT-1524)
