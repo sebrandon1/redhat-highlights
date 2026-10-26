@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-26: Local Targets Catch CI Failures Before Push - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Contributors can now catch a red pipeline before pushing: new make targets reproduce every CI static check, compile the integration suites, and enforce a race-enabled 92 percent coverage floor. Fewer failed runs, faster feedback, less wasted CI capacity. [PR #1667](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1667) | [CNFCERT-1524](https://redhat.atlassian.net/browse/CNFCERT-1524)
+
+---
+
 ## 2026-10-26: Closed Vulnerability In Registry Tooling - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Shipped go-quay v1.2.4, closing a known Go vulnerability (GO-2026-6809) for everyone consuming the library and command-line tool, and correcting documentation that taught deprecated commands. A new automated check prevents those misleading examples from returning. Five merged pull requests; all release builds passed. [Release v1.2.4](https://github.com/sebrandon1/go-quay/releases/tag/v1.2.4) | [PR #275](https://github.com/sebrandon1/go-quay/pull/275) | [PR #272](https://github.com/sebrandon1/go-quay/pull/272) | [PR #273](https://github.com/sebrandon1/go-quay/pull/273) | [PR #274](https://github.com/sebrandon1/go-quay/pull/274) | [PR #276](https://github.com/sebrandon1/go-quay/pull/276)
