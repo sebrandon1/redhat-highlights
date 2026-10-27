@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-27: Shipped Fixes Through Both Catalogs - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Delivered six reliability and security fixes to OpenShift operators through both distribution channels — OperatorHub.io and the OpenShift community catalog — with a multi-architecture, cryptographically signed image and a Go upgrade clearing a known vulnerability. Until now the fixes existed only in source. [Release v1.1.19](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.19) | [PR #9768](https://github.com/k8s-operatorhub/community-operators/pull/9768) | [PR #11799](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11799) | [CNF-28990](https://redhat.atlassian.net/browse/CNF-28990)
+
+---
+
 ## 2026-10-27: Hardened TLS Compliance Operator - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Eliminated five reliability defects in the OpenShift TLS compliance operator: a crash loop from a misconfigured interval, duplicate report deletion across replicas, stale metrics after report removal, silently wrong compliance after a profile fetch error, and a watch that stopped reporting without error. Five PRs, 1,378 tests passing. [PR #622](https://github.com/sebrandon1/tls-compliance-operator/pull/622) | [PR #624](https://github.com/sebrandon1/tls-compliance-operator/pull/624) | [PR #625](https://github.com/sebrandon1/tls-compliance-operator/pull/625) | [PR #623](https://github.com/sebrandon1/tls-compliance-operator/pull/623) | [PR #626](https://github.com/sebrandon1/tls-compliance-operator/pull/626) | Epic [CNF-26078](https://redhat.atlassian.net/browse/CNF-26078)
