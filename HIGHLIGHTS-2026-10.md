@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-28: Eliminated Seed Teardown Crash - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Removed a panic in the Lifecycle Agent's seed-image teardown that fired whenever the systemd services directory was absent, and raised unit-test coverage for that package from 0% to 96%, so the crash is now caught by tests instead of at cluster upgrade time. [PR #10191](https://github.com/openshift-kni/lifecycle-agent/pull/10191) | [CNF-29072](https://redhat.atlassian.net/browse/CNF-29072)
+
+---
+
 ## 2026-10-28: Enabled OpenShift 5.0 Compatibility Data - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Enabled the certification suite's daily operating-system mapping to cover OpenShift 5.0, so checks recognize 5.0 clusters as they ship. Fixed a tooling gap that blocked 5.0 lookups; future 5.0 releases now update automatically. [PR #3997](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3997) | [CNFCERT-1531](https://redhat.atlassian.net/browse/CNFCERT-1531)
