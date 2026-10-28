@@ -4,6 +4,12 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-28: Enabled OpenShift 5.0 Compatibility Data - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Enabled the certification suite's daily operating-system mapping to cover OpenShift 5.0, so checks recognize 5.0 clusters as they ship. Fixed a tooling gap that blocked 5.0 lookups; future 5.0 releases now update automatically. [PR #3997](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3997) | [CNFCERT-1531](https://redhat.atlassian.net/browse/CNFCERT-1531)
+
+---
+
 ## 2026-10-27: Shipped Fixes Through Both Catalogs - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Delivered six reliability and security fixes to OpenShift operators through both distribution channels — OperatorHub.io and the OpenShift community catalog — with a multi-architecture, cryptographically signed image and a Go upgrade clearing a known vulnerability. Until now the fixes existed only in source. [Release v1.1.19](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.19) | [PR #9768](https://github.com/k8s-operatorhub/community-operators/pull/9768) | [PR #11799](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11799) | [CNF-28990](https://redhat.atlassian.net/browse/CNF-28990)
