@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-28: Fixed Misleading Upgrade Operator Docs - [cluster-group-upgrades-operator](https://github.com/openshift-kni/cluster-group-upgrades-operator)
+
+Stopped telecom fleet administrators from writing configurations the cluster rejects or status checks that never complete, by auditing 11 upgrade-operator guides against the code. Corrected wrong status names, invalid pre-caching examples, three broken links and outdated developer instructions. [PR #13931](https://github.com/openshift-kni/cluster-group-upgrades-operator/pull/13931) | [CNF-29089](https://redhat.atlassian.net/browse/CNF-29089)
+
 ## 2026-10-28: Restored Silently Skipped CI Checks - [cnf-features-deploy](https://github.com/openshift-kni/cnf-features-deploy)
 
 Restored four ZTP (Zero Touch Provisioning) validation checks that had silently stopped running — CI advertised seven and executed three — including the ISO image filename-length guard that prevents unbootable install media. Added a guard that fails CI if any check loses its recipe, so the gap cannot reopen. [PR #5397](https://github.com/openshift-kni/cnf-features-deploy/pull/5397) | [CNF-29069](https://redhat.atlassian.net/browse/CNF-29069)
