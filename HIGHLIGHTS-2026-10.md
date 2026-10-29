@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-29: Stopped Security Checks Passing Without Evidence - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Closed a false pass in a mandatory certification check that could mark workloads compliant without inspecting their custom resources, and stopped retired API versions from aborting the check. Added regression tests and a smoke scenario verified on a live cluster. [PR #3999](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3999) | [CNFCERT-1533](https://redhat.atlassian.net/browse/CNFCERT-1533)
+
 ## 2026-10-29: Unblocked Dependabot Security Updates - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Restored automated dependency updates after two Dependabot pull requests sat red for days: GitHub's CodeQL (static code analysis) requires every action step to share one version, which per-step bot PRs can never satisfy. Consolidated the bump and added a grouping rule so it cannot recur, clearing three queued upgrades. [PR #1683](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1683) | [CNFCERT-1534](https://redhat.atlassian.net/browse/CNFCERT-1534)
