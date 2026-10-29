@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-29: Unblocked Dependabot Security Updates - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Restored automated dependency updates after two Dependabot pull requests sat red for days: GitHub's CodeQL (static code analysis) requires every action step to share one version, which per-step bot PRs can never satisfy. Consolidated the bump and added a grouping rule so it cannot recur, clearing three queued upgrades. [PR #1683](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1683) | [CNFCERT-1534](https://redhat.atlassian.net/browse/CNFCERT-1534)
+
 ## 2026-10-29: Halved Pull Request CI Cost - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Cut the certification harness's pull-request pipeline in half by removing a duplicate test pass that ran 23 jobs twice, and made its container memory cap actually apply, preventing out-of-memory failures on shared runners. [PR #1681](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1681) | [PR #1682](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1682)
