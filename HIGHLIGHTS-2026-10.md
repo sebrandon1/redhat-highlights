@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-29: Eliminated TLS Scanner Documentation Drift - [tls-scanner](https://github.com/openshift/tls-scanner)
+
+Prevented security teams from misreading TLS compliance results by aligning the scanner's documentation with actual behavior: removed 5 nonexistent status codes, documented all 24 command-line flags and 39 output columns, and corrected deployment actions and settings. [PR #106](https://github.com/openshift/tls-scanner/pull/106) | [CNF-29249](https://redhat.atlassian.net/browse/CNF-29249)
+
 ## 2026-10-28: Fixed Misleading Upgrade Operator Docs - [cluster-group-upgrades-operator](https://github.com/openshift-kni/cluster-group-upgrades-operator)
 
 Stopped telecom fleet administrators from writing configurations the cluster rejects or status checks that never complete, by auditing 11 upgrade-operator guides against the code. Corrected wrong status names, invalid pre-caching examples, three broken links and outdated developer instructions. [PR #13931](https://github.com/openshift-kni/cluster-group-upgrades-operator/pull/13931) | [CNF-29089](https://redhat.atlassian.net/browse/CNF-29089)
