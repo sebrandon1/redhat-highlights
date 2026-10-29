@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-29: Halved Pull Request CI Cost - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Cut the certification harness's pull-request pipeline in half by removing a duplicate test pass that ran 23 jobs twice, and made its container memory cap actually apply, preventing out-of-memory failures on shared runners. [PR #1681](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1681) | [PR #1682](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1682)
+
 ## 2026-10-29: Eliminated TLS Scanner Documentation Drift - [tls-scanner](https://github.com/openshift/tls-scanner)
 
 Prevented security teams from misreading TLS compliance results by aligning the scanner's documentation with actual behavior: removed 5 nonexistent status codes, documented all 24 command-line flags and 39 output columns, and corrected deployment actions and settings. [PR #106](https://github.com/openshift/tls-scanner/pull/106) | [CNF-29249](https://redhat.atlassian.net/browse/CNF-29249)
