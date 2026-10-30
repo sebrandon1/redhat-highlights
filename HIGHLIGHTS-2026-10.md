@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Hardened Action Supply Chain - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Closed two supply-chain gaps in a Kubernetes cluster GitHub Action used by CI pipelines: pinned the local registry image by digest and removed shell interpolation of workflow inputs. Released v1.0.10 and repointed docs from a three-month-stale major tag. [PR #504](https://github.com/palmsoftware/quick-k8s/pull/504) | [PR #505](https://github.com/palmsoftware/quick-k8s/pull/505) | [v1.0.10](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.10)
+
 ## 2026-10-30: Shipped SSRF Fix To Catalogs - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Closed a server-side request forgery (SSRF) gap that let custom scan targets reach internal cluster addresses, blocked additional reserved network ranges, and fixed overnight scan windows skipping their after-midnight hours. Released v1.1.20 to OperatorHub.io and the OpenShift community catalog, verified over 14 hours on a live cluster. [Release v1.1.20](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.20) | [PR #640](https://github.com/sebrandon1/tls-compliance-operator/pull/640) | [PR #9804](https://github.com/k8s-operatorhub/community-operators/pull/9804) | [PR #11839](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11839) | [CNF-29268](https://redhat.atlassian.net/browse/CNF-29268)
