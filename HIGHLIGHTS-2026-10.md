@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Unblocked a Flaky Operator Merge Gate - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Stopped an intermittent cluster failure from blocking pull requests: a transient API-server timeout in the operator's end-to-end (e2e) test polling was treated as fatal, forcing a multi-hour retest almost every run. Fixed the retry handling, added regression tests, and raised the automatic retest allowance. [PR #532](https://github.com/openshift/cert-manager-operator/pull/532) | [PR #88061](https://github.com/openshift/release/pull/88061) | [CNF-29270](https://redhat.atlassian.net/browse/CNF-29270)
+
 ## 2026-10-29: Stopped Security Checks Passing Without Evidence - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Closed a false pass in a mandatory certification check that could mark workloads compliant without inspecting their custom resources, and stopped retired API versions from aborting the check. Added regression tests and a smoke scenario verified on a live cluster. [PR #3999](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/3999) | [CNFCERT-1533](https://redhat.atlassian.net/browse/CNFCERT-1533)
