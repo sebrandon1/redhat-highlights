@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Cleaner Aborts for Operator Tests - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Made the cert-manager operator's end-to-end (e2e) tests stop cleanly when a run is interrupted or times out, instead of leaving cluster polls running for up to 10 minutes alongside cleanup. Converted 58 uncancellable calls across 21 test files and verified the change on a live cluster. [PR #533](https://github.com/openshift/cert-manager-operator/pull/533) | [CNF-29279](https://redhat.atlassian.net/browse/CNF-29279)
+
 ## 2026-10-30: Stopped Stale Security Data - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Eliminated false security reporting from the cluster image inventory: the operator kept presenting vulnerability counts, certification badges, and CVE lists that registries had stopped publishing, and retried requests that could never succeed. Fixed Docker Hub and Quay handling, plus the upstream Quay client it depended on. [PR #249](https://github.com/sebrandon1/imagecertinfo-operator/pull/249) | [PR #292](https://github.com/sebrandon1/go-quay/pull/292) | [v1.2.6](https://github.com/sebrandon1/go-quay/releases/tag/v1.2.6)
