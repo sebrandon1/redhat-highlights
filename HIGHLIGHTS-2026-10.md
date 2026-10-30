@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Stopped Stale Security Data - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Eliminated false security reporting from the cluster image inventory: the operator kept presenting vulnerability counts, certification badges, and CVE lists that registries had stopped publishing, and retried requests that could never succeed. Fixed Docker Hub and Quay handling, plus the upstream Quay client it depended on. [PR #249](https://github.com/sebrandon1/imagecertinfo-operator/pull/249) | [PR #292](https://github.com/sebrandon1/go-quay/pull/292) | [v1.2.6](https://github.com/sebrandon1/go-quay/releases/tag/v1.2.6)
+
 ## 2026-10-30: Hardened Action Supply Chain - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Closed two supply-chain gaps in a Kubernetes cluster GitHub Action used by CI pipelines: pinned the local registry image by digest and removed shell interpolation of workflow inputs. Released v1.0.10 and repointed docs from a three-month-stale major tag. [PR #504](https://github.com/palmsoftware/quick-k8s/pull/504) | [PR #505](https://github.com/palmsoftware/quick-k8s/pull/505) | [v1.0.10](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.10)
