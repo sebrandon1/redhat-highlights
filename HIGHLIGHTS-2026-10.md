@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Shipped SSRF Fix To Catalogs - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Closed a server-side request forgery (SSRF) gap that let custom scan targets reach internal cluster addresses, blocked additional reserved network ranges, and fixed overnight scan windows skipping their after-midnight hours. Released v1.1.20 to OperatorHub.io and the OpenShift community catalog, verified over 14 hours on a live cluster. [Release v1.1.20](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.20) | [PR #640](https://github.com/sebrandon1/tls-compliance-operator/pull/640) | [PR #9804](https://github.com/k8s-operatorhub/community-operators/pull/9804) | [PR #11839](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11839) | [CNF-29268](https://redhat.atlassian.net/browse/CNF-29268)
+
 ## 2026-10-30: Unblocked a Flaky Operator Merge Gate - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Stopped an intermittent cluster failure from blocking pull requests: a transient API-server timeout in the operator's end-to-end (e2e) test polling was treated as fatal, forcing a multi-hour retest almost every run. Fixed the retry handling, added regression tests, and raised the automatic retest allowance. [PR #532](https://github.com/openshift/cert-manager-operator/pull/532) | [PR #88061](https://github.com/openshift/release/pull/88061) | [CNF-29270](https://redhat.atlassian.net/browse/CNF-29270)
