@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Octob
 
 ---
 
+## 2026-10-30: Corrected Misleading PQC Scan Reports - [tls-scanner](https://github.com/openshift/tls-scanner)
+
+Stopped the TLS scanner from reporting false post-quantum (PQC) failures and impossible port totals: in a real cluster run, 21 of 50 ports were misreported as unsupported when they were never probed. Corrected the counts, added tests for the reporting paths, and verified the fix on a live OpenShift 5.1 cluster. [PR #107](https://github.com/openshift/tls-scanner/pull/107) | [CNF-29280](https://redhat.atlassian.net/browse/CNF-29280)
+
 ## 2026-10-30: Cleaner Aborts for Operator Tests - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Made the cert-manager operator's end-to-end (e2e) tests stop cleanly when a run is interrupted or times out, instead of leaving cluster polls running for up to 10 minutes alongside cleanup. Converted 58 uncancellable calls across 21 test files and verified the change on a live cluster. [PR #533](https://github.com/openshift/cert-manager-operator/pull/533) | [CNF-29279](https://redhat.atlassian.net/browse/CNF-29279)
