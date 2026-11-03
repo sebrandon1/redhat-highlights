@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-03: Prevented Fleet-Wide Spoke Disconnects - [telco-reference](https://github.com/openshift-kni/telco-reference)
+
+Caught a flaw in the Telco hub reference configuration that would disconnect every managed cluster within minutes when adopting cert-manager certificates on an existing hub. Validated the corrected rollout and recovery steps three times on a live OpenShift 4.22 lab, then gave quality engineering (QE) a step-by-step guide with automated health checks. [PR #1027](https://github.com/openshift-kni/telco-reference/pull/1027) | [Guide](https://github.com/sebrandon1/cert-manager-poc/blob/main/docs/hub-spoke-cert-rotation.md) | [OCPBUGS-85774](https://redhat.atlassian.net/browse/OCPBUGS-85774)
+
 ## 2026-11-03: Unblocked Compliance Lane, 60x Faster Scans - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Unblocked the cluster-network-addons-operator (CNAO) s390x compliance lane, which timed out because TLS scans stalled on stale endpoints. A full scan on a 300-endpoint cluster now finishes in 38 seconds instead of 40 minutes, and namespace filtering is applied consistently across the operator. Released and adopted upstream. [v1.1.22](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.1.22) [PR #648](https://github.com/sebrandon1/tls-compliance-operator/pull/648) [PR #651](https://github.com/sebrandon1/tls-compliance-operator/pull/651) [CNAO #2942](https://github.com/kubevirt/cluster-network-addons-operator/pull/2942)
