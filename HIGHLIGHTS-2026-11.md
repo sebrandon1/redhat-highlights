@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-04: Dependable cert-manager Test Toolkit - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Made the cert-manager test toolkit dependable outside default setups: it now honors custom namespaces, fully cleans up after itself, stops leaking test resources, and its version-bump script works on macOS. Traced intermittent CI failures to undersized build machines, then shipped four fixes as v0.0.25. [v0.0.25](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.25) | [PR #228](https://github.com/sebrandon1/cert-manager-scripts/pull/228) [PR #229](https://github.com/sebrandon1/cert-manager-scripts/pull/229) [PR #230](https://github.com/sebrandon1/cert-manager-scripts/pull/230) [PR #231](https://github.com/sebrandon1/cert-manager-scripts/pull/231) | [CNF-29689](https://redhat.atlassian.net/browse/CNF-29689)
+
 ## 2026-11-03: Prevented Fleet-Wide Spoke Disconnects - [telco-reference](https://github.com/openshift-kni/telco-reference)
 
 Caught a flaw in the Telco hub reference configuration that would disconnect every managed cluster within minutes when adopting cert-manager certificates on an existing hub. Validated the corrected rollout and recovery steps three times on a live OpenShift 4.22 lab, then gave quality engineering (QE) a step-by-step guide with automated health checks. [PR #1027](https://github.com/openshift-kni/telco-reference/pull/1027) | [Guide](https://github.com/sebrandon1/cert-manager-poc/blob/main/docs/hub-spoke-cert-rotation.md) | [OCPBUGS-85774](https://redhat.atlassian.net/browse/OCPBUGS-85774)
