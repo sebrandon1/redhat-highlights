@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-04: Closed CVE in grab Release - [grab](https://github.com/sebrandon1/grab)
+
+Shipped grab v1.2.3, closing a Go standard-library vulnerability (GO-2026-6809) before it could reach downstream automation, and modernizing HTTP handling via go-toolbox. The patch is now available for Linux, macOS, and Windows with verified binaries. [v1.2.3](https://github.com/sebrandon1/grab/releases/tag/v1.2.3) [PR #90](https://github.com/sebrandon1/grab/pull/90) [PR #91](https://github.com/sebrandon1/grab/pull/91)
+
 ## 2026-11-04: Cut Flaky CI With Data - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Measured 1,300 CI runs to prove a single OpenShift version caused most flaky failures — a 7.7% failure rate versus 0.6% for every other version — then retired it and dropped its wasted jobs. Also taught the cache check to survive runner disk and network faults. [PR #225](https://github.com/palmsoftware/quick-ocp/pull/225) [PR #226](https://github.com/palmsoftware/quick-ocp/pull/226) [v1.0.10](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.10) [v1.0.11](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.11) | [CNF-29533](https://redhat.atlassian.net/browse/CNF-29533) [CNF-29535](https://redhat.atlassian.net/browse/CNF-29535)
