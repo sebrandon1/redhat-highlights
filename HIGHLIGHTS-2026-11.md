@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-04: Cut Flaky CI With Data - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
+
+Measured 1,300 CI runs to prove a single OpenShift version caused most flaky failures — a 7.7% failure rate versus 0.6% for every other version — then retired it and dropped its wasted jobs. Also taught the cache check to survive runner disk and network faults. [PR #225](https://github.com/palmsoftware/quick-ocp/pull/225) [PR #226](https://github.com/palmsoftware/quick-ocp/pull/226) [v1.0.10](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.10) [v1.0.11](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.0.11) | [CNF-29533](https://redhat.atlassian.net/browse/CNF-29533) [CNF-29535](https://redhat.atlassian.net/browse/CNF-29535)
+
 ## 2026-11-04: Dependable cert-manager Test Toolkit - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Made the cert-manager test toolkit dependable outside default setups: it now honors custom namespaces, fully cleans up after itself, stops leaking test resources, and its version-bump script works on macOS. Traced intermittent CI failures to undersized build machines, then shipped four fixes as v0.0.25. [v0.0.25](https://github.com/sebrandon1/cert-manager-scripts/releases/tag/v0.0.25) | [PR #228](https://github.com/sebrandon1/cert-manager-scripts/pull/228) [PR #229](https://github.com/sebrandon1/cert-manager-scripts/pull/229) [PR #230](https://github.com/sebrandon1/cert-manager-scripts/pull/230) [PR #231](https://github.com/sebrandon1/cert-manager-scripts/pull/231) | [CNF-29689](https://redhat.atlassian.net/browse/CNF-29689)
