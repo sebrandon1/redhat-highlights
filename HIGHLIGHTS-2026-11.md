@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-05: Six-Repo Go Toolchain Standardization - [grab](https://github.com/sebrandon1/grab)
+
+Removed a hard Go patch-version requirement that blocked the CRC integration build, so any Go 1.26.x/1.27.x consumer can build while CI and release binaries still use patched compilers. Rolled the fix across six Go libraries, shipped patch releases, and eliminated flaky network-dependent CI tests. [PR #92](https://github.com/sebrandon1/grab/pull/92) [v1.2.4](https://github.com/sebrandon1/grab/releases/tag/v1.2.4) [go-dci PR #257](https://github.com/sebrandon1/go-dci/pull/257) [go-enphase PR #111](https://github.com/sebrandon1/go-enphase/pull/111)
+
 ## 2026-11-04: Closed CVE in grab Release - [grab](https://github.com/sebrandon1/grab)
 
 Shipped grab v1.2.3, closing a Go standard-library vulnerability (GO-2026-6809) before it could reach downstream automation, and modernizing HTTP handling via go-toolbox. The patch is now available for Linux, macOS, and Windows with verified binaries. [v1.2.3](https://github.com/sebrandon1/grab/releases/tag/v1.2.3) [PR #90](https://github.com/sebrandon1/grab/pull/90) [PR #91](https://github.com/sebrandon1/grab/pull/91)
