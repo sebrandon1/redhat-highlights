@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-06: Shipped Quay Traffic Analytics - [go-quay](https://github.com/sebrandon1/go-quay)
+
+Enabled teams to see which images and clusters drive registry load. New `list pull-traffic` and `report consumers` commands rank image pulls by repository, tag, puller identity, and source IP, with CSV export for spreadsheets — turning a manual 90-day investigation into one command. Released as v1.3.0. [PR #302](https://github.com/sebrandon1/go-quay/pull/302) [v1.3.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.3.0)
+
 ## 2026-11-05: Six-Repo Go Toolchain Standardization - [grab](https://github.com/sebrandon1/grab)
 
 Removed a hard Go patch-version requirement that blocked the CRC integration build, so any Go 1.26.x/1.27.x consumer can build while CI and release binaries still use patched compilers. Rolled the fix across six Go libraries, shipped patch releases, and eliminated flaky network-dependent CI tests. [PR #92](https://github.com/sebrandon1/grab/pull/92) [v1.2.4](https://github.com/sebrandon1/grab/releases/tag/v1.2.4) [go-dci PR #257](https://github.com/sebrandon1/go-dci/pull/257) [go-enphase PR #111](https://github.com/sebrandon1/go-enphase/pull/111)
