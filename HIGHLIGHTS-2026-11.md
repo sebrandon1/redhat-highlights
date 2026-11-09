@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-09: Eliminated Five Silent CI Failures - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Restored OpenShift compliance automation that silently reported success: both image-mirroring pipelines lacked a required tool, a verification job could pass after applying nothing, and the dashboard showed a six-fold-undercounted result. Fixed all five defects with regression coverage; 550 tests pass. [PR #451](https://github.com/sebrandon1/compliance-scripts/pull/451) [PR #452](https://github.com/sebrandon1/compliance-scripts/pull/452) [PR #453](https://github.com/sebrandon1/compliance-scripts/pull/453) [PR #454](https://github.com/sebrandon1/compliance-scripts/pull/454) [PR #455](https://github.com/sebrandon1/compliance-scripts/pull/455)
+
 ## 2026-11-06: Shipped Quay Traffic Analytics - [go-quay](https://github.com/sebrandon1/go-quay)
 
 Enabled teams to see which images and clusters drive registry load. New `list pull-traffic` and `report consumers` commands rank image pulls by repository, tag, puller identity, and source IP, with CSV export for spreadsheets — turning a manual 90-day investigation into one command. Released as v1.3.0. [PR #302](https://github.com/sebrandon1/go-quay/pull/302) [v1.3.0](https://github.com/sebrandon1/go-quay/releases/tag/v1.3.0)
