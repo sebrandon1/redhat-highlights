@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-09: Hardened cert-manager Test Cleanup - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
+
+Prevented destructive cleanup on shared OpenShift test clusters: fake-DNS setup now preserves existing DNS forwarding and restores it, `make clean` removes only certificates this toolkit created, and the operator uninstall target now actually uninstalls. Four bug fixes with regression tests. [PR #238](https://github.com/sebrandon1/cert-manager-scripts/pull/238) [PR #239](https://github.com/sebrandon1/cert-manager-scripts/pull/239) [PR #240](https://github.com/sebrandon1/cert-manager-scripts/pull/240) [PR #241](https://github.com/sebrandon1/cert-manager-scripts/pull/241)
+
 
 ## 2026-11-09: Eliminated Five Silent CI Failures - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
