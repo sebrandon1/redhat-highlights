@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-10: Eliminated Broken OCP Version Bumps - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Prevented deployment automation from publishing unusable OpenShift release levels: the nightly updater now waits until Red Hat's mirror actually carries a version, eliminating update PRs that failed all 31 CI checks. Shipped in v1.0.12 alongside Istio and MetalLB bumps. [PR #512](https://github.com/palmsoftware/quick-k8s/pull/512) [v1.0.12](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.12)
+
 ## 2026-11-09: Hardened cert-manager Test Cleanup - [cert-manager-scripts](https://github.com/sebrandon1/cert-manager-scripts)
 
 Prevented destructive cleanup on shared OpenShift test clusters: fake-DNS setup now preserves existing DNS forwarding and restores it, `make clean` removes only certificates this toolkit created, and the operator uninstall target now actually uninstalls. Four bug fixes with regression tests. [PR #238](https://github.com/sebrandon1/cert-manager-scripts/pull/238) [PR #239](https://github.com/sebrandon1/cert-manager-scripts/pull/239) [PR #240](https://github.com/sebrandon1/cert-manager-scripts/pull/240) [PR #241](https://github.com/sebrandon1/cert-manager-scripts/pull/241)
