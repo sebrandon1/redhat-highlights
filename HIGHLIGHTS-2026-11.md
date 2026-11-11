@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-11: Shipped Compliance-Scripts v1.2.4 - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
+
+Released 20 merged changes that restore trust in OpenShift compliance reporting: scheduled image mirroring now installs its required tool, verification fails when nothing was applied, and the dashboard validator reports only real problems. [Release v1.2.4](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.2.4) [PR #456](https://github.com/sebrandon1/compliance-scripts/pull/456) [PR #457](https://github.com/sebrandon1/compliance-scripts/pull/457)
+
 ## 2026-11-10: Eliminated Broken OCP Version Bumps - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Prevented deployment automation from publishing unusable OpenShift release levels: the nightly updater now waits until Red Hat's mirror actually carries a version, eliminating update PRs that failed all 31 CI checks. Shipped in v1.0.12 alongside Istio and MetalLB bumps. [PR #512](https://github.com/palmsoftware/quick-k8s/pull/512) [v1.0.12](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.12)
