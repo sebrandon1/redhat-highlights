@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-12: Hardened Cluster Reconfiguration Tool - [recert](https://github.com/rh-ecosystem-edge/recert)
+
+Closed major test gaps in recert, the tool that reconfigures pre-built OpenShift single-node clusters for each site. 10 new integration scenarios now cover cluster, IP, proxy and certificate renames. The scenarios exposed and fixed 19 crash and silent-failure bugs, including IP renames that corrupted similar addresses. [PR #2364](https://github.com/rh-ecosystem-edge/recert/pull/2364) [CNF-30065](https://redhat.atlassian.net/browse/CNF-30065)
+
 ## 2026-11-12: Unblocked TLS Operator OpenShift Release - [community-operators-prod](https://github.com/redhat-openshift-ecosystem/community-operators-prod)
 
 Caught that OpenShift users could not install the latest TLS Compliance Operator: two releases (1.1.20, 1.2.0) were merged but never published to the OpenShift community catalog. Opened the catalog update with a direct upgrade path from any prior version, bringing custom security profiles and localhost-listener detection to OpenShift. [PR #12002](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/12002) [PR #11989](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11989) [v1.2.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.2.0)
