@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-12: Hardened Fleet Upgrade Orchestration - [cluster-group-upgrades-operator](https://github.com/openshift-kni/cluster-group-upgrades-operator)
+
+Prevented silent upgrade failures and controller crashes in TALM (Topology Aware Lifecycle Manager), which rolls updates across thousands of edge clusters. Fixed 8 bugs, including partially failed rollouts reported as successful, and added unit tests for 60+ untested functions. [PR #14500](https://github.com/openshift-kni/cluster-group-upgrades-operator/pull/14500) [CNF-30144](https://redhat.atlassian.net/browse/CNF-30144) [CNF-30139](https://redhat.atlassian.net/browse/CNF-30139)
+
 ## 2026-11-12: Made Test Coverage Gaps Visible - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Merged a reworked smoke-scenario coverage report so engineers can see at a glance which of 124 tests are covered and why the other 38 cannot run. Replaced ~87 repeated scenario names with linked IDs, added per-scenario links to the scripts that run, and cut the file size. [PR #4019](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/4019) (merged)
