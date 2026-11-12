@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-12: Unblocked TLS Operator OpenShift Release - [community-operators-prod](https://github.com/redhat-openshift-ecosystem/community-operators-prod)
+
+Caught that OpenShift users could not install the latest TLS Compliance Operator: two releases (1.1.20, 1.2.0) were merged but never published to the OpenShift community catalog. Opened the catalog update with a direct upgrade path from any prior version, bringing custom security profiles and localhost-listener detection to OpenShift. [PR #12002](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/12002) [PR #11989](https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/11989) [v1.2.0](https://github.com/sebrandon1/tls-compliance-operator/releases/tag/v1.2.0)
+
 ## 2026-11-11: Shipped Compliance-Scripts v1.2.4 - [compliance-scripts](https://github.com/sebrandon1/compliance-scripts)
 
 Released 20 merged changes that restore trust in OpenShift compliance reporting: scheduled image mirroring now installs its required tool, verification fails when nothing was applied, and the dashboard validator reports only real problems. [Release v1.2.4](https://github.com/sebrandon1/compliance-scripts/releases/tag/v1.2.4) [PR #456](https://github.com/sebrandon1/compliance-scripts/pull/456) [PR #457](https://github.com/sebrandon1/compliance-scripts/pull/457)
