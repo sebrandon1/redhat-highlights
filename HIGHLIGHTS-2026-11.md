@@ -5,7 +5,7 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 ---
 ## 2026-11-12: Made Test Coverage Gaps Visible - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
-Reworked the smoke-scenario coverage report so engineers can see at a glance which of 124 tests are covered and why the other 38 cannot run. Replaced ~87 repeated scenario names with linked IDs, added per-scenario links to the scripts that run, and cut the file size. [PR #4019](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/4019)
+Merged a reworked smoke-scenario coverage report so engineers can see at a glance which of 124 tests are covered and why the other 38 cannot run. Replaced ~87 repeated scenario names with linked IDs, added per-scenario links to the scripts that run, and cut the file size. [PR #4019](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/4019) (merged)
 
 ## 2026-11-12: Hardened Cluster Reconfiguration Tool - [recert](https://github.com/rh-ecosystem-edge/recert)
 
