@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-13: Backported Operator Stability Fixes - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Opened backports so customers on cert-manager Operator 1.20 get three stability fixes without waiting for the next release: a crash (nil-pointer panic), lost error details, and skipped retries. Resolved conflicts manually where automation failed, and rebased 6 open pull requests onto master. [PR #546](https://github.com/openshift/cert-manager-operator/pull/546) [PR #547](https://github.com/openshift/cert-manager-operator/pull/547) [PR #548](https://github.com/openshift/cert-manager-operator/pull/548) [CNF-26102](https://redhat.atlassian.net/browse/CNF-26102) [CNF-29074](https://redhat.atlassian.net/browse/CNF-29074)
+
 ## 2026-11-12: Hardened Fleet Upgrade Orchestration - [cluster-group-upgrades-operator](https://github.com/openshift-kni/cluster-group-upgrades-operator)
 
 Prevented silent upgrade failures and controller crashes in TALM (Topology Aware Lifecycle Manager), which rolls updates across thousands of edge clusters. Fixed 8 bugs, including partially failed rollouts reported as successful, and added unit tests for 60+ untested functions. [PR #14500](https://github.com/openshift-kni/cluster-group-upgrades-operator/pull/14500) [CNF-30144](https://redhat.atlassian.net/browse/CNF-30144) [CNF-30139](https://redhat.atlassian.net/browse/CNF-30139)
