@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-16: Remediated Go CVE Across 17 Repos - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
+
+Eliminated a known Go standard-library vulnerability (GO-2026-6859) across 17 repositories by pinning Go 1.27.4 — 18 pull requests merged in one pass — and turned on patch-level drift detection so the next stale toolchain is caught before a security scan fails. [PR #1698](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1698) [CNFCERT-1542](https://redhat.atlassian.net/browse/CNFCERT-1542)
+
 ## 2026-11-16: Fixed Misdiagnosed Cluster Failures - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
 Found from raw CI logs that a reported "silent setup crash" was really two post-startup failures, so none of the requested fixes would have helped. Added automatic retries for transient API (Application Programming Interface) errors, failure diagnostics, and an early warning for unstable clusters, with 8 new tests. [PR #229](https://github.com/palmsoftware/quick-ocp/pull/229) [Issue #228](https://github.com/palmsoftware/quick-ocp/issues/228)
