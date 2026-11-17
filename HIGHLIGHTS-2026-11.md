@@ -21,7 +21,7 @@ Eliminated a known Go standard-library vulnerability (GO-2026-6859) across 17 re
 
 ## 2026-11-16: Fixed Misdiagnosed Cluster Failures - [quick-ocp](https://github.com/palmsoftware/quick-ocp)
 
-Found from raw CI logs that a reported "silent setup crash" was really two post-startup failures, so none of the requested fixes would have helped. Added automatic retries for transient API (Application Programming Interface) errors, failure diagnostics, and an early warning for unstable clusters, with 8 new tests. [PR #229](https://github.com/palmsoftware/quick-ocp/pull/229) [Issue #228](https://github.com/palmsoftware/quick-ocp/issues/228)
+Released v1.1.1 after proving from raw CI logs that a reported "silent setup crash" was really two post-startup failures, so none of the requested fixes would have helped. Added automatic retries for transient API (Application Programming Interface) errors, timeout diagnostics, and an unstable-cluster warning, with 8 new tests. [PR #229](https://github.com/palmsoftware/quick-ocp/pull/229) [v1.1.1](https://github.com/palmsoftware/quick-ocp/releases/tag/v1.1.1) [CNF-30256](https://redhat.atlassian.net/browse/CNF-30256)
 
 ## 2026-11-13: Backported Operator Stability Fixes - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
