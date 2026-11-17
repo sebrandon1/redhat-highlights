@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-17: Made Lab CLI Timeouts Configurable - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Removed hardcoded network and cache settings from the lab provisioning CLI, so CI runs can disable caching and long-running jobs can raise timeouts without code changes — fewer failed automated runs. Shipped v0.1.5 with both changes and five bug fixes. [PR #229](https://github.com/sebrandon1/succulent-cli/pull/229) [PR #230](https://github.com/sebrandon1/succulent-cli/pull/230) [v0.1.5](https://github.com/sebrandon1/succulent-cli/releases/tag/v0.1.5)
+
 ## 2026-11-17: Refreshed Kubernetes Networking Defaults - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
 
 Shipped release v1.0.13, keeping the Kubernetes test harness on current networking components: Calico v3.33.1 and Cilium CLI v0.20.3 defaults, plus a CI fix that stops version bumps from landing before the upstream mirror publishes them, preventing wasted failed builds. [PR #514](https://github.com/palmsoftware/quick-k8s/pull/514) [PR #513](https://github.com/palmsoftware/quick-k8s/pull/513) [v1.0.13](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.13) [CNF-30255](https://redhat.atlassian.net/browse/CNF-30255)
