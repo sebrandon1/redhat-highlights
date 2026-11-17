@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-17: Refreshed Kubernetes Networking Defaults - [quick-k8s](https://github.com/palmsoftware/quick-k8s)
+
+Shipped release v1.0.13, keeping the Kubernetes test harness on current networking components: Calico v3.33.1 and Cilium CLI v0.20.3 defaults, plus a CI fix that stops version bumps from landing before the upstream mirror publishes them, preventing wasted failed builds. [PR #514](https://github.com/palmsoftware/quick-k8s/pull/514) [PR #513](https://github.com/palmsoftware/quick-k8s/pull/513) [v1.0.13](https://github.com/palmsoftware/quick-k8s/releases/tag/v1.0.13) [CNF-30255](https://redhat.atlassian.net/browse/CNF-30255)
+
 ## 2026-11-17: Shipped CI Flake Triage Tool - [whyfail](https://github.com/sebrandon1/whyfail)
 
 Released whyfail v0.0.1, which separates broken CI jobs from flaky ones using Prow's own retained history, so reviewers stop chasing false failures. Merged two improvements and added a one-command PR comment that flags historically flaky checks. [v0.0.1](https://github.com/sebrandon1/whyfail/releases/tag/v0.0.1) [PR #46](https://github.com/sebrandon1/whyfail/pull/46) [PR #47](https://github.com/sebrandon1/whyfail/pull/47)
