@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-17: Added OpenShift 5.0 Nightly Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
+
+Started daily certification testing against OpenShift 5.0, the first 5.x release, and retired 4.14/4.16 nightlies that depended on hand-maintained lab machines. Moving all nightlies to GitHub-hosted runners removes lab upkeep and frees two lab machines. [PR #4026](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/4026)
+
 ## 2026-11-16: Remediated Go CVE Across 17 Repos - [certsuite-qe](https://github.com/redhat-best-practices-for-k8s/certsuite-qe)
 
 Eliminated a known Go standard-library vulnerability (GO-2026-6859) across 17 repositories by pinning Go 1.27.4 — 18 pull requests merged in one pass — and turned on patch-level drift detection so the next stale toolchain is caught before a security scan fails. [PR #1698](https://github.com/redhat-best-practices-for-k8s/certsuite-qe/pull/1698) [CNFCERT-1542](https://redhat.atlassian.net/browse/CNFCERT-1542)
