@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-17: Shipped CI Flake Triage Tool - [whyfail](https://github.com/sebrandon1/whyfail)
+
+Released whyfail v0.0.1, which separates broken CI jobs from flaky ones using Prow's own retained history, so reviewers stop chasing false failures. Merged two improvements and added a one-command PR comment that flags historically flaky checks. [v0.0.1](https://github.com/sebrandon1/whyfail/releases/tag/v0.0.1) [PR #46](https://github.com/sebrandon1/whyfail/pull/46) [PR #47](https://github.com/sebrandon1/whyfail/pull/47)
+
 ## 2026-11-17: Added OpenShift 5.0 Nightly Coverage - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Started daily certification testing against OpenShift 5.0, the first 5.x release, and retired 4.14/4.16 nightlies that depended on hand-maintained lab machines. Moving all nightlies to GitHub-hosted runners removes lab upkeep and frees two lab machines. [PR #4026](https://github.com/redhat-best-practices-for-k8s/certsuite/pull/4026)
