@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-18: Enabled Upgrade Testing Without Hardware - [lifecycle-agent](https://github.com/openshift-kni/lifecycle-agent)
+
+Proved Image Based Upgrades (IBU) can be tested on virtual single-node OpenShift clusters inside an existing lab cluster, with no reprovisioning or spare servers. Completed a full 4.20.45→4.20.46 upgrade, published a step-by-step team guide, and fixed a documentation bug that broke node boots. [PR #10670](https://github.com/openshift-kni/lifecycle-agent/pull/10670) [CNF-30291](https://redhat.atlassian.net/browse/CNF-30291)
+
 ## 2026-11-17: Delivered OpenShift 5.0-Ready Release - [certsuite](https://github.com/redhat-best-practices-for-k8s/certsuite)
 
 Shipped certsuite v5.5.27, the first release validated against OpenShift 5.0, so partners can test workloads on the next platform version. Also closed a credential leak in result files and cut smoke-test runtime 41%, making every certification run faster and safer. [v5.5.27](https://github.com/redhat-best-practices-for-k8s/certsuite/releases/tag/v5.5.27) [CNFCERT-1543](https://redhat.atlassian.net/browse/CNFCERT-1543)
