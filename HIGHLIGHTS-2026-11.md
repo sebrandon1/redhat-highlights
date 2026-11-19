@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-19: Shipped CI Flake Triage v0.0.2 - [whyfail](https://github.com/sebrandon1/whyfail)
+
+Released whyfail v0.0.2, twelve changes making CI flake triage a one-command answer: failing checks name the PRs behind them, logs are grep-able, runs can gate CI with an exit code, and a daily dashboard tracks job health past Prow's 90-day retention. [v0.0.2](https://github.com/sebrandon1/whyfail/releases/tag/v0.0.2) [PR #68](https://github.com/sebrandon1/whyfail/pull/68)
+
 ## 2026-11-19: Hardened TLS Scanning Coverage - [tls-config-lint](https://github.com/sebrandon1/tls-config-lint)
 
 Shipped tls-config-lint v1.2.5, closing nine open issues: scans now cover C, JSX/TSX, and Kotlin scripts, detect deeper repositories, and stop reporting commented-out code and ecosystem test files. Teams relying on it as a TLS security gate get accurate results instead of silent or noisy scans. [v1.2.5](https://github.com/sebrandon1/tls-config-lint/releases/tag/v1.2.5) [PR #135](https://github.com/sebrandon1/tls-config-lint/pull/135)
