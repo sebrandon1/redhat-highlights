@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-20: Closed 12 Operator Enhancements - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
+
+Closed 14 open enhancement issues for the image certification operator in one pass. New orphan cleanup reclaims stale inventory automatically, credential rotation no longer needs a restart, and GitHub Container Registry images are now enriched alongside Red Hat and Quay. [PR #283](https://github.com/sebrandon1/imagecertinfo-operator/pull/283) [PR #286](https://github.com/sebrandon1/imagecertinfo-operator/pull/286) [PR #289](https://github.com/sebrandon1/imagecertinfo-operator/pull/289)
+
 ## 2026-11-19: Shipped CI Flake Triage v0.0.2 - [whyfail](https://github.com/sebrandon1/whyfail)
 
 Released whyfail v0.0.2, twelve changes making CI flake triage a one-command answer: failing checks name the PRs behind them, logs are grep-able, runs can gate CI with an exit code, and a daily dashboard tracks job health past Prow's 90-day retention. [v0.0.2](https://github.com/sebrandon1/whyfail/releases/tag/v0.0.2) [PR #68](https://github.com/sebrandon1/whyfail/pull/68)
