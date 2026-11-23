@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-23: Hardened OLM Against Crashes and Bad Labels - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
+
+Eliminated two classes of Operator Lifecycle Manager failures: invalid API keys no longer leak malformed strings into RBAC labels and annotations, and serving-certificate generation now returns an error instead of panicking, with a new 16-test suite covering previously untested certificate rotation code. [PR #3933](https://github.com/operator-framework/operator-lifecycle-manager/pull/3933) [PR #3944](https://github.com/operator-framework/operator-lifecycle-manager/pull/3944) [CNF-27963](https://redhat.atlassian.net/browse/CNF-27963) [CNF-28768](https://redhat.atlassian.net/browse/CNF-28768)
+
 ## 2026-11-23: Shipped CI Triage Release v0.1.0 - [whyfail](https://github.com/sebrandon1/whyfail)
 
 Released whyfail v0.1.0, seven changes making OpenShift CI triage trustworthy: job health now says when a verdict came from a partial read instead of miscounting failures, AI agents can search CI and read bounded logs, and the daily board flags jobs that newly broke. [v0.1.0](https://github.com/sebrandon1/whyfail/releases/tag/v0.1.0) [PR #82](https://github.com/sebrandon1/whyfail/pull/82) [PR #81](https://github.com/sebrandon1/whyfail/pull/81)
