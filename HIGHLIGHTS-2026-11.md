@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-23: Shipped CI Triage Release v0.1.0 - [whyfail](https://github.com/sebrandon1/whyfail)
+
+Released whyfail v0.1.0, seven changes making OpenShift CI triage trustworthy: job health now says when a verdict came from a partial read instead of miscounting failures, AI agents can search CI and read bounded logs, and the daily board flags jobs that newly broke. [v0.1.0](https://github.com/sebrandon1/whyfail/releases/tag/v0.1.0) [PR #82](https://github.com/sebrandon1/whyfail/pull/82) [PR #81](https://github.com/sebrandon1/whyfail/pull/81)
+
 ## 2026-11-20: Closed 12 Operator Enhancements - [imagecertinfo-operator](https://github.com/sebrandon1/imagecertinfo-operator)
 
 Closed 14 open enhancement issues for the image certification operator in one pass. New orphan cleanup reclaims stale inventory automatically, credential rotation no longer needs a restart, and GitHub Container Registry images are now enriched alongside Red Hat and Quay. [PR #283](https://github.com/sebrandon1/imagecertinfo-operator/pull/283) [PR #286](https://github.com/sebrandon1/imagecertinfo-operator/pull/286) [PR #289](https://github.com/sebrandon1/imagecertinfo-operator/pull/289)
