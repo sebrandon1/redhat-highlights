@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Unblocked Performance API Development - [oran-o2ims](https://github.com/openshift-kni/oran-o2ims)
+
+Delivered the first building block for the O-RAN Performance API by making the cluster and resource clients shareable across O-Cloud Manager services. Removed duplicated authentication setup, fixed a latent namespace bug that breaks token requests in non-default namespaces, and added 10 unit tests. [PR #5494](https://github.com/openshift-kni/oran-o2ims/pull/5494) [CNF-30450](https://redhat.atlassian.net/browse/CNF-30450)
+
 ## 2026-11-24: Hardened Dashboard and Shipped v1.0.0 - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
 
 Closed all 10 remaining open issues in one batch and cut the first stable release: opt-in authentication, origin-restricted CORS and WebSockets, request-body caps, AI rate limiting, and durable event storage. 10 PRs merged, all checks green. [v1.0.0](https://github.com/sebrandon1/ztp-dashboard/releases/tag/v1.0.0)
