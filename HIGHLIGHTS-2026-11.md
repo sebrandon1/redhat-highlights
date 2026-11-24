@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Shipped Self-Diagnosing vSNO v0.1.1 - [vsno](https://github.com/sebrandon1/vsno)
+
+Removed the config-file barrier to first use of the virtual single-node OpenShift (vSNO) lab tool and released v0.1.1: 70 changes, including doctor and report commands that turn stalled upgrades from hours of log reading into one diagnostic command. [PR #157](https://github.com/sebrandon1/vsno/pull/157) [v0.1.1](https://github.com/sebrandon1/vsno/releases/tag/v0.1.1)
+
 ## 2026-11-24: Restored Lab CLI Docs Accuracy - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
 
 Restored trust in the lab provisioning CLI's documentation, which still described pre-`--follow` log streaming and omitted environment groups, audit logging, and container builds — corrected stale guidance across four docs, all five CI checks green. [PR #232](https://github.com/sebrandon1/succulent-cli/pull/232)
