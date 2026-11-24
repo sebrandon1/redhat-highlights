@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Hardened Dashboard and Shipped v1.0.0 - [ztp-dashboard](https://github.com/sebrandon1/ztp-dashboard)
+
+Closed all 10 remaining open issues in one batch and cut the first stable release: opt-in authentication, origin-restricted CORS and WebSockets, request-body caps, AI rate limiting, and durable event storage. 10 PRs merged, all checks green. [v1.0.0](https://github.com/sebrandon1/ztp-dashboard/releases/tag/v1.0.0)
+
 ## 2026-11-24: Shipped Self-Diagnosing vSNO v0.1.1 - [vsno](https://github.com/sebrandon1/vsno)
 
 Removed the config-file barrier to first use of the virtual single-node OpenShift (vSNO) lab tool and released v0.1.1: 70 changes, including doctor and report commands that turn stalled upgrades from hours of log reading into one diagnostic command. [PR #157](https://github.com/sebrandon1/vsno/pull/157) [v0.1.1](https://github.com/sebrandon1/vsno/releases/tag/v0.1.1)
