@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Shipped vSNO Usability Release v0.1.2 - [vsno](https://github.com/sebrandon1/vsno)
+
+Cut manual polling and guesswork from virtual single-node OpenShift lab operations: one-command inspection (describe), scriptable waits, shell completion, list filters and dry-run planning, then released v0.1.2 with binaries for four platforms. [PR #159](https://github.com/sebrandon1/vsno/pull/159) [PR #163](https://github.com/sebrandon1/vsno/pull/163) [v0.1.2](https://github.com/sebrandon1/vsno/releases/tag/v0.1.2)
+
 ## 2026-11-24: Unblocked Performance API Development - [oran-o2ims](https://github.com/openshift-kni/oran-o2ims)
 
 Delivered the first building block for the O-RAN Performance API by making the cluster and resource clients shareable across O-Cloud Manager services. Removed duplicated authentication setup, fixed a latent namespace bug that breaks token requests in non-default namespaces, and added 10 unit tests. [PR #5494](https://github.com/openshift-kni/oran-o2ims/pull/5494) [CNF-30450](https://redhat.atlassian.net/browse/CNF-30450)
