@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Consoleless Install Fix Now Shipping - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
+
+Customers running consoleless clusters, such as Radio Access Network (RAN) telco deployments, can now install cert-manager straight from the Red Hat catalog. Released v1.20.1 includes the fix moving Console resources out of the install bundle, removing the manual cluster-patching workaround. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) [PR #467](https://github.com/openshift/cert-manager-operator/pull/467) [OCPBUGS-85579](https://redhat.atlassian.net/browse/OCPBUGS-85579)
+
 ## 2026-11-23: Hardened OLM Against Crashes and Bad Labels - [operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
 
 Eliminated two classes of Operator Lifecycle Manager failures: invalid API keys no longer leak malformed strings into RBAC labels and annotations, and serving-certificate generation now returns an error instead of panicking, with a new 16-test suite covering previously untested certificate rotation code. [PR #3933](https://github.com/operator-framework/operator-lifecycle-manager/pull/3933) [PR #3944](https://github.com/operator-framework/operator-lifecycle-manager/pull/3944) [CNF-27963](https://redhat.atlassian.net/browse/CNF-27963) [CNF-28768](https://redhat.atlassian.net/browse/CNF-28768)
