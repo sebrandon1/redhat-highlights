@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Fixed Four vSNO Lifecycle Defects - [vsno](https://github.com/sebrandon1/vsno)
+
+Eliminated four defects that stalled virtual single-node OpenShift upgrades: stuck Image Based Upgrades now fail in seconds with a recovery path, interrupted seed builds stay visible instead of appearing dead, and stopping a cluster mid-generation is refused. 980 tests; verified live. [PR #153](https://github.com/sebrandon1/vsno/pull/153) [PR #154](https://github.com/sebrandon1/vsno/pull/154) [PR #155](https://github.com/sebrandon1/vsno/pull/155) [PR #156](https://github.com/sebrandon1/vsno/pull/156)
+
 ## 2026-11-24: Consoleless Install Fix Now Shipping - [cert-manager-operator](https://github.com/openshift/cert-manager-operator)
 
 Customers running consoleless clusters, such as Radio Access Network (RAN) telco deployments, can now install cert-manager straight from the Red Hat catalog. Released v1.20.1 includes the fix moving Console resources out of the install bundle, removing the manual cluster-patching workaround. [PR #455](https://github.com/openshift/cert-manager-operator/pull/455) [PR #467](https://github.com/openshift/cert-manager-operator/pull/467) [OCPBUGS-85579](https://redhat.atlassian.net/browse/OCPBUGS-85579)
