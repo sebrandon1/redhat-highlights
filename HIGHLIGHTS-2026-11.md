@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-24: Restored Lab CLI Docs Accuracy - [succulent-cli](https://github.com/sebrandon1/succulent-cli)
+
+Restored trust in the lab provisioning CLI's documentation, which still described pre-`--follow` log streaming and omitted environment groups, audit logging, and container builds — corrected stale guidance across four docs, all five CI checks green. [PR #232](https://github.com/sebrandon1/succulent-cli/pull/232)
+
 ## 2026-11-24: Fixed Four vSNO Lifecycle Defects - [vsno](https://github.com/sebrandon1/vsno)
 
 Eliminated four defects that stalled virtual single-node OpenShift upgrades: stuck Image Based Upgrades now fail in seconds with a recovery path, interrupted seed builds stay visible instead of appearing dead, and stopping a cluster mid-generation is refused. 980 tests; verified live. [PR #153](https://github.com/sebrandon1/vsno/pull/153) [PR #154](https://github.com/sebrandon1/vsno/pull/154) [PR #155](https://github.com/sebrandon1/vsno/pull/155) [PR #156](https://github.com/sebrandon1/vsno/pull/156)
