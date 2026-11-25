@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-25: Restored Nightly E2E Signal - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
+
+Restored nightly upgrade testing for the TLS compliance operator after a GitHub runner image change silently broke every OpenShift end-to-end run for six nights; pinning the job to a supported image brings the safety signal back. [PR #737](https://github.com/sebrandon1/tls-compliance-operator/pull/737) [CNF-30462](https://redhat.atlassian.net/browse/CNF-30462)
+
 ## 2026-11-25: Prevented Disk-Wipe Data Loss - [vsno](https://github.com/sebrandon1/vsno)
 
 Eliminated a data-loss risk in the virtual single-node OpenShift lab tool: its cluster precheck now proves a disk is blank before recommending it for LVM Storage, so a live Ceph storage disk can no longer be erased. [PR #164](https://github.com/sebrandon1/vsno/pull/164) [v0.1.3](https://github.com/sebrandon1/vsno/releases/tag/v0.1.3) [CNF-30463](https://redhat.atlassian.net/browse/CNF-30463)
