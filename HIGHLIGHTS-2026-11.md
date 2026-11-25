@@ -3,6 +3,10 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+## 2026-11-25: Prevented Disk-Wipe Data Loss - [vsno](https://github.com/sebrandon1/vsno)
+
+Eliminated a data-loss risk in the virtual single-node OpenShift lab tool: its cluster precheck now proves a disk is blank before recommending it for LVM Storage, so a live Ceph storage disk can no longer be erased. [PR #164](https://github.com/sebrandon1/vsno/pull/164) [v0.1.3](https://github.com/sebrandon1/vsno/releases/tag/v0.1.3) [CNF-30463](https://redhat.atlassian.net/browse/CNF-30463)
+
 ## 2026-11-24: Shipped vSNO Usability Release v0.1.2 - [vsno](https://github.com/sebrandon1/vsno)
 
 Cut manual polling and guesswork from virtual single-node OpenShift lab operations: one-command inspection (describe), scriptable waits, shell completion, list filters and dry-run planning, then released v0.1.2 with binaries for four platforms. [PR #159](https://github.com/sebrandon1/vsno/pull/159) [PR #163](https://github.com/sebrandon1/vsno/pull/163) [v0.1.2](https://github.com/sebrandon1/vsno/releases/tag/v0.1.2)
