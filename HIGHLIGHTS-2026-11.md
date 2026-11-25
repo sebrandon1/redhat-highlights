@@ -4,6 +4,11 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-25: Repaired Broken Shared Skills - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Fixed five shared Claude skills that had drifted from daily use: three plugins referenced helper scripts nobody had published, so installed copies would fail on first run. Audited all 58 published skills; the remainder are current. [MR !69](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/69) [MR !73](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/73)
+
+
 ## 2026-11-25: Documented ZTP Credential Recovery - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Cut hours of lab troubleshooting for ZTP cluster access: the shared Claude skill now documents how to recover a console URL and kubeadmin password, plus the two failures (denied SSH, stale certificates) that strand engineers. [MR !68](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/68)
