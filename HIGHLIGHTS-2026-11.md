@@ -3,6 +3,11 @@
 A reverse-chronological log of significant engineering accomplishments for November 2026.
 
 ---
+
+## 2026-11-25: Documented ZTP Credential Recovery - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
+
+Cut hours of lab troubleshooting for ZTP cluster access: the shared Claude skill now documents how to recover a console URL and kubeadmin password, plus the two failures (denied SSH, stale certificates) that strand engineers. [MR !68](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/68)
+
 ## 2026-11-25: Restored Nightly E2E Signal - [tls-compliance-operator](https://github.com/sebrandon1/tls-compliance-operator)
 
 Restored nightly upgrade testing for the TLS compliance operator after a GitHub runner image change silently broke every OpenShift end-to-end run for six nights; pinning the job to a supported image brings the safety signal back. [PR #737](https://github.com/sebrandon1/tls-compliance-operator/pull/737) [CNF-30462](https://redhat.atlassian.net/browse/CNF-30462)
