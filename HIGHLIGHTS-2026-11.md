@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-25: Automated vSNO Resource Cleanup - [vsno](https://github.com/sebrandon1/vsno)
+
+Reduced orphaned storage and stale lab state: a vSNO's Service, disks and DNS entries now clean up with its VM, and a new `vsno reconcile` command repairs leaks unattended from cron. Verified end to end on a live OpenShift cluster (install, teardown, reclamation). [PR #165](https://github.com/sebrandon1/vsno/pull/165)
+
 ## 2026-11-25: Unblocked Upstream Adoption Test - [cluster-network-addons-operator](https://github.com/kubevirt/cluster-network-addons-operator)
 
 Unblocked the upstream end-to-end test that validates the TLS compliance operator inside Kubernetes networking, after a one-character patch defect failed every run; also advanced the operator to v1.2.2 and deleted 32 lines of obsolete workarounds. [PR #3010](https://github.com/kubevirt/cluster-network-addons-operator/pull/3010)
