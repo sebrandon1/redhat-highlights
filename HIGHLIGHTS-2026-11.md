@@ -4,6 +4,10 @@ A reverse-chronological log of significant engineering accomplishments for Novem
 
 ---
 
+## 2026-11-25: Unblocked Upstream Adoption Test - [cluster-network-addons-operator](https://github.com/kubevirt/cluster-network-addons-operator)
+
+Unblocked the upstream end-to-end test that validates the TLS compliance operator inside Kubernetes networking, after a one-character patch defect failed every run; also advanced the operator to v1.2.2 and deleted 32 lines of obsolete workarounds. [PR #3010](https://github.com/kubevirt/cluster-network-addons-operator/pull/3010)
+
 ## 2026-11-25: Repaired Broken Shared Skills - [shared-ai-skills](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills)
 
 Fixed five shared Claude skills that had drifted from daily use: three plugins referenced helper scripts nobody had published, so installed copies would fail on first run. Audited all 58 published skills; the remainder are current. [MR !69](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/69) [MR !73](https://gitlab.cee.redhat.com/telco-ai-projects/shared-ai-skills/-/merge_requests/73)
